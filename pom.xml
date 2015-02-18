@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.hspconsortium</groupId>
+    <artifactId>hsp-tools</artifactId>
+    <version>0.7.0.1</version>
+    <packaging>pom</packaging>
+
+	<modules>
+        <module>tools</module>
+    </modules>
+
+    <properties>
+        <java.version>1.7</java.version>
+        <hsp.version>0.7.0.1</hsp.version>
+        <springframework.version>4.0.5.RELEASE</springframework.version>
+        <commons-io.version>1.2</commons-io.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <javax.servlet.version>3.0.1</javax.servlet.version>
+        <apache.httpclient.version>4.3.5</apache.httpclient.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

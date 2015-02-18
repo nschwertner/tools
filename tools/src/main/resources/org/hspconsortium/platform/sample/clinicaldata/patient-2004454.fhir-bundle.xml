@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:38</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/2004454</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Kevin Lee</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="2004454"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Lee"/>
+      <given value="Kevin"/>
+      <given value="H."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.lee@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="M"/>
+        <display value="Male"/>
+      </coding>
+    </gender>
+    <birthDate value="2007-07-15" />
+    <address>
+      <use value="home"/>
+      <line value="80 Mill StApt 21"/>
+      <city value="Sand Springs"/>
+      <state value="OK"/>
+      <zip value="74063"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1836-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="60.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-07-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="40.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="109.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1837-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+    </name>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1838-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Phe DBS Ql = Normal </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+    </name>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1839-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Phe DBS Ql = Normal </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+    </name>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1840-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="49220-7"/>
+        <display value="Prolactin SerPl 3rd IS-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="86.5"/>
+      <units value="ng/mL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="2.0"/>
+          <units value="ng/mL"/>
+          <code value="ng/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="15.0"/>
+          <units value="ng/mL"/>
+          <code value="ng/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1841-lab</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+    </name>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/295</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-07-09"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/296</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267024001"/>
+        <display value="Abnormal weight loss"/>
+      </coding>
+      <text value="Abnormal weight loss"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-07-14"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/297</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Diaper rash</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="91487003"/>
+        <display value="Diaper rash"/>
+      </coding>
+      <text value="Diaper rash"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-08-01"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/298</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54150009"/>
+        <display value="Acute upper respiratory infection"/>
+      </coding>
+      <text value="Acute upper respiratory infection"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-03-02"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/299</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65363002"/>
+        <display value="Otitis media"/>
+      </coding>
+      <text value="Otitis media"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-03-02"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/300</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Nausea and vomiting</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="16932000"/>
+        <display value="Nausea and vomiting"/>
+      </coding>
+      <text value="Nausea and vomiting"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-08-07"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/301</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Viral disease</div>   
+   </text>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34014006"/>
+        <display value="Viral disease"/>
+      </coding>
+      <text value="Viral disease"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-08-07"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1-smokingstatus</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="428041000124106"/>
+        <display value="Current some day smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2004454-gestage</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-07-15: Gestational age at birth = 30.6 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="30.6"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-07-15"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/2004454"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>List/45</id>
+  <updated>2014-11-10T11:52:12.814120</updated>
+  <published>2014-11-10T11:52:12.814120</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <List xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/2004454"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </content>
+</entry>
+
+</feed>

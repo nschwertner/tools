@@ -1,0 +1,5045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:15</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/731673</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Sarah Graham</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="731673"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Graham"/>
+      <given value="Sarah"/>
+      <given value="Y."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-534-9017"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="sarah.graham@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </gender>
+    <birthDate value="1949-09-22" />
+    <address>
+      <use value="home"/>
+      <line value="92 Pine Ave"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <zip value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/13</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Cetirizine 10 MG Oral Tablet [Zyrtec] (rxnorm: 210596)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="210596"/>
+	  <display value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-10-28"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/181</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Cetirizine 10 MG Oral Tablet [Zyrtec]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="210596"/>
+	  <display value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/13"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-10-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/14</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Levofloxacin 500 MG Oral Tablet [Levaquin] (rxnorm: 211816)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="211816"/>
+	  <display value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-10-28"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="10"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/182</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 10 tablets = 10 day supply of Levofloxacin 500 MG Oral Tablet [Levaquin]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="211816"/>
+	  <display value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/14"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="10" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="10"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-10-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/15</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Promethazine 25 MG Oral Tablet (rxnorm: 312664)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Promethazine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312664"/>
+	  <display value="Promethazine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-10-28"/>
+      </event>
+      <repeat>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 qid prn nausea"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="20"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="5"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/180</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 20 tablets = 5 day supply of Promethazine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Promethazine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312664"/>
+	  <display value="Promethazine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/15"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="5" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="20"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-10-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/16</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Trazodone 50 MG Oral Tablet (rxnorm: 856377)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-11-03"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 qhs"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/138</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-03-14"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/153</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-06-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/151</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-04-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/149</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-01-29"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/142</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/147</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-11-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/148</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-12-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/136</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-01-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/143</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-25"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/134</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/140</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-05-17"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/145</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-09-27"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/144</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-08-26"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/152</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-04-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/139</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/146</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-10-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/141</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-06-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/135</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-12-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/137</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/150</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/16"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-02-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/17</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      montelukast 10 MG Oral Tablet [Singulair] (rxnorm: 153892)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="montelukast 10 MG Oral Tablet [Singulair]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="153892"/>
+	  <display value="montelukast 10 MG Oral Tablet [Singulair]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-11-08"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/169</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of montelukast 10 MG Oral Tablet [Singulair]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="montelukast 10 MG Oral Tablet [Singulair]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="153892"/>
+	  <display value="montelukast 10 MG Oral Tablet [Singulair]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/17"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-08"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/18</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      valdecoxib 20 MG Oral Tablet [Bextra] (rxnorm: 352063)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-11-08"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/185</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/18"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-08"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/186</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/18"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-01-06"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/19</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet (rxnorm: 310812)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-11-18"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/167</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-06-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/160</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-18"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/165</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-11-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/164</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-09-23"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/163</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-06-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/161</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/162</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/166</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/19"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-03-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/20</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Lisinopril 20 MG Oral Tablet (rxnorm: 314077)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2004-11-18"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/172</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-18"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/176</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-09-23"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/178</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-03-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/177</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-11-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/173</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/174</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/175</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-06-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/179</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/20"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-06-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/21</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      duloxetine 60 MG Enteric Coated Capsule [Cymbalta] (rxnorm: 615186)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-02-17"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/154</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/21"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-17"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/156</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/21"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/157</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/21"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-17"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/158</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/21"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-02-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/155</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/21"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-22"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/22</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet (rxnorm: 828576)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="828576"/>
+	  <display value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-02-17"/>
+      </event>
+      <repeat>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 q6h prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="40"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/159</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 40 tablets = 10 day supply of Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="828576"/>
+	  <display value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/22"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="10" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="40"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-17"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/23</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Meclizine 25 MG Oral Tablet (rxnorm: 311470)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-04-16"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid prn dizziness"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="14"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="7"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/183</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/23"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="7" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="14"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/184</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/23"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="7" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="14"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-10-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/24</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Nitrofurantoin 100 MG Oral Capsule (rxnorm: 311992)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-05-12"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="20"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/168</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 20 tablets = 10 day supply of Nitrofurantoin 100 MG Oral Capsule
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/24"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="10" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="20"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-05-12"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/25</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort] (rxnorm: 752370)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="752370"/>
+	  <display value="120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-09-09"/>
+      </event>
+      <repeat>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="2"/>
+      <units value="{puff}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{puff}"/>
+    </doseQuantity>
+    
+    <text value="2 puffs bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value="{puff}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{puff}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/104</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-10-28"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/105</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Allergic rhinitis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="61582004"/>
+        <display value="Allergic rhinitis"/>
+      </coding>
+      <text value="Allergic rhinitis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-10-28"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/106</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Dizziness and giddiness</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="404640003"/>
+        <display value="Dizziness and giddiness"/>
+      </coding>
+      <text value="Dizziness and giddiness"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-10-28"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/107</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Other diseases of nasal cavity and sinuses</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68235000"/>
+        <display value="Other diseases of nasal cavity and sinuses"/>
+      </coding>
+      <text value="Other diseases of nasal cavity and sinuses"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-10-29"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/108</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Arthropathy</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="3723001"/>
+        <display value="Arthropathy"/>
+      </coding>
+      <text value="Arthropathy"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-02-16"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/109</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Myalgia and myositis, unspecified</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68962001"/>
+        <display value="Myalgia and myositis, unspecified"/>
+      </coding>
+      <text value="Myalgia and myositis, unspecified"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-02-16"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/110</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Anxiety</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="48694002"/>
+        <display value="Anxiety"/>
+      </coding>
+      <text value="Anxiety"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-03-27"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/111</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign essential hypertension</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1201005"/>
+        <display value="Benign essential hypertension"/>
+      </coding>
+      <text value="Benign essential hypertension"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-03-27"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/112</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Depressive disorder</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="35489007"/>
+        <display value="Depressive disorder"/>
+      </coding>
+      <text value="Depressive disorder"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-05-12"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/113</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Urinary tract infectious disease</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68566005"/>
+        <display value="Urinary tract infectious disease"/>
+      </coding>
+      <text value="Urinary tract infectious disease"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-05-12"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/114</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25064002"/>
+        <display value="Headache"/>
+      </coding>
+      <text value="Headache"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-06-18"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/115</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Essential hypertension</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="38341003"/>
+        <display value="Essential hypertension"/>
+      </coding>
+      <text value="Essential hypertension"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-06-19"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/116</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="55822004"/>
+        <display value="Hyperlipidemia"/>
+      </coding>
+      <text value="Hyperlipidemia"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-06-19"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/117</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Peripheral vertigo</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="50438001"/>
+        <display value="Peripheral vertigo"/>
+      </coding>
+      <text value="Peripheral vertigo"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-07-07"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/118</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Sensorineural hearing loss</div>   
+   </text>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="60700002"/>
+        <display value="Sensorineural hearing loss"/>
+      </coding>
+      <text value="Sensorineural hearing loss"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-07-07"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/13-smokingstatus</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Never smoker</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266919005"/>
+        <display value="Never smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/731673-gestage</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1949-09-22: Gestational age at birth = 39.2 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="39.2"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1949-09-22"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/731673"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>List/9</id>
+  <updated>2014-11-10T11:52:11.962637</updated>
+  <published>2014-11-10T11:52:11.962637</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <List xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/731673"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </content>
+</entry>
+
+</feed>

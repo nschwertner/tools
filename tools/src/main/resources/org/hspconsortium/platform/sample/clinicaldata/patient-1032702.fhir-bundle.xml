@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:18</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/1032702</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Amy Shaw</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="1032702"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Shaw"/>
+      <given value="Amy"/>
+      <given value="V."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-782-6765"/>
+      <use value="mobile"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="amy.shaw@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </gender>
+    <birthDate value="2007-03-20" />
+    <address>
+      <use value="home"/>
+      <line value="49 Meadow St"/>
+      <city value="Mounds"/>
+      <state value="OK"/>
+      <zip value="74047"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/101</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Nizatidine 15 MG/ML Oral Solution [Axid] (rxnorm: 582620)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="582620"/>
+	  <display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1032702"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-04-05"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="10"/>
+      <units value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="10 mL bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/119</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2007-12-14"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/120</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267024001"/>
+        <display value="Abnormal weight loss"/>
+      </coding>
+      <text value="Abnormal weight loss"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2007-12-19"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/121</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Follow-up encounter</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="310249008"/>
+        <display value="Follow-up encounter"/>
+      </coding>
+      <text value="Follow-up encounter"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2007-12-19"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/122</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Gastroesophageal reflux disease</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="235595009"/>
+        <display value="Gastroesophageal reflux disease"/>
+      </coding>
+      <text value="Gastroesophageal reflux disease"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-04-03"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/123</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Needs influenza immunization</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="185903001"/>
+        <display value="Needs influenza immunization"/>
+      </coding>
+      <text value="Needs influenza immunization"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-06-29"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Immunization/1</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Immunization xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">DTaP-hepatitis B and poliovirus vaccine</div>
+        </text>
+        <subject>
+            <reference value="Patient/1032702"/>
+        </subject>
+        <date value="2007-09-27"/>
+        <vaccineType>
+            <coding>
+        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+		 <code value="110"/>
+       		 <display value="DTaP-hepatitis B and poliovirus vaccine"/>
+		</coding>
+        </vaccineType>
+        <reported value="false"/>
+        <refusedIndicator value="false"/>
+    </Immunization>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Immunization/2</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Immunization xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">poliovirus vaccine, unspecified formulation</div>
+        </text>
+        <subject>
+            <reference value="Patient/1032702"/>
+        </subject>
+        <date value="2011-01-27"/>
+        <vaccineType>
+            <coding>
+        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+		 <code value="89"/>
+       		 <display value="poliovirus vaccine, unspecified formulation"/>
+		</coding>
+        </vaccineType>
+        <reported value="false"/>
+        <refusedIndicator value="false"/>
+    </Immunization>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Immunization/3</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Immunization xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">poliovirus vaccine, unspecified formulation</div>
+        </text>
+        <subject>
+            <reference value="Patient/1032702"/>
+        </subject>
+        <date value="2011-05-27"/>
+        <vaccineType>
+            <coding>
+        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+		 <code value="89"/>
+       		 <display value="poliovirus vaccine, unspecified formulation"/>
+		</coding>
+        </vaccineType>
+        <reported value="false"/>
+        <refusedIndicator value="false"/>
+    </Immunization>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Immunization/4</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Immunization xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">rotavirus, live, pentavalent vaccine</div>
+        </text>
+        <subject>
+            <reference value="Patient/1032702"/>
+        </subject>
+        <date value="2007-05-24"/>
+        <vaccineType>
+            <coding>
+        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+		 <code value="116"/>
+       		 <display value="rotavirus, live, pentavalent vaccine"/>
+		</coding>
+        </vaccineType>
+        <reported value="false"/>
+        <refusedIndicator value="false"/>
+    </Immunization>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/5-smokingstatus</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="428041000124106"/>
+        <display value="Current some day smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1032702"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>List/19</id>
+  <updated>2014-11-10T11:52:12.056486</updated>
+  <published>2014-11-10T11:52:12.056486</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <List xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/1032702"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </content>
+</entry>
+
+</feed>

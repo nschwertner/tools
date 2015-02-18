@@ -1,0 +1,6036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:56</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/1137192</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Joshua Williams</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="1137192"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Williams"/>
+      <given value="Joshua"/>
+      <given value="P."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-232-5751"/>
+      <use value="mobile"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="joshua.williams@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="M"/>
+        <display value="Male"/>
+      </coding>
+    </gender>
+    <birthDate value="1954-08-21" />
+    <address>
+      <use value="home"/>
+      <line value="96 East Rd"/>
+      <city value="Tulsa"/>
+      <state value="OK"/>
+      <zip value="74108"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2348-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Trigl SerPl-mCnc = 152 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="152.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2349-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: CO2 SerPl-sCnc = 26 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2028-9"/>
+        <display value="CO2 SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="26.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="22.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="29.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2350-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Glucose SerPl-mCnc = 116 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2345-7"/>
+        <display value="Glucose SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="116.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="70.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2351-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Bilirub SerPl-mCnc = 0.9 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="0.9"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="1.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2352-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: BUN SerPl-mCnc = 10 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3094-0"/>
+        <display value="BUN SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="10.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="5.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="20.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2353-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: HDLc SerPl-mCnc = 31 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="31.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2354-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: LDLc SerPl Calc-mCnc = 82 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="82.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2355-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Anion Gap3 SerPl-sCnc = 7 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10466-1"/>
+        <display value="Anion Gap3 SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="7.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2356-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: ALP SerPl-cCnc = 47 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="6768-6"/>
+        <display value="ALP SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="47.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="50.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="136.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2357-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: ALP SerPl-cCnc = 42 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="6768-6"/>
+        <display value="ALP SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="42.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="50.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="136.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2358-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Prot SerPl-mCnc = 7.2 g/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2885-2"/>
+        <display value="Prot SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="7.2"/>
+      <units value="g/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="6.3"/>
+          <units value="g/dL"/>
+          <code value="g/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="8.2"/>
+          <units value="g/dL"/>
+          <code value="g/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2359-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Albumin SerPl-mCnc = 4.3 g/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1751-7"/>
+        <display value="Albumin SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="4.3"/>
+      <units value="g/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="3.5"/>
+          <units value="g/dL"/>
+          <code value="g/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="5.0"/>
+          <units value="g/dL"/>
+          <code value="g/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2360-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Calcium SerPl-mCnc = 9.3 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="17861-6"/>
+        <display value="Calcium SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="9.3"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="8.5"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="10.5"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2361-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: AST SerPl-cCnc = 33 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1920-8"/>
+        <display value="AST SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="33.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="4.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="37.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2362-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Sodium SerPl-sCnc = 139 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2951-2"/>
+        <display value="Sodium SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="139.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="135.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="145.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2363-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Creat SerPl-mCnc = 1.1 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2160-0"/>
+        <display value="Creat SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="1.1"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.8"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="1.4"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2364-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: ALT SerPl-cCnc = 60 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1742-6"/>
+        <display value="ALT SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="60.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="50.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2365-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: ALT SerPl-cCnc = 58 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1742-6"/>
+        <display value="ALT SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="58.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="50.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2366-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Potassium SerPl-sCnc = 4.6 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2823-3"/>
+        <display value="Potassium SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="4.6"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="3.5"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="5.5"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2367-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Chloride SerPl-sCnc = 106 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2075-0"/>
+        <display value="Chloride SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="106.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="95.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="105.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2368-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-06-11: Cholest SerPl-mCnc = 143 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="143.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-06-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2369-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Trigl SerPl-mCnc = 115 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="115.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2370-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Cholest SerPl-mCnc = 169 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="169.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2371-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Glucose SerPl-mCnc = 112 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2345-7"/>
+        <display value="Glucose SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="112.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="70.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="109.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2372-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: BUN SerPl-mCnc = 7 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3094-0"/>
+        <display value="BUN SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="7.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="5.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="20.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2373-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: HDLc SerPl-mCnc = 45 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2374-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: LDLc SerPl Calc-mCnc = 101 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="101.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2375-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Anion Gap3 SerPl-sCnc = 9 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10466-1"/>
+        <display value="Anion Gap3 SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="9.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2376-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Calcium SerPl-mCnc = 9.1 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="17861-6"/>
+        <display value="Calcium SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="9.1"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="8.5"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="10.5"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2377-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Sodium SerPl-sCnc = 140 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2951-2"/>
+        <display value="Sodium SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="140.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="135.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="145.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2378-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Creat SerPl-mCnc = 1.1 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2160-0"/>
+        <display value="Creat SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="1.1"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.8"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="1.4"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2379-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Potassium SerPl-sCnc = 4 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2823-3"/>
+        <display value="Potassium SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="4.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="3.5"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="5.5"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2380-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: Chloride SerPl-sCnc = 105 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2075-0"/>
+        <display value="Chloride SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="105.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="95.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="105.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2381-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-06-03: CO2 SerPl-sCnc = 26 mmol/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2028-9"/>
+        <display value="CO2 SerPl-sCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="26.0"/>
+      <units value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2005-06-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="22.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="29.0"/>
+          <units value="mmol/L"/>
+          <code value="mmol/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2382-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-05-26: LDLc SerPl Calc-mCnc = 56 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="56.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-05-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2383-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-05-26: HDLc SerPl-mCnc = 27 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="27.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-05-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2384-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-05-26: Trigl SerPl-mCnc = 196 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="196.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-05-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2385-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-05-26: Cholest SerPl-mCnc = 122 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="122.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-05-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2386-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: HDLc SerPl-mCnc = 29 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="29.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2387-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: Trigl SerPl-mCnc = 115 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="115.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2388-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: ALT SerPl-cCnc = 38 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1742-6"/>
+        <display value="ALT SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="38.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="45.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2389-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: AST SerPl-cCnc = 30 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1920-8"/>
+        <display value="AST SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="30.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="15.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="41.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2390-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: LDLc SerPl Calc-mCnc = 71 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="71.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2391-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-06-01: Cholest SerPl-mCnc = 123 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="123.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-06-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2392-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: Cholest SerPl-mCnc = 159 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="159.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2393-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: AST SerPl-cCnc = 23 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1920-8"/>
+        <display value="AST SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="23.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="15.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="41.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2394-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: HDLc SerPl-mCnc = 41 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="41.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2395-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: LDLc SerPl Calc-mCnc = 93 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="93.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2396-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: Trigl SerPl-mCnc = 126 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="126.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2397-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: ALT SerPl-cCnc = 27 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1742-6"/>
+        <display value="ALT SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="27.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="45.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2398-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: HDLc SerPl-mCnc = 41 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="41.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2399-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: Trigl SerPl-mCnc = 116 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="116.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2400-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: ALT SerPl-cCnc = 27 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1742-6"/>
+        <display value="ALT SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="27.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="45.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2401-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: Cholest SerPl-mCnc = 163 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="163.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2402-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: LDLc SerPl Calc-mCnc = 99 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="99.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2403-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2009-05-29: AST SerPl-cCnc = 24 U/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1920-8"/>
+        <display value="AST SerPl-cCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="24.0"/>
+      <units value="U/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2009-05-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="15.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="41.0"/>
+          <units value="U/L"/>
+          <code value="U/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/2404-lab</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-05-30: CRP SerPl HS-mCnc = 3.8 mg/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30522-7"/>
+        <display value="CRP SerPl HS-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="3.8"/>
+      <units value="mg/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-05-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/L"/>
+          <code value="mg/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="3.0"/>
+          <units value="mg/L"/>
+          <code value="mg/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/121</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      benazepril 10 MG Oral Tablet (rxnorm: 308607)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-08-20"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="90"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1252</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of benazepril 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/121"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-05-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1253</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of benazepril 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/121"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-09-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1251</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of benazepril 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/121"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-02-05"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1249</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of benazepril 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/121"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-08-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1250</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of benazepril 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="benazepril 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="308607"/>
+	  <display value="benazepril 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/121"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-11-12"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/122</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Simvastatin 20 MG Oral Tablet (rxnorm: 312961)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-08-20"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 qhs"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="90"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1258</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of Simvastatin 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/122"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-09-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1257</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of Simvastatin 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/122"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-05-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1256</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of Simvastatin 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/122"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-02-05"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1254</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of Simvastatin 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/122"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-08-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1255</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of Simvastatin 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Simvastatin 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312961"/>
+	  <display value="Simvastatin 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/122"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-11-12"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/123</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Isosorbide Dinitrate 10 MG Oral Tablet (rxnorm: 381056)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-08-20"/>
+      </event>
+      <repeat>
+        <frequency value="3"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="270"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1241</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 270 tablets = 90 day supply of Isosorbide Dinitrate 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/123"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="270"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-06-24"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1242</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 270 tablets = 90 day supply of Isosorbide Dinitrate 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/123"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="270"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-09-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1238</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 270 tablets = 90 day supply of Isosorbide Dinitrate 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/123"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="270"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-08-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1239</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 270 tablets = 90 day supply of Isosorbide Dinitrate 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/123"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="270"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-10-26"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1240</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 270 tablets = 90 day supply of Isosorbide Dinitrate 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="381056"/>
+	  <display value="Isosorbide Dinitrate 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/123"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="270"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-02-05"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/124</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metoprolol 100 MG Oral Tablet (rxnorm: 866511)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866511"/>
+	  <display value="Metoprolol 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-08-20"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="180"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1244</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 180 tablets = 90 day supply of Metoprolol 100 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866511"/>
+	  <display value="Metoprolol 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/124"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="180"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-08-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1245</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 180 tablets = 90 day supply of Metoprolol 100 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866511"/>
+	  <display value="Metoprolol 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/124"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="180"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-10-26"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/125</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metoprolol 50 MG Oral Tablet (rxnorm: 866514)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866514"/>
+	  <display value="Metoprolol 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2009-02-05"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="180"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1246</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 180 tablets = 90 day supply of Metoprolol 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866514"/>
+	  <display value="Metoprolol 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/125"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="180"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-02-05"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1248</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 180 tablets = 90 day supply of Metoprolol 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866514"/>
+	  <display value="Metoprolol 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/125"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="180"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-09-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1247</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 180 tablets = 90 day supply of Metoprolol 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Metoprolol 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="866514"/>
+	  <display value="Metoprolol 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/125"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="180"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-05-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/126</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Diazepam 10 MG Oral Tablet (rxnorm: 197589)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Diazepam 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="197589"/>
+	  <display value="Diazepam 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2009-07-13"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid prn anxiety"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="6"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="6"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1243</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 6 tablets = 6 day supply of Diazepam 10 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Diazepam 10 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="197589"/>
+	  <display value="Diazepam 10 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/126"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="6" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="6"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-07-13"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/127</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Methylprednisolone 4 MG Oral Tablet (rxnorm: 762675)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Methylprednisolone 4 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="762675"/>
+	  <display value="Methylprednisolone 4 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2009-07-13"/>
+      </event>
+    </timingSchedule>
+    <text value="taper as directed"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="21"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="3"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/1259</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 21 tablets = 3 day supply of Methylprednisolone 4 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Methylprednisolone 4 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="762675"/>
+	  <display value="Methylprednisolone 4 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1137192"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/127"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="3" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="21"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-07-13"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/472</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Chronic ischemic heart disease</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="413838009"/>
+        <display value="Chronic ischemic heart disease"/>
+      </coding>
+      <text value="Chronic ischemic heart disease"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-06-11"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/473</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Coronary arteriosclerosis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="53741008"/>
+        <display value="Coronary arteriosclerosis"/>
+      </coding>
+      <text value="Coronary arteriosclerosis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-06-03"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/474</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign prostatic hyperplasia</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="254902007"/>
+        <display value="Benign prostatic hyperplasia"/>
+      </coding>
+      <text value="Benign prostatic hyperplasia"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2006-11-05"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/475</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Anxiety</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="48694002"/>
+        <display value="Anxiety"/>
+      </coding>
+      <text value="Anxiety"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2007-09-22"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/476</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single major depressive episode, mild</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="79298009"/>
+        <display value="Single major depressive episode, mild"/>
+      </coding>
+      <text value="Single major depressive episode, mild"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2007-10-26"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/477</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abnormal ECG</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="102594003"/>
+        <display value="Abnormal ECG"/>
+      </coding>
+      <text value="Abnormal ECG"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-05-30"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/478</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abdominal pain</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="21522001"/>
+        <display value="Abdominal pain"/>
+      </coding>
+      <text value="Abdominal pain"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-07-04"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/479</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Migraine with aura</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="230462002"/>
+        <display value="Migraine with aura"/>
+      </coding>
+      <text value="Migraine with aura"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-07-04"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/480</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Visual disturbance</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="63102001"/>
+        <display value="Visual disturbance"/>
+      </coding>
+      <text value="Visual disturbance"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-07-04"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/481</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Mononeuritis of lower limb</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="297946004"/>
+        <display value="Mononeuritis of lower limb"/>
+      </coding>
+      <text value="Mononeuritis of lower limb"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-07-13"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/45-smokingstatus</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Unknown if ever smoked</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266927001"/>
+        <display value="Unknown if ever smoked"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1137192-gestage</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1954-08-21: Gestational age at birth = 45.2 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.2"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1954-08-21"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1137192"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Substance/ndfrt-N0000175503</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Substance xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">drug class - sulfonamide antibacterial</div>
+      </text>
+      <type>
+        <coding>
+          <system value="http://rxnav.nlm.nih.gov/REST/Ndfrt"/>
+          <code value="N0000175503"/>
+          <display value="sulfonamide antibacterial"/>
+        </coding>
+      </type>
+    </Substance>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>AdverseReaction/23</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <AdverseReaction xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2000: minor skin rash caused by sulfonamide antibacterial</div>
+      </text>
+      <date value="2000"/>
+      <subject>
+          <reference value="Patient/1137192"/>
+      </subject>
+      <didNotOccurFlag value="false"/>
+      <symptom>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="271807003"/>
+            <display value="skin rash"/>
+          </coding>
+          <text value="skin rash"/>
+        </code>
+        <severity value="minor"/>
+        
+      </symptom>
+      <exposure>
+        <substance>
+          <reference value="Substance/ndfrt-N0000175503"/>
+        </substance>
+      </exposure>
+    </AdverseReaction>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>AllergyIntolerance/23</id>
+  <updated>2014-11-10T11:52:13.549259</updated>
+  <published>2014-11-10T11:52:13.549259</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <AllergyIntolerance xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">Sensitivity to sulfonamide antibacterial</div>
+        </text>
+        <criticality value="low"/>
+        
+        <sensitivityType value="allergy"/>
+        <recordedDate value="2000"/>
+        <status value="confirmed"/>
+        <subject>
+          <reference value="Patient/1137192"/>
+        </subject>
+        <substance>
+            <reference value="Substance/ndfrt-N0000175503"/>
+        </substance>
+        <reaction>
+            <reference value="AdverseReaction/23"/>
+        </reaction>
+        
+    </AllergyIntolerance>
+  
+  </content>
+</entry>
+
+</feed>

@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:35</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/1098667</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Robert Hill</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="1098667"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Hill"/>
+      <given value="Robert"/>
+      <given value="P."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="robert.hill@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="M"/>
+        <display value="Male"/>
+      </coding>
+    </gender>
+    <birthDate value="1953-10-27" />
+    <address>
+      <use value="home"/>
+      <line value="42 Park St"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <zip value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/109</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin] (rxnorm: 150840)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="150840"/>
+	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-01-13"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/570</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="150840"/>
+	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/109"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-01-13"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/110</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 300 MG / Codeine 30 MG Oral Tablet (rxnorm: 309462)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="309462"/>
+	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2005-07-30"/>
+      </event>
+      <repeat>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 q6h prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="24"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="6"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/565</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 24 tablets = 6 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="309462"/>
+	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/110"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="6" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="24"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-30"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/111</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      fexofenadine 180 MG Oral Tablet (rxnorm: 310333)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-09-10"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="90"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/567</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/111"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-01-07"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/566</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/111"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-09-10"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/569</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/111"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-08-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/568</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/111"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="90" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-05-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/112</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC] (rxnorm: 351396)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="351396"/>
+	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2008-09-12"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/572</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 10 day supply of Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="351396"/>
+	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/112"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="10" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2008-09-12"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/113</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream (rxnorm: 310893)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310893"/>
+	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2009-04-23"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="28"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="28"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/571</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 28 tablets = 28 day supply of Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310893"/>
+	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/113"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="28" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="28"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-04-23"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/272</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute maxillary sinusitis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68272006"/>
+        <display value="Acute maxillary sinusitis"/>
+      </coding>
+      <text value="Acute maxillary sinusitis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2004-12-01"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/273</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-02-24"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/274</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25064002"/>
+        <display value="Headache"/>
+      </coding>
+      <text value="Headache"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-02-24"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/275</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Migraine without aura</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="56097005"/>
+        <display value="Migraine without aura"/>
+      </coding>
+      <text value="Migraine without aura"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-03-17"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/276</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="55822004"/>
+        <display value="Hyperlipidemia"/>
+      </coding>
+      <text value="Hyperlipidemia"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-04-09"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/277</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Blood chemistry abnormal</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="80394007"/>
+        <display value="Blood chemistry abnormal"/>
+      </coding>
+      <text value="Blood chemistry abnormal"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-04-22"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/278</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hemangioma</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="400210000"/>
+        <display value="Hemangioma"/>
+      </coding>
+      <text value="Hemangioma"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-04-28"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/279</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Pure hypercholesterolemia</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267432004"/>
+        <display value="Pure hypercholesterolemia"/>
+      </coding>
+      <text value="Pure hypercholesterolemia"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-04-28"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/280</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Family history of malignant neoplasm of gastrointestinal tract</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="312824007"/>
+        <display value="Family history of malignant neoplasm of gastrointestinal tract"/>
+      </coding>
+      <text value="Family history of malignant neoplasm of gastrointestinal tract"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-08-26"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/281</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">History of polyp of colon</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="429047008"/>
+        <display value="History of polyp of colon"/>
+      </coding>
+      <text value="History of polyp of colon"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-08-26"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/282</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of face</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92359006"/>
+        <display value="Benign neoplasm of skin of face"/>
+      </coding>
+      <text value="Benign neoplasm of skin of face"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-10-15"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/283</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of trunk</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92380000"/>
+        <display value="Benign neoplasm of skin of trunk"/>
+      </coding>
+      <text value="Benign neoplasm of skin of trunk"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-10-15"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/18-smokingstatus</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Unknown if ever smoked</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266927001"/>
+        <display value="Unknown if ever smoked"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1098667-gestage</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1953-10-27: Gestational age at birth = 43.4 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="43.4"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1953-10-27"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1098667"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>List/21</id>
+  <updated>2014-11-10T11:52:12.742562</updated>
+  <published>2014-11-10T11:52:12.742562</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <List xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/1098667"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </content>
+</entry>
+
+</feed>

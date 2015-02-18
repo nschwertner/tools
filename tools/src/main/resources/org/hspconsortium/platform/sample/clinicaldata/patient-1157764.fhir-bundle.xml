@@ -1,0 +1,5415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:47</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/1157764</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Carol Hughes</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="1157764"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Hughes"/>
+      <given value="Carol"/>
+      <given value="U."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-971-5389"/>
+      <use value="mobile"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="carol.hughes@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </gender>
+    <birthDate value="1949-11-04" />
+    <address>
+      <use value="home"/>
+      <line value="36 South St"/>
+      <city value="Tulsa"/>
+      <state value="OK"/>
+      <zip value="74108"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1842-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: LDLc SerPl Calc-mCnc = 101 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13457-7"/>
+        <display value="LDLc SerPl Calc-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="101.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="100.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1843-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: TSH SerPl DL&lt;=0.005 mU/L-aCnc = 3.548 mcU/mL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11580-8"/>
+        <display value="TSH SerPl DL&lt;=0.005 mU/L-aCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="3.548"/>
+      <units value="mcU/mL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.4"/>
+          <units value="mcU/mL"/>
+          <code value="mcU/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="4.2"/>
+          <units value="mcU/mL"/>
+          <code value="mcU/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1844-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: HDLc SerPl-mCnc = 66 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2085-9"/>
+        <display value="HDLc SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="66.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1845-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: Trigl SerPl-mCnc = 72 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2571-8"/>
+        <display value="Trigl SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="72.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="150.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1846-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: Cholest SerPl-mCnc = 181 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2093-3"/>
+        <display value="Cholest SerPl-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="181.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="200.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1847-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: pH Ur Strip = 5 [pH]</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5803-2"/>
+        <display value="pH Ur Strip"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="5.0"/>
+      <units value="[pH]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="5.0"/>
+          <units value="[pH]"/>
+          <code value="[pH]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="8.0"/>
+          <units value="[pH]"/>
+          <code value="[pH]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1848-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Prot Ur Strip-mCnc = 0 mg/dL</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5804-0"/>
+        <display value="Prot Ur Strip-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="0.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1849-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: RBC #/area UrnS HPF = 1 /[HPF]</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="13945-1"/>
+        <display value="RBC #/area UrnS HPF"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="1.0"/>
+      <units value="/[HPF]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="2.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1850-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: WBC #/area UrnS HPF = 1 /[HPF]</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5821-4"/>
+        <display value="WBC #/area UrnS HPF"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="1.0"/>
+      <units value="/[HPF]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="5.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1851-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Bacteria #/area UrnS HPF = 44 /[HPF]</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5769-5"/>
+        <display value="Bacteria #/area UrnS HPF"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="44.0"/>
+      <units value="/[HPF]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="0.0"/>
+          <units value="/[HPF]"/>
+          <code value="/[HPF]"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1852-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Squamous UrnS Ql HPF = None </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="12258-0"/>
+        <display value="Squamous UrnS Ql HPF"/>
+      </coding>
+    </name>
+    <valueString value="None"/>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1853-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Sp Gr Ur Strip = 1.001 </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5811-5"/>
+        <display value="Sp Gr Ur Strip"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="1.001"/>
+      <units value=""/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="1.003"/>
+          <units value=""/>
+          <code value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="1.03"/>
+          <units value=""/>
+          <code value=""/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1854-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+        <valueString value='[&#39;Negative&#39;, &#39;Positive&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Nitrite Ur Ql Strip = Negative </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5802-4"/>
+        <display value="Nitrite Ur Ql Strip"/>
+      </coding>
+    </name>
+    <valueString value="Negative"/>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1855-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Appearance Ur = Clear </div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="5767-9"/>
+        <display value="Appearance Ur"/>
+      </coding>
+    </name>
+    <valueString value="Clear"/>
+    
+    <appliesDateTime value="2006-10-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1856-lab</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: CRP SerPl HS-mCnc = 2.2 mg/L</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30522-7"/>
+        <display value="CRP SerPl HS-mCnc"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.2"/>
+      <units value="mg/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2004-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="0.0"/>
+          <units value="mg/L"/>
+          <code value="mg/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="3.0"/>
+          <units value="mg/L"/>
+          <code value="mg/L"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/128</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      anastrozole 1 MG Oral Tablet [Arimidex] (rxnorm: 151124)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2003-10-23"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/928</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/913</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-01-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/936</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-03-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/925</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-07"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/920</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-09-26"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/924</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-03-09"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/927</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-06-05"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/930</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-09-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/912</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-12-21"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/917</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-06-29"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/931</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-10-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/921</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-10-27"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/911</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-11-21"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/934</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-01-01"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/915</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-03-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/916</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-04-19"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/926</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-05-06"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/933</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-12-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/923</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-06"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/919</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-08-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/918</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-07-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/932</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-11-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/922</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-25"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/910</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-10-23"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/914</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-02-18"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/929</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-08-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/935</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="151124"/>
+	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/128"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-01-31"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/129</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35] (rxnorm: 877300)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2003-11-02"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="wk"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 weekly"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="4"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/898</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-02-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/889</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-06-09"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/908</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-12-25"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/890</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-07-06"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/891</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-08-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/902</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-06-08"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/899</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-03-19"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/884</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-01-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/892</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-09-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/905</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-09-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/886</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-03-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/904</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-08-03"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/882</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-11-30"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/885</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-02-18"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/901</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-05-15"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/896</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-12-26"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/895</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-11-25"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/883</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-12-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/893</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-09-28"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/907</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-11-27"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/888</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-05-10"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/887</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-04-19"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/897</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-01-23"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/906</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-10-30"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/903</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-07-04"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/909</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-01-20"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/894</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2004-10-27"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/881</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2003-11-02"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/900</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="877300"/>
+	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/129"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="4"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2005-04-16"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/130</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Nitrofurantoin 100 MG Oral Capsule (rxnorm: 311992)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2006-10-31"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="60"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/880</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 60 tablets = 30 day supply of Nitrofurantoin 100 MG Oral Capsule
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/130"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="30" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="60"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2006-10-31"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/131</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan] (rxnorm: 285128)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="285128"/>
+	  <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2009-08-22"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="[drp]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="[drp]"/>
+    </doseQuantity>
+    
+    <text value="1 gtt daily in OD"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="2"/>
+        <units value="[drp]"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[drp]"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="20"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationDispense/937</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 2 tablets = 20 day supply of bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication id="med">
+      <name value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="285128"/>
+	  <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <patient>
+    <reference value="Patient/1157764"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/131"/>
+  </authorizingPrescription>
+
+  <dispense>
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+       <valueQuantity>
+         <value value="20" />
+         <units value="days" />
+         <system value="http://unitsofmeasure.org" />
+         <code value="d" />
+       </valueQuantity>
+    </extension>
+    <status value="completed"/>  
+    <quantity>
+      <value value="2"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+    </quantity>
+    <medication>
+      <reference value="#med"/>
+    </medication>
+    <whenHandedOver value="2009-08-22"/>
+  </dispense>
+</MedicationDispense>
+
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/379</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Primary malignant neoplasm of female breast</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="254837009"/>
+        <display value="Primary malignant neoplasm of female breast"/>
+      </coding>
+      <text value="Primary malignant neoplasm of female breast"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2003-12-16"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/380</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Adjustment disorder</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="17226007"/>
+        <display value="Adjustment disorder"/>
+      </coding>
+      <text value="Adjustment disorder"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-09-14"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/381</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Crohn&#39;s disease of large bowel</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="7620006"/>
+        <display value="Crohn&#39;s disease of large bowel"/>
+      </coding>
+      <text value="Crohn&#39;s disease of large bowel"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-11-14"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/382</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Recurrent major depressive episodes, moderate</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="18818009"/>
+        <display value="Recurrent major depressive episodes, moderate"/>
+      </coding>
+      <text value="Recurrent major depressive episodes, moderate"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2005-11-15"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/383</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2006-09-26"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/384</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hematuria syndrome</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="53298000"/>
+        <display value="Hematuria syndrome"/>
+      </coding>
+      <text value="Hematuria syndrome"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2006-10-30"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/385</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Primary malignant neoplasm of central portion of female breast</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="372064008"/>
+        <display value="Primary malignant neoplasm of central portion of female breast"/>
+      </coding>
+      <text value="Primary malignant neoplasm of central portion of female breast"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2008-10-21"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/386</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Primary open angle glaucoma</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="77075001"/>
+        <display value="Primary open angle glaucoma"/>
+      </coding>
+      <text value="Primary open angle glaucoma"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-05-20"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Condition/387</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Condition xmlns="http://hl7.org/fhir">
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Low tension glaucoma</div>   
+   </text>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="50485007"/>
+        <display value="Low tension glaucoma"/>
+      </coding>
+      <text value="Low tension glaucoma"/>
+    </code>
+   <status value="confirmed"/>
+   <onsetDate value="2009-07-01"/>
+   
+  </Condition>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/46-smokingstatus</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current every day smoker</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </name>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="449868002"/>
+        <display value="Current every day smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1157764-gestage</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1949-11-04: Gestational age at birth = 38.3 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="38.3"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1949-11-04"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/1157764"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>List/24</id>
+  <updated>2014-11-10T11:52:13.197437</updated>
+  <published>2014-11-10T11:52:13.197437</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <List xmlns="http://hl7.org/fhir">
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/1157764"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </content>
+</entry>
+
+</feed>

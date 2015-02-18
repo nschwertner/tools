@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:37</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/7777705</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Angela Montgomery</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospiptal MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="7777705"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Montgomery"/>
+      <given value="Angela"/>
+    </name>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </gender>
+    <birthDate value="2012-08-24" />
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1025</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-08-24: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2012-08-24"/>
+       <end value="2012-08-24"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1026</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-12-02: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2012-12-02"/>
+       <end value="2012-12-02"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1027</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-12-08: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2012-12-08"/>
+       <end value="2012-12-08"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1028</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-12-15: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2012-12-15"/>
+       <end value="2012-12-15"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1029</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-12-30: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2012-12-30"/>
+       <end value="2012-12-30"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1030</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-01-08: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-01-08"/>
+       <end value="2013-01-08"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1031</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-01-14: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-01-14"/>
+       <end value="2013-01-14"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1032</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-01-23: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-01-23"/>
+       <end value="2013-01-23"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1033</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-01-29: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-01-29"/>
+       <end value="2013-01-29"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1034</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-02-19: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-02-19"/>
+       <end value="2013-02-19"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Encounter/1035</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <Encounter xmlns="http://hl7.org/fhir">
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-02-21: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <subject>
+        <reference value="Patient/7777705"/>
+      </subject>
+      <period>
+       <start value="2013-02-21"/>
+       <end value="2013-02-21"/>
+      </period>
+    </Encounter>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1025-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1025"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-08-24: weight = 0.753 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="0.753"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-08-24"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1026-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1026"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-02: height = 45.0 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.0"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-02"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1026-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1026"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-02: weight = 2.194 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.194"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-02"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1027-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1027"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-08: height = 45.0 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.0"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-08"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1027-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1027"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-08: weight = 2.244 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.244"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-08"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1028-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1028"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-15: height = 45.0 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.0"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-15"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1028-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1028"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-15: weight = 2.371 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.371"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-15"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1029-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1029"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-30: height = 45.9 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="45.9"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1029-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1029"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-12-30: weight = 2.648 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.648"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-12-30"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1030-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1030"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-08: height = 46.7 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="46.7"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-08"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1030-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1030"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-08: weight = 2.775 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.775"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-08"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1031-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1031"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-14: height = 46.8 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="46.8"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-14"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1031-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1031"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-14: weight = 2.926 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="2.926"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-14"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1032-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1032"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-23: weight = 3.1 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="3.1"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1033-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1033"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-29: height = 49.5 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="49.5"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1033-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1033"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-01-29: weight = 3.2 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="3.2"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-01-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1034-height</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1034"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-19: height = 50.1 cm</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="50.1"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-02-19"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/1034-weight</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+        <valueResource>
+            <reference value="Encounter/1034"/>
+        </valueResource>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-19: weight = 3.7 kg</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="3.7"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-02-19"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>FamilyHistory/15</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <FamilyHistory xmlns="http://hl7.org/fhir">
+      <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
+        <valueQuantity>
+          <value value="177"/>
+          <units value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Father</div>
+      </text>
+      <subject>
+         <reference value="Patient/7777705"/>
+      </subject>
+      <relation>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="FTH"/>
+            <display value="father"/>
+          </coding>
+        </relationship>
+      </relation>
+    </FamilyHistory>
+  
+  </content>
+</entry>
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>FamilyHistory/16</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+    <FamilyHistory xmlns="http://hl7.org/fhir">
+      <extension url="http://fhir-registry.smartplatforms.org/Profile/family-history#height">
+        <valueQuantity>
+          <value value="164"/>
+          <units value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Mother</div>
+      </text>
+      <subject>
+         <reference value="Patient/7777705"/>
+      </subject>
+      <relation>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+          </coding>
+        </relationship>
+      </relation>
+    </FamilyHistory>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Observation/7777705-gestage</id>
+  <updated>2014-11-10T11:52:12.809050</updated>
+  <published>2014-11-10T11:52:12.809050</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Observation xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-08-24: Gestational age at birth = 25.2 weeks</div>
+    </text>
+    <name>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </name>
+    <valueQuantity>
+      <value value="25.2"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-08-24"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/7777705"/>
+    </subject>
+  </Observation>
+  
+  </content>
+</entry>
+
+</feed>
