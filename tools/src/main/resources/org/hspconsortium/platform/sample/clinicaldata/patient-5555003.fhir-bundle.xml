@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART patient bundle for transactional posting</title>
+  <id>urn:uuid:39</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+
+  <entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>Patient/5555003</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+  <Patient xmlns="http://hl7.org/fhir">
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Mildred Hoffman</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <label value="SMART Hospital MRN"/>
+      <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+      <value value="5555003"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Hoffman"/>
+      <given value="Mildred"/>
+      <given value="E."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="mildred.hoffman@example.com"/>
+    </telecom>
+    <gender>
+      <coding>
+        <system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+        <code value="F"/>
+        <display value="Female"/>
+      </coding>
+    </gender>
+    <birthDate value="1952-05-12" />
+    <address>
+      <use value="home"/>
+      <line value="2001 Airport Road"/>
+      <city value="Morrisville"/>
+      <state value="NC"/>
+      <zip value="27560"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/335</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Carvedilol Tablet 25mg (rxnorm: 200033)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Carvedilol Tablet 25mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="200033"/>
+	  <display value="Carvedilol Tablet 25mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-04-23"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="60"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/336</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Irbesartan Tablet 300mg (rxnorm: 200096)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Irbesartan Tablet 300mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="200096"/>
+	  <display value="Irbesartan Tablet 300mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-05-24"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/337</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      losartan Tablet 100mg (rxnorm: 979480)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="losartan Tablet 100mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="979480"/>
+	  <display value="losartan Tablet 100mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-07-23"/>
+        <end value="2014-05-24"/>
+        
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/338</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Aspirin Tablet 81mg (rxnorm: 243670)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Aspirin Tablet 81mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="243670"/>
+	  <display value="Aspirin Tablet 81mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-11-02"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/339</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Brilinta Tablet 90mg (rxnorm: 1116639)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Brilinta Tablet 90mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="1116639"/>
+	  <display value="Brilinta Tablet 90mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-11-01"/>
+        <end value="2014-05-14"/>
+        
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/340</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Omeprazole Delayed Release Tablet 20mg (rxnorm: 402014)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Omeprazole Delayed Release Tablet 20mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="402014"/>
+	  <display value="Omeprazole Delayed Release Tablet 20mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-05-02"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/341</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Synthroid Tablet 50mcg (rxnorm: 966247)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Synthroid Tablet 50mcg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="966247"/>
+	  <display value="Synthroid Tablet 50mcg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-08-11"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/342</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Synthroid Tablet 25mcg (rxnorm: 966158)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Synthroid Tablet 25mcg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="966158"/>
+	  <display value="Synthroid Tablet 25mcg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-08-11"/>
+        <end value="2014-05-03"/>
+        
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/343</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Systane ophthalmic solution (rxnorm: 707566)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Systane ophthalmic solution"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="707566"/>
+	  <display value="Systane ophthalmic solution"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-10-17"/>
+      </event>
+      <repeat>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="[drp]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="[drp]"/>
+    </doseQuantity>
+    
+    <text value="1 drop OU bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value="[drp]"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[drp]"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/344</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      ProAir HFA (rxnorm: 745752)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="ProAir HFA"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="745752"/>
+	  <display value="ProAir HFA"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2013-08-12"/>
+      </event>
+    </timingSchedule>
+    <text value="2 puffs every 4 hrs for asthma"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/345</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Flovent 100mcg/inh (rxnorm: 896031)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Flovent 100mcg/inh"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="896031"/>
+	  <display value="Flovent 100mcg/inh"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-08-12"/>
+      </event>
+    </timingSchedule>
+    <text value="1 puff every 12 hrs"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/346</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Advair 100/50 (rxnorm: 896185)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Advair 100/50"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="896185"/>
+	  <display value="Advair 100/50"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-03-19"/>
+        <end value="2014-08-12"/>
+        
+      </event>
+    </timingSchedule>
+    <text value="1 puff every 12 hrs for asthma"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/347</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Zetia Tablet 10mg (rxnorm: 352304)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Zetia Tablet 10mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352304"/>
+	  <display value="Zetia Tablet 10mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-03-19"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/348</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Crestor Tablet 10mg (rxnorm: 859749)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Crestor Tablet 10mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="859749"/>
+	  <display value="Crestor Tablet 10mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-02-01"/>
+        <end value="2014-03-19"/>
+        
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qhs"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/349</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Fish Oil Capsule 1000mg (rxnorm: 577208)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Fish Oil Capsule 1000mg"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="577208"/>
+	  <display value="Fish Oil Capsule 1000mg"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2012-04-12"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="2"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="2 caps qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="60"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/350</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metamucil Sugar-Free (rxnorm: 880853)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Metamucil Sugar-Free"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="880853"/>
+	  <display value="Metamucil Sugar-Free"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2011-09-11"/>
+      </event>
+      <repeat>
+        <frequency value="3"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="tsp"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="tsp"/>
+    </doseQuantity>
+    
+    <text value="1 tsp. tid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="1"/>
+        <units value="tsp"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="tsp"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/351</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Vitamin D3 Capsule 5000 iu (rxnorm: 240029)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Vitamin D3 Capsule 5000 iu"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="240029"/>
+	  <display value="Vitamin D3 Capsule 5000 iu"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2015-01-03"/>
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="d"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 cap qd"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+<entry xmlns="http://www.w3.org/2005/Atom">
+  <title>SMART Patient-level resource</title>
+  <id>MedicationPrescription/352</id>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
+  <author>
+    <name>https://github.com/smart-on-fhir/sample-patients</name>
+  </author>
+  <content type="text/xml">
+    
+<MedicationPrescription xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Ergocalciferol Capsule 50,000 iu (rxnorm: 1367410)
+    </div>
+  </text>
+
+  <contained>
+    <Medication id="med">
+      <name value="Ergocalciferol Capsule 50,000 iu"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="1367410"/>
+	  <display value="Ergocalciferol Capsule 50,000 iu"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/5555003"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <timingSchedule>
+      <event>
+        <start value="2014-09-05"/>
+        <end value="2014-12-23"/>
+        
+      </event>
+      <repeat>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <units value="wk"/>
+      </repeat>
+      
+    </timingSchedule>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 cap once a week"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     <quantity>
+        <value value="12"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     <expectedSupplyDuration>
+        <value value="84"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+  </dispense>
+  
+</MedicationPrescription>
+
+  </content>
+</entry>
+
+</feed>
