@@ -15,9 +15,24 @@ import java.io.IOException;
 
 public class DataLoad {
     private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata";
-    private static final String RESOURCE_URI = "http://localhost:8080/hsp-api";
+    private static String RESOURCE_URI = "http://localhost:8080/hsp-api";
 
     public static void main(String[] args) throws Exception{
+
+        for (int i = 0; i< args.length; i++) {
+
+            switch (args[i]){
+                case "-h" :
+                    System.out.println("java -jar hsp-tools.jar org.hspconsortium.DataLoad [options]");
+                    System.out.println("   Options:");
+                    System.out.println("   -h    print this message");
+                    System.out.println("   -url  the url for the hsp api ex: -url http://localhost:8080/hsp-api");
+                    return;
+                case "-url" :
+                    RESOURCE_URI = args[++i];
+                    break;
+            }
+        }
 
         PathMatchingResourcePatternResolver resourceResolver = new PathMatchingResourcePatternResolver();
         org.springframework.core.io.Resource[] patientFileResources = resourceResolver.getResources(String.format("classpath:%s/*.fhir-bundle.xml", STATIC_DATA_PATH));
