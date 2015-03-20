@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>SMART patient bundle for transactional posting</title>
   <id>urn:uuid:41</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
+  <updated>2015-03-18T18:19:23.789092</updated>
 
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Patient/2004454</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -61,8 +61,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1836-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -122,15 +122,15 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1837-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -160,15 +160,15 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1838-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -198,15 +198,15 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1839-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -236,8 +236,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1840-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -297,15 +297,15 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1841-lab</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -335,8 +335,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/295</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -368,8 +368,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/296</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -401,8 +401,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/297</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -434,8 +434,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/298</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -467,8 +467,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/299</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -500,8 +500,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/300</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -533,8 +533,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Condition/301</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -566,8 +566,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/1-smokingstatus</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -604,8 +604,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Observation/2004454-gestage</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -643,8 +643,8 @@
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>List/45</id>
-  <updated>2015-02-22T17:12:21.440714</updated>
-  <published>2015-02-22T17:12:21.440714</published>
+  <updated>2015-03-18T18:19:23.789092</updated>
+  <published>2015-03-18T18:19:23.789092</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
