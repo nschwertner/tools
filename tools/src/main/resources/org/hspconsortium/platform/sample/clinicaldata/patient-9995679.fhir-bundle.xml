@@ -285,7 +285,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/2"/>
         </valueResource>
@@ -421,13 +421,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/3"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -476,7 +476,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -575,13 +575,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/4"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -630,7 +630,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -729,13 +729,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -784,7 +784,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -883,13 +883,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -938,7 +938,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1037,7 +1037,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/7"/>
         </valueResource>
@@ -1173,13 +1173,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/7"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1228,7 +1228,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1327,13 +1327,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1382,7 +1382,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1481,13 +1481,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1536,7 +1536,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1635,13 +1635,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1690,7 +1690,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1789,13 +1789,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1844,7 +1844,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -1943,13 +1943,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -1998,7 +1998,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -2097,13 +2097,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -2152,7 +2152,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -2251,13 +2251,13 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter">
         <valueResource>
             <reference value="Encounter/15"/>
         </valueResource>
     </extension>
     
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#position">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#position">
       <valueCodeableConcept>
          <coding>
              <system value="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
@@ -2306,7 +2306,7 @@
     
     <method>
      <coding>
-         <system value="http://smartplatforms.org/terms/codes/BloodPressureMethod#"/>
+         <system value="http://smarthealthit.org/terms/codes/BloodPressureMethod#"/>
          <code value="machine"/>
          <display value="machine"/>
      </coding>
@@ -2405,7 +2405,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/1"/>
         </valueResource>
@@ -2450,7 +2450,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/1"/>
         </valueResource>
@@ -2495,7 +2495,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/1"/>
         </valueResource>
@@ -2540,7 +2540,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/2"/>
         </valueResource>
@@ -2585,7 +2585,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/2"/>
         </valueResource>
@@ -2630,7 +2630,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/2"/>
         </valueResource>
@@ -2675,7 +2675,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/3"/>
         </valueResource>
@@ -2720,7 +2720,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/3"/>
         </valueResource>
@@ -2765,7 +2765,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/3"/>
         </valueResource>
@@ -2810,7 +2810,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/4"/>
         </valueResource>
@@ -2855,7 +2855,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/4"/>
         </valueResource>
@@ -2900,7 +2900,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/4"/>
         </valueResource>
@@ -2945,7 +2945,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
@@ -2990,7 +2990,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
@@ -3035,7 +3035,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
@@ -3080,7 +3080,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/5"/>
         </valueResource>
@@ -3125,7 +3125,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/7"/>
         </valueResource>
@@ -3170,7 +3170,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/7"/>
         </valueResource>
@@ -3215,7 +3215,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3260,7 +3260,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3305,7 +3305,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3350,7 +3350,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3395,7 +3395,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3440,7 +3440,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3485,7 +3485,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3530,7 +3530,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/9"/>
         </valueResource>
@@ -3575,7 +3575,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/15"/>
         </valueResource>
@@ -3620,7 +3620,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/15"/>
         </valueResource>
@@ -3665,7 +3665,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/vital-signs#encounter" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/vital-signs#encounter" >
         <valueResource>
             <reference value="Encounter/15"/>
         </valueResource>

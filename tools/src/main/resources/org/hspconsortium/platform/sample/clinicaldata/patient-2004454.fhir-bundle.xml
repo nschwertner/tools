@@ -130,7 +130,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -168,7 +168,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -206,7 +206,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -305,7 +305,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     

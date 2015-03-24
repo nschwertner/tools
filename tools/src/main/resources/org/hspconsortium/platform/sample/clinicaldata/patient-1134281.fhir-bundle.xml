@@ -1050,7 +1050,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
     
@@ -1088,7 +1088,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
     </extension>
     
@@ -1431,7 +1431,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Low&#39;, &#39;Adequate&#39;, &#39;High&#39;]'/>
     </extension>
     
@@ -3211,7 +3211,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
     </extension>
     
@@ -3249,7 +3249,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
     
@@ -3287,7 +3287,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
     
@@ -3630,7 +3630,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -3668,7 +3668,7 @@
   <content type="text/xml">
     
   <Observation xmlns="http://hl7.org/fhir">
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/labs#value-range" >
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
     
@@ -4501,7 +4501,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="10" />
          <units value="days" />
@@ -4647,7 +4647,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="10" />
          <units value="days" />
@@ -5098,7 +5098,7 @@
         <explanation>
             <refusalReason>
             <coding>
-                <system value="http://smartplatforms.org/terms/codes/ImmunizationRefusalReason#"/>
+                <system value="http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#"/>
                 <code value="documentedImmunityOrPreviousDisease"/>
                 <display value="Documented immunity or previous disease"/>
 		</coding>

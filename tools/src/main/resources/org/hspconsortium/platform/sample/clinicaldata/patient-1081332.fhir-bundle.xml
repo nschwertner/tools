@@ -185,7 +185,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="7" />
          <units value="days" />
@@ -331,7 +331,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="10" />
          <units value="days" />
@@ -396,7 +396,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="10" />
          <units value="days" />
@@ -542,7 +542,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="5" />
          <units value="days" />
@@ -688,7 +688,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="10" />
          <units value="days" />
@@ -753,7 +753,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="7" />
          <units value="days" />
@@ -899,7 +899,7 @@
   </authorizingPrescription>
 
   <dispense>
-    <extension url="http://fhir-registry.smartplatforms.org/Profile/dispense#days-supply">
+    <extension url="http://fhir-registry.smarthealthit.org/Profile/dispense#days-supply">
        <valueQuantity>
          <value value="7" />
          <units value="days" />
