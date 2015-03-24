@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public class DataLoad {
     private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata";
-    private static String RESOURCE_URI = "https://hspc.isalusconsulting.com/open-hsp-api";
+    private static String RESOURCE_URI = "http://localhost:8080/open-hsp-api";
     private static String OUTPUT_DIR = "output";
 
     public static void main(String[] args) throws Exception{
