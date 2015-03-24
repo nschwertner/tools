@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>SMART patient bundle for transactional posting</title>
   <id>urn:uuid:39</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
+  <updated>2015-02-22T17:12:21.434775</updated>
 
   <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>Patient/5555003</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -61,8 +61,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/335</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -142,8 +142,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/336</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -223,8 +223,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/337</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -251,7 +251,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
@@ -306,8 +306,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/338</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -387,8 +387,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/339</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -415,7 +415,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
@@ -470,8 +470,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/340</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -551,8 +551,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/341</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -632,8 +632,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/342</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -660,7 +660,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
@@ -715,8 +715,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/343</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -796,8 +796,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/344</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -864,8 +864,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/345</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -932,8 +932,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/346</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -960,7 +960,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
@@ -1002,8 +1002,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/347</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1083,8 +1083,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/348</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1111,7 +1111,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
@@ -1166,8 +1166,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/349</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1247,8 +1247,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/350</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1328,8 +1328,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/351</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1409,8 +1409,8 @@
 <entry xmlns="http://www.w3.org/2005/Atom">
   <title>SMART Patient-level resource</title>
   <id>MedicationPrescription/352</id>
-  <updated>2015-03-18T18:19:23.782997</updated>
-  <published>2015-03-18T18:19:23.782997</published>
+  <updated>2015-02-22T17:12:21.434775</updated>
+  <published>2015-02-22T17:12:21.434775</published>
   <author>
     <name>https://github.com/smart-on-fhir/sample-patients</name>
   </author>
@@ -1437,7 +1437,7 @@
     </Medication>
   </contained>
 
-  <status value="completed" />
+  <status value="active" />
   <patient>
     <reference value="Patient/5555003"/>
   </patient>
