@@ -413,7 +413,7 @@
     </Medication>
   </contained>
 
-  <status value="active" />
+  <status value="completed" />
   <patient>
     <reference value="Patient/5555002"/>
   </patient>
@@ -496,7 +496,7 @@
     </Medication>
   </contained>
 
-  <status value="active" />
+  <status value="completed" />
   <patient>
     <reference value="Patient/5555002"/>
   </patient>
@@ -1161,6 +1161,8 @@
         <start value="2012-11-04"/>
       </event>
     </timingSchedule>
+    <asNeededBoolean value="true"/>
+
     <text value="2 puffs q4-6 hrs prn asthma"/>
   </dosageInstruction>
   <dispense>
@@ -1295,7 +1297,7 @@
     </Medication>
   </contained>
 
-  <status value="active" />
+  <status value="completed" />
   <patient>
     <reference value="Patient/5555002"/>
   </patient>
@@ -1487,6 +1489,8 @@
       <code value="{tablet}"/>
     </doseQuantity>
     
+    <asNeededBoolean value="true"/>
+
     <text value="1 tab tid prn pain"/>
   </dosageInstruction>
   <dispense>
@@ -1568,6 +1572,8 @@
       <code value="{tablet}"/>
     </doseQuantity>
     
+    <asNeededBoolean value="true"/>
+
     <text value="1 tab qhs prn muscle spasm"/>
   </dosageInstruction>
   <dispense>
@@ -1648,7 +1654,9 @@
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
-    
+
+    <asNeededBoolean value="true"/>
+
     <text value="1 tab qhs prn sleep"/>
   </dosageInstruction>
   <dispense>
