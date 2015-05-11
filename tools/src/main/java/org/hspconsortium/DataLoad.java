@@ -15,9 +15,11 @@ import java.io.*;
 import java.util.UUID;
 
 public class DataLoad {
-    private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata";
-    private static String RESOURCE_URI = "http://localhost:8080/open-hsp-api";
+    private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata/dstu2";
+    private static String RESOURCE_URI = "https://hspc.isalusconsulting.com/dstu2-open-hsp-api/data";
+//    private static String RESOURCE_URI = "http://localhost:8080/hsp-rest-api-webapp/data";
     private static String OUTPUT_DIR = "output";
+    private static boolean isXML = true;
 
     public static void main(String[] args) throws Exception{
 
@@ -33,6 +35,7 @@ public class DataLoad {
                     System.out.println("   Options:");
                     System.out.println("   -h       print this message");
                     System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hsp-api");
+                    System.out.println("   -json    indicates that the input files are JSON, XML is the default");
                     System.out.println("   -out     the output directory for results; default '<current dir>/output'");
                     System.out.println("            unless the current directory is 'target', the output directory will");
                     System.out.println("            be created one directory up from 'target'");
@@ -41,11 +44,17 @@ public class DataLoad {
                     return;
                 case "-url" :
                     RESOURCE_URI = args[++i];
+                    break;
                 case "-out" :
                     userProvidedDir = true;
                     OUTPUT_DIR = args[++i];
+                    break;
                 case "-no-out" :
                     writeOutput = false;
+                    break;
+                case "-json" :
+                    isXML = false;
+                    break;
             }
         }
 
@@ -59,9 +68,12 @@ public class DataLoad {
         }
 
         PathMatchingResourcePatternResolver resourceResolver = new PathMatchingResourcePatternResolver();
-        org.springframework.core.io.Resource[] patientFileResources = resourceResolver.getResources(String.format("classpath:%s/*.fhir-bundle.xml", STATIC_DATA_PATH));
+        org.springframework.core.io.Resource[] patientFileResources = resourceResolver.getResources(String.format("classpath:%s/*", STATIC_DATA_PATH));
 
         for(org.springframework.core.io.Resource patientFile : patientFileResources){
+            if (!patientFile.isReadable()) {
+                continue;
+            }
             byte[] xmlString = IOUtils.toByteArray(patientFile.getInputStream());
 
             HttpResponse response = post(xmlString);
@@ -80,7 +92,9 @@ public class DataLoad {
         OutputStream outputStream = null;
 
         try {
-            outputStream = new FileOutputStream(OUTPUT_DIR + "/" + getUinqueID() + ".json");
+            String outputDir = OUTPUT_DIR + "/" + getUinqueID() + ".json";
+            System.out.println("Output: " + outputDir);
+            outputStream = new FileOutputStream(outputDir);
             IOUtils.copy(response.getEntity().getContent(), outputStream);
         } catch (IOException ex) {
             // report
@@ -157,8 +171,13 @@ public class DataLoad {
 
     protected static void setRequestHeaders(HttpRequest request){
         request.addHeader("User-Agent", "Java FHIR Client for FHIR");
-        request.addHeader("Accept", "application/fhir+json");
-        request.addHeader("Content-Type", "application/xml;charset=" + "UTF-8");
+        if (isXML){
+            request.addHeader("Accept", "application/xml+fhir");
+            request.addHeader("Content-Type", "application/xml+fhir;charset=" + "UTF-8");
+        } else {
+            request.addHeader("Accept", "application/json+fhir");
+            request.addHeader("Content-Type", "application/json+fhir;charset=" + "UTF-8");
+        }
         request.addHeader("Accept-Charset", "UTF-8");
     }
 

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <id value="ID4444001"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Christopher Sherman</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="4444001"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Sherman"/>
+      <given value="Christopher"/>
+      <given value="T."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="ChristopherTSherman@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1932-06-15" />
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Patient/ID4444001"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID357-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 325 MG [Tylenol] (rxnorm: 569998)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Acetaminophen 325 MG [Tylenol]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="569998"/>
+	  <display value="Acetaminophen 325 MG [Tylenol]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2014-06-21"/>
+        </bounds>
+        <frequency value="6"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 tab q4h prn"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID357-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID358-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Aspirin 81 MG [Ecotrin] (rxnorm: 1189780)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Aspirin 81 MG [Ecotrin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="1189780"/>
+	  <display value="Aspirin 81 MG [Ecotrin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2014-06-21"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID358-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID359-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren] (rxnorm: 855635)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="855635"/>
+	  <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2015-01-27"/>
+          <end value="2016-01-27"/>
+          
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <text value="bid"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID359-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID360-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      ferrous sulfate 325 MG [Feosol] (rxnorm: 635969)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="ferrous sulfate 325 MG [Feosol]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="635969"/>
+	  <display value="ferrous sulfate 325 MG [Feosol]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2012-04-13"/>
+        </bounds>
+        <frequency value="3"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab tid"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID360-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID361-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Lisinopril 5 MG [Prinivil] (rxnorm: 567575)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 5 MG [Prinivil]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="567575"/>
+	  <display value="Lisinopril 5 MG [Prinivil]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2015-02-07"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID361-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID362-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metformin hydrochloride 500 MG [Glucophage] (rxnorm: 860976)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Metformin hydrochloride 500 MG [Glucophage]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="860976"/>
+	  <display value="Metformin hydrochloride 500 MG [Glucophage]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2015-01-27"/>
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid wf"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID362-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID363-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      metoprolol succinate 25 MG [Toprol] (rxnorm: 1370507)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="metoprolol succinate 25 MG [Toprol]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="1370507"/>
+	  <display value="metoprolol succinate 25 MG [Toprol]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/ID4444001"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2014-08-18"/>
+          <end value="2015-08-18"/>
+          
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID363-mp"/>
+  </transaction>
+</entry>
+
+</Bundle>

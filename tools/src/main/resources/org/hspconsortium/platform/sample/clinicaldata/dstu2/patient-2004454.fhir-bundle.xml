@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <id value="ID2004454"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Kevin Lee</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="2004454"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Lee"/>
+      <given value="Kevin"/>
+      <given value="H."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.lee@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="2007-07-15" />
+    <address>
+      <use value="home"/>
+      <line value="80 Mill StApt 21"/>
+      <city value="Sand Springs"/>
+      <state value="OK"/>
+      <postalCode value="74063"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Patient/ID2004454"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1836-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="60.0"/>
+      <units value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-07-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="40.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="109.0"/>
+          <units value="mg/dL"/>
+          <code value="mg/dL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1836-lab"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1837-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+    </code>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1837-lab"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1838-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Phe DBS Ql = Normal </div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+    </code>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1838-lab"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1839-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Phe DBS Ql = Normal </div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+    </code>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1839-lab"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1840-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="49220-7"/>
+        <display value="Prolactin SerPl 3rd IS-mCnc"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="86.5"/>
+      <units value="ng/mL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+      </meaning>
+        <low>
+          <value value="2.0"/>
+          <units value="ng/mL"/>
+          <code value="ng/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+        <high>
+          <value value="15.0"/>
+          <units value="ng/mL"/>
+          <code value="ng/mL"/>
+          <system value="http://unitsofmeasure.org"/>
+        </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1840-lab"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1841-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+    </code>
+    <valueString value="Normal"/>
+    
+    <appliesDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1841-lab"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID295-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2008-07-09"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID295-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID296-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267024001"/>
+        <display value="Abnormal weight loss"/>
+      </coding>
+      <text value="Abnormal weight loss"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2008-07-14"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID296-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID297-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Diaper rash</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="91487003"/>
+        <display value="Diaper rash"/>
+      </coding>
+      <text value="Diaper rash"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2008-08-01"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID297-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID298-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54150009"/>
+        <display value="Acute upper respiratory infection"/>
+      </coding>
+      <text value="Acute upper respiratory infection"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2009-03-02"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID298-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID299-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65363002"/>
+        <display value="Otitis media"/>
+      </coding>
+      <text value="Otitis media"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2009-03-02"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID299-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID300-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Nausea and vomiting</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="16932000"/>
+        <display value="Nausea and vomiting"/>
+      </coding>
+      <text value="Nausea and vomiting"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2009-08-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID300-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID301-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Viral disease</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34014006"/>
+        <display value="Viral disease"/>
+      </coding>
+      <text value="Viral disease"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2009-08-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID301-c"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="428041000124106"/>
+        <display value="Current some day smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1-smokingstatus"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID2004454-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-07-15: Gestational age at birth = 30.6 weeks</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="30.6"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2007-07-15"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID2004454-gestage"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+  <id value="ID45-l"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ID2004454"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="List/ID45-l"/>
+  </transaction>
+</entry>
+
+</Bundle>

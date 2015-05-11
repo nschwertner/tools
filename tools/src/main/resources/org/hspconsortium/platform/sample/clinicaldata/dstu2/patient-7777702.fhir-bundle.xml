@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <id value="ID7777702"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Yolanda Warren</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="7777702"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Warren"/>
+      <given value="Yolanda"/>
+    </name>
+    <gender value="female" />
+    <birthDate value="2008-10-01" />
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Patient/ID7777702"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID984"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2010-10-04: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2010-10-04"/>
+       <end value="2010-10-04"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID984"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID985"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2010-11-10: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2010-11-10"/>
+       <end value="2010-11-10"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID985"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID986"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-04-05: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-04-05"/>
+       <end value="2011-04-05"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID986"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID987"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-05-11: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-05-11"/>
+       <end value="2011-05-11"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID987"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID988"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-06-17: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-06-17"/>
+       <end value="2011-06-17"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID988"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID989"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-07-23: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-07-23"/>
+       <end value="2011-07-23"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID989"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID990"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-08-29: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-08-29"/>
+       <end value="2011-08-29"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID990"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID991"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-10-04: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-10-04"/>
+       <end value="2011-10-04"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID991"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID992"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-11-10: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-11-10"/>
+       <end value="2011-11-10"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID992"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID993"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-12-16: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2011-12-16"/>
+       <end value="2011-12-16"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID993"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID994"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-05-10: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2012-05-10"/>
+       <end value="2012-05-10"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID994"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID995"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-10-03: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2012-10-03"/>
+       <end value="2012-10-03"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID995"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+  <id value="ID996"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-02-26: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/ID7777702"/>
+      </patient>
+      <period>
+       <start value="2013-02-26"/>
+       <end value="2013-02-26"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Encounter/ID996"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID984-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-10-04: height = 78.5 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="78.5"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2010-10-04"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID984"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID984-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID984-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-10-04: weight = 9.8 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="9.8"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2010-10-04"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID984"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID984-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID985-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-11-10: height = 78.5 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="78.5"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2010-11-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID985"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID985-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID985-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-11-10: weight = 9.8 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="9.8"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2010-11-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID985"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID985-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID986-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-04-05: height = 82.3 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="82.3"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-04-05"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID986"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID986-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID986-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-04-05: weight = 10.9 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="10.9"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-04-05"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID986"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID986-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID987-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-05-11: height = 82.3 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="82.3"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-05-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID987"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID987-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID987-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-05-11: weight = 11.2 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.2"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-05-11"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID987"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID987-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID988-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-06-17: height = 84.0 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="84.0"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-06-17"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID988"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID988-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID988-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-06-17: weight = 11.2 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.2"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-06-17"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID988"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID988-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID989-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-07-23: height = 83.5 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="83.5"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID989"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID989-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID989-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-07-23: weight = 11.7 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.7"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-07-23"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID989"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID989-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID990-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-29: height = 85.5 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="85.5"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-08-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID990"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID990-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID990-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-29: weight = 11.0 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.0"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-08-29"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID990"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID990-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID991-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-10-04: height = 86.3 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="86.3"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-10-04"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID991"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID991-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID991-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-10-04: weight = 11.3 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.3"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-10-04"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID991"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID991-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID992-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-11-10: height = 86.3 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="86.3"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-11-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID992"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID992-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID992-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-11-10: weight = 11.9 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="11.9"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-11-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID992"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID992-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID993-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-12-16: height = 86.7 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="86.7"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-12-16"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID993"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID993-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID993-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-12-16: weight = 12.0 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="12.0"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2011-12-16"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID993"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID993-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID994-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-05-10: height = 90.9 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="90.9"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-05-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID994"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID994-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID994-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-05-10: weight = 12.7 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="12.7"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-05-10"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID994"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID994-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID995-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-10-03: height = 95.4 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="95.4"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-10-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID995"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID995-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID995-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-10-03: weight = 13.2 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="13.2"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2012-10-03"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID995"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID995-weight"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID996-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-26: height = 98.8 cm</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="98.8"/>
+      <units value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-02-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID996"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID996-height"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID996-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-26: weight = 14.4 kg</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="14.4"/>
+      <units value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="2013-02-26"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID7777702"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/ID996"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID996-weight"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <FamilyMemberHistory>
+  <id value="ID9-fmh"/>
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
+        <valueQuantity>
+          <value value="177"/>
+          <units value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Father</div>
+      </text>
+      <patient>
+         <reference value="Patient/ID7777702"/>
+      </patient>
+      <relation>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="FTH"/>
+            <display value="father"/>
+          </coding>
+        </relationship>
+      </relation>
+    </FamilyMemberHistory>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="FamilyMemberHistory/ID9-fmh"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <FamilyMemberHistory>
+  <id value="ID10-fmh"/>
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
+        <valueQuantity>
+          <value value="164.5"/>
+          <units value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Mother</div>
+      </text>
+      <patient>
+         <reference value="Patient/ID7777702"/>
+      </patient>
+      <relation>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+          </coding>
+        </relationship>
+      </relation>
+    </FamilyMemberHistory>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="FamilyMemberHistory/ID10-fmh"/>
+  </transaction>
+</entry>
+
+</Bundle>

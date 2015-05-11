@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <id value="ID1098667"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Robert Hill</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="1098667"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Hill"/>
+      <given value="Robert"/>
+      <given value="P."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="robert.hill@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1953-10-27" />
+    <address>
+      <use value="home"/>
+      <line value="42 Park St"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <postalCode value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Patient/ID1098667"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID109-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin] (rxnorm: 150840)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="150840"/>
+	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-01-13"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID109-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID570-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="150840"/>
+	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID109-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-01-13"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID570-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID110-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 300 MG / Codeine 30 MG Oral Tablet (rxnorm: 309462)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="309462"/>
+	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-07-30"/>
+        </bounds>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 q6h prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="24"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="6"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID110-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID565-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 24 tablets = 6 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="309462"/>
+	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID110-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="24"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="6" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-07-30"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID565-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID111-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      fexofenadine 180 MG Oral Tablet (rxnorm: 310333)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2008-09-10"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="90"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID111-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID567-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID111-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2009-01-07"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID567-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID566-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID111-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2008-09-10"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID566-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID569-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID111-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2009-08-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID569-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID568-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="fexofenadine 180 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310333"/>
+	  <display value="fexofenadine 180 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID111-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2009-05-02"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID568-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID112-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC] (rxnorm: 351396)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="351396"/>
+	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2008-09-12"/>
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID112-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID572-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 10 day supply of Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="351396"/>
+	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID112-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2008-09-12"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID572-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID113-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream (rxnorm: 310893)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310893"/>
+	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2009-04-23"/>
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="28"/>
+        <units value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="28"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID113-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID571-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 28 tablets = 28 day supply of Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310893"/>
+	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID113-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="28"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="28" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2009-04-23"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID571-md"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID272-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute maxillary sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68272006"/>
+        <display value="Acute maxillary sinusitis"/>
+      </coding>
+      <text value="Acute maxillary sinusitis"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-01"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID272-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID273-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-24"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID273-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID274-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25064002"/>
+        <display value="Headache"/>
+      </coding>
+      <text value="Headache"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-24"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID274-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID275-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Migraine without aura</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="56097005"/>
+        <display value="Migraine without aura"/>
+      </coding>
+      <text value="Migraine without aura"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-03-17"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID275-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID276-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="55822004"/>
+        <display value="Hyperlipidemia"/>
+      </coding>
+      <text value="Hyperlipidemia"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-09"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID276-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID277-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Blood chemistry abnormal</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="80394007"/>
+        <display value="Blood chemistry abnormal"/>
+      </coding>
+      <text value="Blood chemistry abnormal"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-22"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID277-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID278-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hemangioma</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="400210000"/>
+        <display value="Hemangioma"/>
+      </coding>
+      <text value="Hemangioma"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID278-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID279-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Pure hypercholesterolemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267432004"/>
+        <display value="Pure hypercholesterolemia"/>
+      </coding>
+      <text value="Pure hypercholesterolemia"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID279-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID280-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Family history of malignant neoplasm of gastrointestinal tract</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="312824007"/>
+        <display value="Family history of malignant neoplasm of gastrointestinal tract"/>
+      </coding>
+      <text value="Family history of malignant neoplasm of gastrointestinal tract"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-08-26"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID280-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID281-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">History of polyp of colon</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="429047008"/>
+        <display value="History of polyp of colon"/>
+      </coding>
+      <text value="History of polyp of colon"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-08-26"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID281-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID282-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of face</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92359006"/>
+        <display value="Benign neoplasm of skin of face"/>
+      </coding>
+      <text value="Benign neoplasm of skin of face"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-10-15"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID282-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID283-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of trunk</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92380000"/>
+        <display value="Benign neoplasm of skin of trunk"/>
+      </coding>
+      <text value="Benign neoplasm of skin of trunk"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-10-15"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID283-c"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID18-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Unknown if ever smoked</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266927001"/>
+        <display value="Unknown if ever smoked"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID1098667"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID18-smokingstatus"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID1098667-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1953-10-27: Gestational age at birth = 43.4 weeks</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="43.4"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1953-10-27"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID1098667"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID1098667-gestage"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+  <id value="ID21-l"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ID1098667"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="List/ID21-l"/>
+  </transaction>
+</entry>
+
+</Bundle>

@@ -1,0 +1,5122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <id value="ID731673"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Sarah Graham</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="731673"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Graham"/>
+      <given value="Sarah"/>
+      <given value="Y."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-534-9017"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="sarah.graham@example.com"/>
+    </telecom>
+    <gender value="female" />
+    <birthDate value="1949-09-22" />
+    <address>
+      <use value="home"/>
+      <line value="92 Pine Ave"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <postalCode value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Patient/ID731673"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID13-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Cetirizine 10 MG Oral Tablet [Zyrtec] (rxnorm: 210596)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="210596"/>
+	  <display value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-10-28"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID13-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID181-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Cetirizine 10 MG Oral Tablet [Zyrtec]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="210596"/>
+	  <display value="Cetirizine 10 MG Oral Tablet [Zyrtec]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID13-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-10-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID181-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID14-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Levofloxacin 500 MG Oral Tablet [Levaquin] (rxnorm: 211816)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="211816"/>
+	  <display value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-10-28"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="10"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID14-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID182-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 10 tablets = 10 day supply of Levofloxacin 500 MG Oral Tablet [Levaquin]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="211816"/>
+	  <display value="Levofloxacin 500 MG Oral Tablet [Levaquin]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID14-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="10"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-10-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID182-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID15-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Promethazine 25 MG Oral Tablet (rxnorm: 312664)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Promethazine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312664"/>
+	  <display value="Promethazine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-10-28"/>
+        </bounds>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 qid prn nausea"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="20"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="5"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID15-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID180-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 20 tablets = 5 day supply of Promethazine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Promethazine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="312664"/>
+	  <display value="Promethazine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID15-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="20"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="5" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-10-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID180-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID16-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Trazodone 50 MG Oral Tablet (rxnorm: 856377)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-11-03"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 qhs"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID16-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID138-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-03-14"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID138-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID153-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-06-01"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID153-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID151-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-04-01"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID151-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID149-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-01-29"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID149-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID142-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-07-24"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID142-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID147-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-11-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID147-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID148-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-12-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID148-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID136-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-01-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID136-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID143-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-07-25"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID143-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID134-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-11-03"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID134-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID140-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-05-17"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID140-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID145-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-09-27"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID145-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID144-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-08-26"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID144-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID152-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-04-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID152-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID139-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-16"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID139-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID146-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-10-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID146-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID141-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-06-24"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID141-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID135-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-12-01"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID135-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID137-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-02-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID137-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID150-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Trazodone 50 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="856377"/>
+	  <display value="Trazodone 50 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID16-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-02-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID150-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID17-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      montelukast 10 MG Oral Tablet [Singulair] (rxnorm: 153892)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="montelukast 10 MG Oral Tablet [Singulair]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="153892"/>
+	  <display value="montelukast 10 MG Oral Tablet [Singulair]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-11-08"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID17-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID169-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of montelukast 10 MG Oral Tablet [Singulair]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="montelukast 10 MG Oral Tablet [Singulair]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="153892"/>
+	  <display value="montelukast 10 MG Oral Tablet [Singulair]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID17-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-11-08"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID169-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID18-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      valdecoxib 20 MG Oral Tablet [Bextra] (rxnorm: 352063)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-11-08"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 daily prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID18-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID185-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID18-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-11-08"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID185-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID186-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="352063"/>
+	  <display value="valdecoxib 20 MG Oral Tablet [Bextra]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID18-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-01-06"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID186-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID19-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet (rxnorm: 310812)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-11-18"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID19-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID167-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-06-01"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID167-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID160-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-11-18"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID160-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID165-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-11-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID165-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID164-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-09-23"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID164-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID163-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-06-24"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID163-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID161-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-02-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID161-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID162-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-16"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID162-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID166-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="310812"/>
+	  <display value="Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID19-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-03-03"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID166-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID20-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Lisinopril 20 MG Oral Tablet (rxnorm: 314077)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2004-11-18"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID20-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID172-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2004-11-18"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID172-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID176-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-09-23"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID176-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID178-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-03-03"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID178-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID177-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-11-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID177-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID173-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-02-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID173-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID174-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-16"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID174-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID175-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-06-24"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID175-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID179-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Lisinopril 20 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="314077"/>
+	  <display value="Lisinopril 20 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID20-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-06-01"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID179-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID21-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      duloxetine 60 MG Enteric Coated Capsule [Cymbalta] (rxnorm: 615186)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-02-17"/>
+        </bounds>
+        <frequency value="1"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID21-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID154-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID21-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-02-17"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID154-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID156-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID21-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-24"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID156-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID157-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID21-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-07-17"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID157-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID158-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID21-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2006-02-16"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID158-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID155-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="615186"/>
+	  <display value="duloxetine 60 MG Enteric Coated Capsule [Cymbalta]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID21-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-22"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID155-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID22-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet (rxnorm: 828576)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="828576"/>
+	  <display value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-02-17"/>
+        </bounds>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 q6h prn pain"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="40"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID22-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID159-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 40 tablets = 10 day supply of Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="828576"/>
+	  <display value="Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID22-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="40"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-02-17"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID159-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID23-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Meclizine 25 MG Oral Tablet (rxnorm: 311470)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-04-16"/>
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 bid prn dizziness"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="14"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="7"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID23-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID183-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID23-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="14"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="7" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-04-16"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID183-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID184-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Meclizine 25 MG Oral Tablet"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311470"/>
+	  <display value="Meclizine 25 MG Oral Tablet"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID23-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="14"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="7" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-10-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID184-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID24-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Nitrofurantoin 100 MG Oral Capsule (rxnorm: 311992)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-05-12"/>
+        </bounds>
+        <frequency value="2"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="1"/>
+      <units value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="20"/>
+        <units value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID24-mp"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <id value="ID168-md"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 20 tablets = 10 day supply of Nitrofurantoin 100 MG Oral Capsule
+    </div>
+  </text>  
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="311992"/>
+	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+  
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationPrescription/ID24-mp"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="20"/>
+      <units value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <units value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medication>
+      <reference value="#med"/>
+  </medication>
+
+  <whenHandedOver value="2005-05-12"/>
+
+</MedicationDispense>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationDispense/ID168-md"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationPrescription>
+  <id value="ID25-mp"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort] (rxnorm: 752370)
+    </div>
+  </text>
+
+  <contained>
+    <Medication>
+      <id value="med"/>
+      <name value="120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort]"/>
+      <code>
+	<coding>
+	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+	  <code value="752370"/>
+	  <display value="120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort]"/>
+	</coding>
+      </code>
+    </Medication>
+  </contained>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/ID731673"/>
+  </patient>
+
+  <medication>
+    <reference value="#med"/>
+  </medication>
+
+  <dosageInstruction>
+    <scheduledTiming>
+      <repeat>
+        <bounds>
+          <start value="2005-09-09"/>
+        </bounds>
+        <frequency value="4"/>
+        <duration value="1"/>
+        <durationUnits value="d"/>
+      </repeat>
+      
+    </scheduledTiming>
+    <doseQuantity>
+      <value value="2"/>
+      <units value="{puff}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{puff}"/>
+    </doseQuantity>
+    
+    <text value="2 puffs bid"/>
+  </dosageInstruction>
+  <dispense>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <units value="{puff}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{puff}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <units value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispense>
+  
+</MedicationPrescription>
+
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="MedicationPrescription/ID25-mp"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID104-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2004-10-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID104-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID105-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Allergic rhinitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="61582004"/>
+        <display value="Allergic rhinitis"/>
+      </coding>
+      <text value="Allergic rhinitis"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2004-10-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID105-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID106-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Dizziness and giddiness</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="404640003"/>
+        <display value="Dizziness and giddiness"/>
+      </coding>
+      <text value="Dizziness and giddiness"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2004-10-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID106-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID107-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Other diseases of nasal cavity and sinuses</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68235000"/>
+        <display value="Other diseases of nasal cavity and sinuses"/>
+      </coding>
+      <text value="Other diseases of nasal cavity and sinuses"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2004-10-29"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID107-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID108-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Arthropathy</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="3723001"/>
+        <display value="Arthropathy"/>
+      </coding>
+      <text value="Arthropathy"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-16"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID108-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID109-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Myalgia and myositis, unspecified</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68962001"/>
+        <display value="Myalgia and myositis, unspecified"/>
+      </coding>
+      <text value="Myalgia and myositis, unspecified"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-16"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID109-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID110-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Anxiety</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="48694002"/>
+        <display value="Anxiety"/>
+      </coding>
+      <text value="Anxiety"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-03-27"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID110-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID111-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign essential hypertension</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1201005"/>
+        <display value="Benign essential hypertension"/>
+      </coding>
+      <text value="Benign essential hypertension"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-03-27"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID111-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID112-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Depressive disorder</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="35489007"/>
+        <display value="Depressive disorder"/>
+      </coding>
+      <text value="Depressive disorder"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-05-12"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID112-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID113-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Urinary tract infectious disease</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68566005"/>
+        <display value="Urinary tract infectious disease"/>
+      </coding>
+      <text value="Urinary tract infectious disease"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-05-12"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID113-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID114-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25064002"/>
+        <display value="Headache"/>
+      </coding>
+      <text value="Headache"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-06-18"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID114-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID115-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Essential hypertension</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="38341003"/>
+        <display value="Essential hypertension"/>
+      </coding>
+      <text value="Essential hypertension"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-06-19"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID115-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID116-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="55822004"/>
+        <display value="Hyperlipidemia"/>
+      </coding>
+      <text value="Hyperlipidemia"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-06-19"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID116-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID117-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Peripheral vertigo</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="50438001"/>
+        <display value="Peripheral vertigo"/>
+      </coding>
+      <text value="Peripheral vertigo"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID117-c"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <id value="ID118-c"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Sensorineural hearing loss</div>   
+   </text>
+    <patient>
+      <reference value="Patient/ID731673"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="60700002"/>
+        <display value="Sensorineural hearing loss"/>
+      </coding>
+      <text value="Sensorineural hearing loss"/>
+    </code>
+   <clinicalStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Condition/ID118-c"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID13-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Never smoker</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266919005"/>
+        <display value="Never smoker"/>
+      </coding>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID731673"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID13-smokingstatus"/>
+  </transaction>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="ID731673-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1949-09-22: Gestational age at birth = 39.2 weeks</div>
+    </text>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="39.2"/>
+      <units value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <appliesDateTime value="1949-09-22"/>
+    <status value="final"/>
+    <reliability value="ok"/>
+    <subject>
+      <reference value="Patient/ID731673"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="Observation/ID731673-gestage"/>
+  </transaction>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+  <id value="ID9-l"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+        </code>
+        <subject>
+          <reference value="Patient/ID731673"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <transaction>
+    <method value="PUT"/>
+    <url value="List/ID9-l"/>
+  </transaction>
+</entry>
+
+</Bundle>
