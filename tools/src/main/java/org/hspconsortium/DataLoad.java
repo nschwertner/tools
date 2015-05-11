@@ -16,8 +16,8 @@ import java.util.UUID;
 
 public class DataLoad {
     private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata/dstu2";
-    private static String RESOURCE_URI = "https://hspc.isalusconsulting.com/dstu2-open-hsp-api/data";
-//    private static String RESOURCE_URI = "http://localhost:8080/hsp-rest-api-webapp/data";
+//    private static String RESOURCE_URI = "https://hspc.isalusconsulting.com/dstu2-open-hsp-api/data";
+    private static String RESOURCE_URI = "http://localhost:8080/hsp-rest-api-webapp/data";
     private static String OUTPUT_DIR = "output";
     private static boolean isXML = true;
 
