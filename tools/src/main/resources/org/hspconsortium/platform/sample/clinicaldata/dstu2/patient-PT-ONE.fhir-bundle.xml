@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="ID549614826"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>PT-ONE XTESTHIMSS</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <system value="urn:oid:0.1.2.3.4.5.6.7"/>
+                    <value value="ID549614826"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="XTESTHIMSS"/>
+                    <given value="PT-ONE"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="home"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <use value="mobile"/>
+                </telecom>
+                <birthDate value="2010-12-16T00:00:00"/>
+                <address>
+                    <use value="home"/>
+                </address>
+                <active value="true"/>
+            </Patient>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Patient/ID549614826"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292593140000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-17T06:39:00: Transcutaneous Bilirubin = 14.000 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="14.000"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-17T06:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292593140000"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292614740000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-17T12:39:00: Transcutaneous Bilirubin = 13.200 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="13.200"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-17T12:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292614740000"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292636340000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-17T18:39:00: Transcutaneous Bilirubin = 12.000 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="12.000"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-17T18:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292636340000"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292722740000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-18T18:39:00: Transcutaneous Bilirubin = 11.000 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="11.000"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-18T18:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292722740000"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292895540000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-20T18:39:00: Transcutaneous Bilirubin = 8.000 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="8.000"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-20T18:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292895540000"/>
+        </transaction>
+    </entry>
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID520409957_1292506740000"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>2010-12-16T06:39:00: Transcutaneous Bilirubin = 4.000 mg/dL</p>
+                    </div>
+                </text>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <valueQuantity>
+                    <value value="4.000"/>
+                    <units value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+                <appliesDateTime value="2010-12-16T06:39:00"/>
+                <status value="final"/>
+                <subject>
+                    <reference value="Patient/ID549614826"/>
+                </subject>
+            </Observation>
+        </resource>
+        <transaction>
+            <method value="PUT"/>
+            <url value="Observation/ID520409957_1292506740000"/>
+        </transaction>
+    </entry>
+
+</Bundle>
