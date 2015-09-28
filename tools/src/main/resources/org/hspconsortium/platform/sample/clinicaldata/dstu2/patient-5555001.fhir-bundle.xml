@@ -105,7 +105,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="50"/>
-      <units value="units"/>
+      <unit value="units"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="units"/>
     </doseQuantity>
@@ -117,14 +117,14 @@
      
      <quantity>
         <value value="1"/>
-        <units value="units"/>
+        <unit value="units"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="units"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="45"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -191,7 +191,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="40"/>
-      <units value="units"/>
+      <unit value="units"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="units"/>
     </doseQuantity>
@@ -203,14 +203,14 @@
      
      <quantity>
         <value value="1"/>
-        <units value="units"/>
+        <unit value="units"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="units"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="45"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -273,14 +273,14 @@
      
      <quantity>
         <value value="1"/>
-        <units value=""/>
+        <unit value=""/>
         <system value="http://unitsofmeasure.org"/>
         <code value=""/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="60"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -345,7 +345,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -357,14 +357,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -431,7 +431,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -443,14 +443,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -515,7 +515,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="2"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -527,14 +527,14 @@
      
      <quantity>
         <value value="120"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -601,7 +601,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -613,14 +613,14 @@
      
      <quantity>
         <value value="60"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -685,7 +685,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -697,14 +697,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -769,7 +769,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -781,14 +781,14 @@
      
      <quantity>
         <value value="60"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -853,7 +853,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -865,14 +865,14 @@
      
      <quantity>
         <value value="60"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -937,7 +937,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="2"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -949,14 +949,14 @@
      
      <quantity>
         <value value="120"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1021,7 +1021,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1033,14 +1033,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1105,7 +1105,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1117,14 +1117,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1191,7 +1191,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1203,14 +1203,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1275,7 +1275,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="2"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1287,14 +1287,14 @@
      
      <quantity>
         <value value="12"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="84"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1361,7 +1361,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1373,14 +1373,14 @@
      
      <quantity>
         <value value="24"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="84"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1445,7 +1445,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1457,14 +1457,14 @@
      
      <quantity>
         <value value="30"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>
@@ -1529,7 +1529,7 @@
     </scheduledTiming>
     <doseQuantity>
       <value value="1"/>
-      <units value="{tablet}"/>
+      <unit value="{tablet}"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="{tablet}"/>
     </doseQuantity>
@@ -1543,14 +1543,14 @@
      
      <quantity>
         <value value="60"/>
-        <units value="{tablet}"/>
+        <unit value="{tablet}"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="{tablet}"/>
      </quantity>
      
      <expectedSupplyDuration>
         <value value="30"/>
-        <units value="days"/>
+        <unit value="days"/>
         <system value="http://unitsofmeasure.org"/>
         <code value="d"/>
      </expectedSupplyDuration>

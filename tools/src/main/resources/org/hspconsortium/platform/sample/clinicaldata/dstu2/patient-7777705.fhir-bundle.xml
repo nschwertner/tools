@@ -358,7 +358,7 @@
     </code>
     <valueQuantity>
       <value value="0.753"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -400,7 +400,7 @@
     </code>
     <valueQuantity>
       <value value="45.0"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -442,7 +442,7 @@
     </code>
     <valueQuantity>
       <value value="2.194"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -484,7 +484,7 @@
     </code>
     <valueQuantity>
       <value value="45.0"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -526,7 +526,7 @@
     </code>
     <valueQuantity>
       <value value="2.244"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -568,7 +568,7 @@
     </code>
     <valueQuantity>
       <value value="45.0"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -610,7 +610,7 @@
     </code>
     <valueQuantity>
       <value value="2.371"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -652,7 +652,7 @@
     </code>
     <valueQuantity>
       <value value="45.9"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -694,7 +694,7 @@
     </code>
     <valueQuantity>
       <value value="2.648"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -736,7 +736,7 @@
     </code>
     <valueQuantity>
       <value value="46.7"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -778,7 +778,7 @@
     </code>
     <valueQuantity>
       <value value="2.775"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -820,7 +820,7 @@
     </code>
     <valueQuantity>
       <value value="46.8"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -862,7 +862,7 @@
     </code>
     <valueQuantity>
       <value value="2.926"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -904,7 +904,7 @@
     </code>
     <valueQuantity>
       <value value="3.1"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -946,7 +946,7 @@
     </code>
     <valueQuantity>
       <value value="49.5"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -988,7 +988,7 @@
     </code>
     <valueQuantity>
       <value value="3.2"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -1030,7 +1030,7 @@
     </code>
     <valueQuantity>
       <value value="50.1"/>
-      <units value="cm"/>
+      <unit value="cm"/>
       <system value="http://unitsofmeasure.org" />
       <code value="cm"/>
     </valueQuantity>
@@ -1072,7 +1072,7 @@
     </code>
     <valueQuantity>
       <value value="3.7"/>
-      <units value="kg"/>
+      <unit value="kg"/>
       <system value="http://unitsofmeasure.org" />
       <code value="kg"/>
     </valueQuantity>
@@ -1104,7 +1104,7 @@
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="177"/>
-          <units value="centimeters"/>
+          <unit value="centimeters"/>
           <system value="http://unitsofmeasure.org"/>
           <code value="cm"/>
         </valueQuantity>
@@ -1143,7 +1143,7 @@
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="164"/>
-          <units value="centimeters"/>
+          <unit value="centimeters"/>
           <system value="http://unitsofmeasure.org"/>
           <code value="cm"/>
         </valueQuantity>
@@ -1192,7 +1192,7 @@
     </code>
     <valueQuantity>
       <value value="25.2"/>
-      <units value="weeks"/>
+      <unit value="weeks"/>
       <system value="http://unitsofmeasure.org" />
       <code value="wk"/>
     </valueQuantity>

@@ -74,7 +74,7 @@
     </code>
     <valueQuantity>
       <value value="60.0"/>
-      <units value="mg/dL"/>
+      <unit value="mg/dL"/>
       <system value="http://unitsofmeasure.org" />
       <code value=""/>
     </valueQuantity>
@@ -95,13 +95,13 @@
       </meaning>
         <low>
           <value value="40.0"/>
-          <units value="mg/dL"/>
+          <unit value="mg/dL"/>
           <code value="mg/dL"/>
           <system value="http://unitsofmeasure.org"/>
         </low>
         <high>
           <value value="109.0"/>
-          <units value="mg/dL"/>
+          <unit value="mg/dL"/>
           <code value="mg/dL"/>
           <system value="http://unitsofmeasure.org"/>
         </high>
@@ -245,7 +245,7 @@
     </code>
     <valueQuantity>
       <value value="86.5"/>
-      <units value="ng/mL"/>
+      <unit value="ng/mL"/>
       <system value="http://unitsofmeasure.org" />
       <code value=""/>
     </valueQuantity>
@@ -266,13 +266,13 @@
       </meaning>
         <low>
           <value value="2.0"/>
-          <units value="ng/mL"/>
+          <unit value="ng/mL"/>
           <code value="ng/mL"/>
           <system value="http://unitsofmeasure.org"/>
         </low>
         <high>
           <value value="15.0"/>
-          <units value="ng/mL"/>
+          <unit value="ng/mL"/>
           <code value="ng/mL"/>
           <system value="http://unitsofmeasure.org"/>
         </high>
@@ -603,7 +603,7 @@
     </code>
     <valueQuantity>
       <value value="30.6"/>
-      <units value="weeks"/>
+      <unit value="weeks"/>
       <system value="http://unitsofmeasure.org" />
       <code value="wk"/>
     </valueQuantity>
