@@ -37,15 +37,15 @@
                 <active value="true"/>
             </Patient>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
             <url value="Patient/ID549614826"/>
-        </transaction>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292593140000"/>
+                <id value="ID5204099571292593140000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -64,22 +64,22 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-17T06:39:00"/>
+                <effectiveDateTime value="2010-12-17T06:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292593140000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292593140000"/>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292614740000"/>
+                <id value="ID520409951292614740000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -98,22 +98,22 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-17T12:39:00"/>
+                <effectiveDateTime value="2010-12-17T12:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292614740000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292614740000"/>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292636340000"/>
+                <id value="ID5204099571292636340000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -132,22 +132,22 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-17T18:39:00"/>
+                <effectiveDateTime value="2010-12-17T18:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292636340000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292636340000"/>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292722740000"/>
+                <id value="ID5204099571292722740000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -166,22 +166,22 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-18T18:39:00"/>
+                <effectiveDateTime value="2010-12-18T18:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292722740000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292722740000"/>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292895540000"/>
+                <id value="ID5204099571292895540000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -200,22 +200,22 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-20T18:39:00"/>
+                <effectiveDateTime value="2010-12-20T18:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292895540000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292895540000"/>
+        </request>
     </entry>
     <entry>
         <resource>
             <Observation xmlns="http://hl7.org/fhir">
-                <id value="ID520409957_1292506740000"/>
+                <id value="ID5204099571292506740000"/>
                 <text>
                     <status value="generated"/>
                     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -234,17 +234,17 @@
                     <units value="mg/dL"/>
                     <code value="mg/dL"/>
                 </valueQuantity>
-                <appliesDateTime value="2010-12-16T06:39:00"/>
+                <effectiveDateTime value="2010-12-16T06:39:00"/>
                 <status value="final"/>
                 <subject>
                     <reference value="Patient/ID549614826"/>
                 </subject>
             </Observation>
         </resource>
-        <transaction>
+        <request>
             <method value="PUT"/>
-            <url value="Observation/ID520409957_1292506740000"/>
-        </transaction>
+            <url value="Observation/ID5204099571292506740000"/>
+        </request>
     </entry>
 
 </Bundle>

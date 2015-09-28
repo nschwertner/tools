@@ -42,10 +42,10 @@
   </Patient>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Patient/ID9995679"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -69,10 +69,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID1"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -96,10 +96,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID2"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -123,10 +123,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID3"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -150,10 +150,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID4"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -177,10 +177,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID5"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -204,10 +204,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID7"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -231,10 +231,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID9"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -258,10 +258,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID15"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -280,7 +280,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -314,10 +314,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -343,7 +343,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -352,10 +352,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -381,7 +381,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -390,10 +390,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -422,7 +422,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -464,10 +464,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -493,7 +493,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -502,10 +502,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -531,7 +531,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -540,10 +540,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -572,7 +572,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -614,10 +614,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -643,7 +643,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -652,10 +652,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -681,7 +681,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -690,10 +690,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -722,7 +722,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -764,10 +764,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -793,7 +793,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -802,10 +802,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -831,7 +831,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -840,10 +840,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -872,7 +872,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -914,10 +914,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID6-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -943,7 +943,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -952,10 +952,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID6-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -981,7 +981,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -990,10 +990,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID6-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1012,7 +1012,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1046,10 +1046,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID7-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1075,7 +1075,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1084,10 +1084,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID7-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1113,7 +1113,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1122,10 +1122,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID7-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1154,7 +1154,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1196,10 +1196,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID8-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1225,7 +1225,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1234,10 +1234,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID8-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1263,7 +1263,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1272,10 +1272,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID8-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1304,7 +1304,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1346,10 +1346,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1375,7 +1375,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1384,10 +1384,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1413,7 +1413,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1422,10 +1422,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1454,7 +1454,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1496,10 +1496,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID10-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1525,7 +1525,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1534,10 +1534,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID10-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1563,7 +1563,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1572,10 +1572,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID10-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1604,7 +1604,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1646,10 +1646,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID11-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1675,7 +1675,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1684,10 +1684,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID11-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1713,7 +1713,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1722,10 +1722,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID11-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1754,7 +1754,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1796,10 +1796,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID12-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1825,7 +1825,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1834,10 +1834,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID12-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1863,7 +1863,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1872,10 +1872,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID12-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1904,7 +1904,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1946,10 +1946,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID13-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1975,7 +1975,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1984,10 +1984,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID13-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2013,7 +2013,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2022,10 +2022,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID13-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -2054,7 +2054,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2096,10 +2096,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID14-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2125,7 +2125,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2134,10 +2134,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID14-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2163,7 +2163,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2172,10 +2172,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID14-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -2204,7 +2204,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2246,10 +2246,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2275,7 +2275,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2284,10 +2284,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2313,7 +2313,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2322,10 +2322,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-diastolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2351,7 +2351,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2006-12-27"/>
+    <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2364,10 +2364,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID1-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2393,7 +2393,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2006-12-27"/>
+    <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2406,10 +2406,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID1-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2435,7 +2435,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2006-12-27"/>
+    <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2448,10 +2448,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID1-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2477,7 +2477,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2490,10 +2490,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2519,7 +2519,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2532,10 +2532,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2561,7 +2561,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-04-18"/>
+    <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2574,10 +2574,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID2-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2603,7 +2603,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2616,10 +2616,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2645,7 +2645,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2658,10 +2658,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2687,7 +2687,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2007-07-18"/>
+    <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2700,10 +2700,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2729,7 +2729,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2742,10 +2742,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2771,7 +2771,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2784,10 +2784,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2813,7 +2813,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-01-16"/>
+    <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2826,10 +2826,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID4-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2855,7 +2855,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2868,10 +2868,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2897,7 +2897,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2910,10 +2910,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2939,7 +2939,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2952,10 +2952,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2981,7 +2981,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2008-06-25"/>
+    <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2994,10 +2994,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID6-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3023,7 +3023,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3036,10 +3036,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID7-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3065,7 +3065,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-06-10"/>
+    <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3078,10 +3078,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID7-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3107,7 +3107,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3120,10 +3120,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3149,7 +3149,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3162,10 +3162,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3191,7 +3191,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3204,10 +3204,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID9-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3233,7 +3233,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3246,10 +3246,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID10-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3275,7 +3275,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3288,10 +3288,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID11-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3317,7 +3317,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3330,10 +3330,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID12-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3359,7 +3359,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3372,10 +3372,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID13-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3401,7 +3401,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-23"/>
+    <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3414,10 +3414,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID14-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3443,7 +3443,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3456,10 +3456,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3485,7 +3485,7 @@
       <code value="{beats}/min"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3498,10 +3498,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-heartrate"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3527,7 +3527,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-22"/>
+    <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3540,10 +3540,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID15-weight"/>
-  </transaction>
+  </request>
 </entry>
 
 </Bundle>

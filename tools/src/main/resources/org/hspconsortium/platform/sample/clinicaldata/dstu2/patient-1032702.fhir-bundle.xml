@@ -55,16 +55,16 @@
   </Patient>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Patient/ID1032702"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID101-mp"/>
   <text>
     <status value="generated"/>
@@ -136,13 +136,13 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID101-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID101-mp"/>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -171,10 +171,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID119-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -203,10 +203,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID120-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -235,10 +235,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID121-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -267,10 +267,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID122-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -299,10 +299,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID123-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -330,10 +330,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID1-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -361,10 +361,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID2-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -392,10 +392,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID3-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -423,10 +423,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID4-i"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -460,10 +460,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID5-smokingstatus"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -497,10 +497,10 @@
     </List>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="List/ID19-l"/>
-  </transaction>
+  </request>
 </entry>
 
 </Bundle>

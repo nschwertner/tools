@@ -50,16 +50,16 @@
   </Patient>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Patient/ID5555001"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID297-mp"/>
   <text>
     <status value="generated"/>
@@ -131,19 +131,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID297-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID297-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID298-mp"/>
   <text>
     <status value="generated"/>
@@ -217,19 +217,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID298-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID298-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID299-mp"/>
   <text>
     <status value="generated"/>
@@ -287,19 +287,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID299-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID299-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID300-mp"/>
   <text>
     <status value="generated"/>
@@ -371,19 +371,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID300-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID300-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID301-mp"/>
   <text>
     <status value="generated"/>
@@ -457,19 +457,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID301-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID301-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID302-mp"/>
   <text>
     <status value="generated"/>
@@ -541,19 +541,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID302-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID302-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID303-mp"/>
   <text>
     <status value="generated"/>
@@ -627,19 +627,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID303-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID303-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID304-mp"/>
   <text>
     <status value="generated"/>
@@ -711,19 +711,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID304-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID304-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID305-mp"/>
   <text>
     <status value="generated"/>
@@ -795,19 +795,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID305-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID305-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID306-mp"/>
   <text>
     <status value="generated"/>
@@ -879,19 +879,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID306-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID306-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID307-mp"/>
   <text>
     <status value="generated"/>
@@ -963,19 +963,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID307-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID307-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID308-mp"/>
   <text>
     <status value="generated"/>
@@ -1047,19 +1047,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID308-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID308-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID309-mp"/>
   <text>
     <status value="generated"/>
@@ -1131,19 +1131,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID309-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID309-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID310-mp"/>
   <text>
     <status value="generated"/>
@@ -1217,19 +1217,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID310-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID310-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID311-mp"/>
   <text>
     <status value="generated"/>
@@ -1301,19 +1301,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID311-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID311-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID312-mp"/>
   <text>
     <status value="generated"/>
@@ -1387,19 +1387,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID312-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID312-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID313-mp"/>
   <text>
     <status value="generated"/>
@@ -1471,19 +1471,19 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID313-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID313-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID314-mp"/>
   <text>
     <status value="generated"/>
@@ -1557,13 +1557,13 @@
      
   </dispense>
   
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID314-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID314-mp"/>
+  </request>
 </entry>
 
 </Bundle>

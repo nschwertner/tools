@@ -37,10 +37,10 @@
   </Patient>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Patient/ID8888803"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -64,10 +64,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID953"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -91,10 +91,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID954"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -118,10 +118,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID955"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -145,10 +145,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID956"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -172,10 +172,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID957"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -199,10 +199,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID958"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -226,10 +226,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID959"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -253,10 +253,10 @@
     </Encounter>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Encounter/ID960"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -275,7 +275,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -301,10 +301,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -330,7 +330,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -339,10 +339,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -368,7 +368,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -377,10 +377,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -399,7 +399,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -425,10 +425,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -454,7 +454,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -463,10 +463,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -492,7 +492,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -501,10 +501,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -523,7 +523,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -549,10 +549,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -578,7 +578,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -587,10 +587,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -616,7 +616,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -625,10 +625,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -647,7 +647,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -673,10 +673,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -702,7 +702,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -711,10 +711,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -740,7 +740,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -749,10 +749,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -771,7 +771,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -797,10 +797,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -826,7 +826,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -835,10 +835,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -864,7 +864,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -873,10 +873,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -895,7 +895,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -921,10 +921,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -950,7 +950,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -959,10 +959,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -988,7 +988,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -997,10 +997,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1019,7 +1019,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1045,10 +1045,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1074,7 +1074,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1083,10 +1083,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1112,7 +1112,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1121,10 +1121,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-diastolic"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -1143,7 +1143,7 @@
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
     </code>
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1169,10 +1169,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-bp"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1198,7 +1198,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1207,10 +1207,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-systolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1236,7 +1236,7 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1245,10 +1245,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-diastolic"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1274,7 +1274,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1287,10 +1287,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1316,7 +1316,7 @@
       <code value="Cel"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1329,10 +1329,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-temperature"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1358,7 +1358,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1371,10 +1371,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1400,7 +1400,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1413,10 +1413,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID953-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1442,7 +1442,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1455,10 +1455,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1484,7 +1484,7 @@
       <code value="Cel"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1497,10 +1497,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-temperature"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1526,7 +1526,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1539,10 +1539,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1568,7 +1568,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1581,10 +1581,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID954-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1610,7 +1610,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1623,10 +1623,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1652,7 +1652,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1665,10 +1665,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1694,7 +1694,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1707,10 +1707,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID955-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1736,7 +1736,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1749,10 +1749,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1778,7 +1778,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1791,10 +1791,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1820,7 +1820,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1833,10 +1833,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID956-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1862,7 +1862,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1875,10 +1875,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1904,7 +1904,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1917,10 +1917,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1946,7 +1946,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -1959,10 +1959,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID957-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -1988,7 +1988,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2001,10 +2001,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2030,7 +2030,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2043,10 +2043,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2072,7 +2072,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2085,10 +2085,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID958-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2114,7 +2114,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2127,10 +2127,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2156,7 +2156,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2169,10 +2169,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2198,7 +2198,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2211,10 +2211,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID959-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2240,7 +2240,7 @@
       <code value="cm"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2253,10 +2253,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-height"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2282,7 +2282,7 @@
       <code value="kg"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2295,10 +2295,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-weight"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2324,7 +2324,7 @@
       <code value="kg/m2"/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2337,10 +2337,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID960-bmi"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2365,7 +2365,7 @@
     </code>
     <valueString value="Positive"/>
     
-    <appliesDateTime value="2009-12-30"/>
+    <effectiveDateTime value="2009-12-30"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2374,10 +2374,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3090-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2403,7 +2403,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2412,10 +2412,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3091-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2441,7 +2441,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2450,10 +2450,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3092-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2479,7 +2479,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2488,10 +2488,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3093-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2517,7 +2517,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2526,10 +2526,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3094-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2555,7 +2555,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2564,10 +2564,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3095-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2593,7 +2593,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2602,10 +2602,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3096-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2631,7 +2631,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2640,10 +2640,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3097-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2669,7 +2669,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2678,10 +2678,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3098-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2707,7 +2707,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2716,10 +2716,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3099-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2745,7 +2745,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2754,10 +2754,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3100-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2783,7 +2783,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2792,10 +2792,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3101-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2821,7 +2821,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2830,10 +2830,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3102-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2859,7 +2859,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2868,10 +2868,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3103-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2897,7 +2897,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2906,10 +2906,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3104-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2935,7 +2935,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2944,10 +2944,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3105-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -2973,7 +2973,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -2982,10 +2982,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3106-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3011,7 +3011,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3020,10 +3020,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3107-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3049,7 +3049,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3058,10 +3058,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3108-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3087,7 +3087,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3096,10 +3096,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3109-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3125,7 +3125,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3134,10 +3134,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3110-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3163,7 +3163,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3172,10 +3172,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3111-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3201,7 +3201,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3210,10 +3210,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3112-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3239,7 +3239,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3248,10 +3248,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3113-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3277,7 +3277,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3286,10 +3286,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3114-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3315,7 +3315,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3324,10 +3324,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3115-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3353,7 +3353,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3362,10 +3362,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3116-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3391,7 +3391,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3400,10 +3400,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3117-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3429,7 +3429,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3438,10 +3438,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3118-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3467,7 +3467,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3476,10 +3476,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3119-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3505,7 +3505,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3514,10 +3514,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3120-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3543,7 +3543,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3552,10 +3552,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3121-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3581,7 +3581,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3590,10 +3590,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3122-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3619,7 +3619,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3628,10 +3628,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3123-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3657,7 +3657,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3666,10 +3666,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3124-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3695,7 +3695,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3704,10 +3704,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3125-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3728,7 +3728,7 @@
     </code>
     <valueString value="clear, yellow"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3737,10 +3737,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3126-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3765,7 +3765,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3774,10 +3774,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3127-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3803,7 +3803,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3812,10 +3812,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3128-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3840,7 +3840,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3849,10 +3849,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3129-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3877,7 +3877,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3886,10 +3886,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3130-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3914,7 +3914,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3923,10 +3923,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3131-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3951,7 +3951,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3960,10 +3960,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3132-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -3989,7 +3989,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -3998,10 +3998,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3133-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4027,7 +4027,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4036,10 +4036,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3134-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4064,7 +4064,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4073,10 +4073,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3135-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4101,7 +4101,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4110,10 +4110,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3136-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4138,7 +4138,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-09-17"/>
+    <effectiveDateTime value="2010-09-17"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4147,10 +4147,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3137-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4171,7 +4171,7 @@
     </code>
     <valueString value="cloudy, yellow"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4180,10 +4180,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3138-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4202,7 +4202,7 @@
         <display value="Bacteria #/area UrnS HPF"/>
       </coding>
     </code>
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4211,10 +4211,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3139-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4239,7 +4239,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4248,10 +4248,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3140-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4277,7 +4277,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4286,10 +4286,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3141-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4314,7 +4314,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4323,10 +4323,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3142-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4351,7 +4351,7 @@
     </code>
     <valueString value="2+"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4360,10 +4360,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3143-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4388,7 +4388,7 @@
     </code>
     <valueString value="1+"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4397,10 +4397,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3144-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4425,7 +4425,7 @@
     </code>
     <valueString value="Trace"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4434,10 +4434,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3145-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4463,7 +4463,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4472,10 +4472,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3146-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4501,7 +4501,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4510,10 +4510,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3147-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4538,7 +4538,7 @@
     </code>
     <valueString value="0-2"/>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4547,10 +4547,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3148-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4576,7 +4576,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2010-12-14"/>
+    <effectiveDateTime value="2010-12-14"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4585,10 +4585,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3149-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4614,7 +4614,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4623,10 +4623,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3150-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4652,7 +4652,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4661,10 +4661,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3151-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4690,7 +4690,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4699,10 +4699,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3152-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4728,7 +4728,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4737,10 +4737,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3153-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4766,7 +4766,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4775,10 +4775,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3154-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4804,7 +4804,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4813,10 +4813,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3155-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4842,7 +4842,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4851,10 +4851,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3156-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4880,7 +4880,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4889,10 +4889,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3157-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4918,7 +4918,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4927,10 +4927,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3158-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4956,7 +4956,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -4965,10 +4965,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3159-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -4994,7 +4994,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5003,10 +5003,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3160-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5032,7 +5032,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5041,10 +5041,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3161-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5070,7 +5070,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5079,10 +5079,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3162-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5108,7 +5108,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5117,10 +5117,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3163-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5146,7 +5146,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5155,10 +5155,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3164-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5184,7 +5184,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5193,10 +5193,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3165-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5222,7 +5222,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5231,10 +5231,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3166-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5260,7 +5260,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5269,10 +5269,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3167-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5298,7 +5298,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5307,10 +5307,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3168-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5336,7 +5336,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5345,10 +5345,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3169-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5374,7 +5374,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5383,10 +5383,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3170-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5412,7 +5412,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5421,10 +5421,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3171-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5450,7 +5450,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5459,10 +5459,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3172-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5488,7 +5488,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5497,10 +5497,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3173-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5526,7 +5526,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5535,10 +5535,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3174-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5564,7 +5564,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5573,10 +5573,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3175-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5602,7 +5602,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5611,10 +5611,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3176-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5640,7 +5640,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5649,10 +5649,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3177-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5678,7 +5678,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5687,10 +5687,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3178-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5716,7 +5716,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5725,10 +5725,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3179-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5754,7 +5754,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5763,10 +5763,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3180-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5792,7 +5792,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5801,10 +5801,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3181-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5830,7 +5830,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5839,10 +5839,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3182-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5868,7 +5868,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5877,10 +5877,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3183-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5906,7 +5906,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5915,10 +5915,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3184-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5943,7 +5943,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5952,10 +5952,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3185-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -5981,7 +5981,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -5990,10 +5990,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3186-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6018,7 +6018,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6027,10 +6027,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3187-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6055,7 +6055,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6064,10 +6064,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3188-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6088,7 +6088,7 @@
     </code>
     <valueString value="pos I, neg II"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6097,10 +6097,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3189-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6125,7 +6125,7 @@
     </code>
     <valueString value="Positive"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6134,10 +6134,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3190-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6163,7 +6163,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6172,10 +6172,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3191-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6201,7 +6201,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6210,10 +6210,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3192-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6239,7 +6239,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6248,10 +6248,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3193-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6277,7 +6277,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6286,10 +6286,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3194-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6315,7 +6315,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6324,10 +6324,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3195-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6353,7 +6353,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6362,10 +6362,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3196-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6391,7 +6391,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6400,10 +6400,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3197-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6424,7 +6424,7 @@
     </code>
     <valueString value="clear, yellow"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6433,10 +6433,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3198-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6461,7 +6461,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6470,10 +6470,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3199-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6499,7 +6499,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6508,10 +6508,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3200-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6536,7 +6536,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6545,10 +6545,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3201-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6573,7 +6573,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6582,10 +6582,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3202-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6610,7 +6610,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6619,10 +6619,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3203-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6647,7 +6647,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6656,10 +6656,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3204-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6685,7 +6685,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6694,10 +6694,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3205-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6723,7 +6723,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6732,10 +6732,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3206-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6760,7 +6760,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6769,10 +6769,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3207-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6797,7 +6797,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6806,10 +6806,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3208-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6834,7 +6834,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6843,10 +6843,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3209-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6871,7 +6871,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6880,10 +6880,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3210-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6908,7 +6908,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2011-11-04"/>
+    <effectiveDateTime value="2011-11-04"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6917,10 +6917,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3211-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6946,7 +6946,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6955,10 +6955,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3212-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -6984,7 +6984,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -6993,10 +6993,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3213-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7022,7 +7022,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7031,10 +7031,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3214-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7060,7 +7060,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7069,10 +7069,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3215-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7098,7 +7098,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7107,10 +7107,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3216-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7136,7 +7136,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7145,10 +7145,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3217-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7174,7 +7174,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7183,10 +7183,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3218-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7212,7 +7212,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7221,10 +7221,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3219-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7250,7 +7250,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7259,10 +7259,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3220-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7288,7 +7288,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7297,10 +7297,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3221-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7326,7 +7326,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7335,10 +7335,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3222-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7364,7 +7364,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7373,10 +7373,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3223-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7402,7 +7402,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7411,10 +7411,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3224-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7440,7 +7440,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7449,10 +7449,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3225-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7478,7 +7478,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7487,10 +7487,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3226-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7516,7 +7516,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7525,10 +7525,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3227-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7554,7 +7554,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7563,10 +7563,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3228-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7592,7 +7592,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7601,10 +7601,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3229-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7630,7 +7630,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7639,10 +7639,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3230-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7668,7 +7668,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7677,10 +7677,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3231-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7706,7 +7706,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7715,10 +7715,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3232-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7744,7 +7744,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7753,10 +7753,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3233-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7782,7 +7782,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7791,10 +7791,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3234-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7820,7 +7820,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7829,10 +7829,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3235-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7858,7 +7858,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7867,10 +7867,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3236-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7896,7 +7896,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7905,10 +7905,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3237-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7934,7 +7934,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7943,10 +7943,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3238-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -7972,7 +7972,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -7981,10 +7981,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3239-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8010,7 +8010,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8019,10 +8019,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3240-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8048,7 +8048,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8057,10 +8057,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3241-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8086,7 +8086,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8095,10 +8095,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3242-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8124,7 +8124,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8133,10 +8133,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3243-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8162,7 +8162,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8171,10 +8171,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3244-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8200,7 +8200,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8209,10 +8209,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3245-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8238,7 +8238,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8247,10 +8247,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3246-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8276,7 +8276,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8285,10 +8285,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3247-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8314,7 +8314,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8323,10 +8323,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3248-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8352,7 +8352,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8361,10 +8361,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3249-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8390,7 +8390,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8399,10 +8399,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3250-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8428,7 +8428,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8437,10 +8437,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3251-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8466,7 +8466,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8475,10 +8475,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3252-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8504,7 +8504,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8513,10 +8513,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3253-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8542,7 +8542,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8551,10 +8551,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3254-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8575,7 +8575,7 @@
     </code>
     <valueString value="clear, yellow"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8584,10 +8584,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3255-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8612,7 +8612,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8621,10 +8621,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3256-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8650,7 +8650,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8659,10 +8659,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3257-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8687,7 +8687,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8696,10 +8696,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3258-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8724,7 +8724,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8733,10 +8733,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3259-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8761,7 +8761,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8770,10 +8770,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3260-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8798,7 +8798,7 @@
     </code>
     <valueString value="Negative"/>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8807,10 +8807,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3261-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8836,7 +8836,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8845,10 +8845,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3262-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8874,7 +8874,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-12-15"/>
+    <effectiveDateTime value="2012-12-15"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8883,10 +8883,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3263-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8912,7 +8912,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8921,10 +8921,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3264-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8950,7 +8950,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8959,10 +8959,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3265-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -8988,7 +8988,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -8997,10 +8997,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3266-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9026,7 +9026,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9035,10 +9035,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3267-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9064,7 +9064,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9073,10 +9073,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3268-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9102,7 +9102,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9111,10 +9111,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3269-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9140,7 +9140,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9149,10 +9149,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3270-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9178,7 +9178,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9187,10 +9187,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3271-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9216,7 +9216,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9225,10 +9225,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3272-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9254,7 +9254,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9263,10 +9263,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3273-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9292,7 +9292,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9301,10 +9301,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3274-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9330,7 +9330,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9339,10 +9339,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3275-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9368,7 +9368,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9377,10 +9377,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3276-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9406,7 +9406,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9415,10 +9415,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3277-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9444,7 +9444,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9453,10 +9453,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3278-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9482,7 +9482,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9491,10 +9491,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3279-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9520,7 +9520,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9529,10 +9529,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3280-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9558,7 +9558,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9567,10 +9567,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3281-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9596,7 +9596,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9605,10 +9605,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3282-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9634,7 +9634,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9643,10 +9643,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3283-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9672,7 +9672,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9681,10 +9681,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3284-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9710,7 +9710,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9719,10 +9719,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3285-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9748,7 +9748,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9757,10 +9757,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3286-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9786,7 +9786,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-05-07"/>
+    <effectiveDateTime value="2012-05-07"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9795,10 +9795,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3287-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9824,7 +9824,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9833,10 +9833,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3288-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9862,7 +9862,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9871,10 +9871,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3289-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9900,7 +9900,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-02-01"/>
+    <effectiveDateTime value="2012-02-01"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9909,10 +9909,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3290-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9938,7 +9938,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9947,10 +9947,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3291-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -9976,7 +9976,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -9985,10 +9985,10 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3292-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
@@ -10014,7 +10014,7 @@
       <code value=""/>
     </valueQuantity>
     
-    <appliesDateTime value="2012-09-06"/>
+    <effectiveDateTime value="2012-09-06"/>
     <status value="final"/>
     <reliability value="ok"/>
     <subject>
@@ -10023,16 +10023,16 @@
   </Observation>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Observation/ID3293-lab"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID279-mp"/>
   <text>
     <status value="generated"/>
@@ -10069,19 +10069,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID279-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID279-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID280-mp"/>
   <text>
     <status value="generated"/>
@@ -10118,19 +10118,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID280-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID280-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID281-mp"/>
   <text>
     <status value="generated"/>
@@ -10167,19 +10167,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID281-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID281-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID282-mp"/>
   <text>
     <status value="generated"/>
@@ -10216,19 +10216,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID282-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID282-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID283-mp"/>
   <text>
     <status value="generated"/>
@@ -10265,19 +10265,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID283-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID283-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID284-mp"/>
   <text>
     <status value="generated"/>
@@ -10314,19 +10314,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID284-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID284-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID285-mp"/>
   <text>
     <status value="generated"/>
@@ -10363,19 +10363,19 @@
     </scheduledTiming>
     <text value="1 tab po qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID285-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID285-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID286-mp"/>
   <text>
     <status value="generated"/>
@@ -10412,19 +10412,19 @@
     </scheduledTiming>
     <text value="1 cap po bid x 10 days"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID286-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID286-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID287-mp"/>
   <text>
     <status value="generated"/>
@@ -10461,13 +10461,13 @@
     </scheduledTiming>
     <text value="1 tab po bid x 10 days"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID287-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID287-mp"/>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10496,10 +10496,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID546-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10528,10 +10528,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID547-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10562,10 +10562,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID548-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10594,10 +10594,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID549-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10628,10 +10628,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID550-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10662,10 +10662,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID551-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10696,10 +10696,10 @@
   </Condition>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Condition/ID552-c"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10727,10 +10727,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID20-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10758,10 +10758,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID21-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10789,10 +10789,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID22-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10820,10 +10820,10 @@
     </Immunization>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Immunization/ID23-i"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10845,10 +10845,10 @@
     </Substance>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Substance/unii-2LQ0UUW8IN"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10878,10 +10878,10 @@
     </AllergyIntolerance>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="AllergyIntolerance/ID60-ai"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10903,10 +10903,10 @@
     </Substance>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Substance/rxnorm-203563"/>
-  </transaction>
+  </request>
 </entry>
   <entry>
   <resource>
@@ -10936,10 +10936,10 @@
     </AllergyIntolerance>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="AllergyIntolerance/ID61-ai"/>
-  </transaction>
+  </request>
 </entry>
 
 </Bundle>

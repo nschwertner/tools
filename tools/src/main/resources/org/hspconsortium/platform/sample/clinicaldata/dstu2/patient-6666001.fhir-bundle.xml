@@ -41,16 +41,16 @@
   </Patient>
   
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
     <url value="Patient/ID6666001"/>
-  </transaction>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID353-mp"/>
   <text>
     <status value="generated"/>
@@ -89,19 +89,19 @@
     
     <text value="prn"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID353-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID353-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID354-mp"/>
   <text>
     <status value="generated"/>
@@ -154,19 +154,19 @@
     
     <text value="1 puff bid"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID354-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID354-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID355-mp"/>
   <text>
     <status value="generated"/>
@@ -205,19 +205,19 @@
     
     <text value="prn"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID355-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID355-mp"/>
+  </request>
 </entry>
 <entry>
   <resource>
     
     
-<MedicationPrescription>
+<MedicationOrder>
   <id value="ID356-mp"/>
   <text>
     <status value="generated"/>
@@ -270,13 +270,13 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-</MedicationPrescription>
+</MedicationOrder>
 
   </resource>
-  <transaction>
+  <request>
     <method value="PUT"/>
-    <url value="MedicationPrescription/ID356-mp"/>
-  </transaction>
+    <url value="MedicationOrder/ID356-mp"/>
+  </request>
 </entry>
 
 </Bundle>
