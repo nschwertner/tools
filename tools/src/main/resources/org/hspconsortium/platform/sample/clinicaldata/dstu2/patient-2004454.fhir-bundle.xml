@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID2004454"/>
+    <id value="2004454"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="2004454"/>
@@ -51,8 +52,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID2004454"/>
+    <method value="POST"/>
+    <url value="Patient/2004454"/>
   </request>
 </entry>
 <entry>
@@ -60,7 +61,7 @@
     
     
   <Observation>
-  <id value="ID1836-lab"/>
+  <id value="1836-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>
@@ -71,6 +72,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="60.0"/>
@@ -81,9 +83,8 @@
     
     <effectiveDateTime value="2008-07-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -92,27 +93,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1836-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1836-lab"/>
   </request>
 </entry>
 <entry>
@@ -120,7 +122,7 @@
     
     
   <Observation>
-  <id value="ID1837-lab"/>
+  <id value="1837-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -135,21 +137,21 @@
         <code value="38478-4"/>
         <display value="Biotinidase DBS Ql"/>
       </coding>
+      <text value="Biotinidase DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2008-07-11"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1837-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1837-lab"/>
   </request>
 </entry>
 <entry>
@@ -157,7 +159,7 @@
     
     
   <Observation>
-  <id value="ID1838-lab"/>
+  <id value="1838-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -172,21 +174,21 @@
         <code value="29571-7"/>
         <display value="Phe DBS Ql"/>
       </coding>
+      <text value="Phe DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2008-07-11"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1838-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1838-lab"/>
   </request>
 </entry>
 <entry>
@@ -194,7 +196,7 @@
     
     
   <Observation>
-  <id value="ID1839-lab"/>
+  <id value="1839-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -209,21 +211,21 @@
         <code value="29571-7"/>
         <display value="Phe DBS Ql"/>
       </coding>
+      <text value="Phe DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2008-08-01"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1839-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1839-lab"/>
   </request>
 </entry>
 <entry>
@@ -231,7 +233,7 @@
     
     
   <Observation>
-  <id value="ID1840-lab"/>
+  <id value="1840-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>
@@ -242,6 +244,7 @@
         <code value="49220-7"/>
         <display value="Prolactin SerPl 3rd IS-mCnc"/>
       </coding>
+      <text value="Prolactin SerPl 3rd IS-mCnc"/>
     </code>
     <valueQuantity>
       <value value="86.5"/>
@@ -252,9 +255,8 @@
     
     <effectiveDateTime value="2008-08-01"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -263,27 +265,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="ng/mL"/>
-          <code value="ng/mL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="15.0"/>
-          <unit value="ng/mL"/>
-          <code value="ng/mL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="ng/mL"/>
+        <code value="ng/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="15.0"/>
+        <unit value="ng/mL"/>
+        <code value="ng/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1840-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1840-lab"/>
   </request>
 </entry>
 <entry>
@@ -291,7 +294,7 @@
     
     
   <Observation>
-  <id value="ID1841-lab"/>
+  <id value="1841-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -306,21 +309,21 @@
         <code value="38478-4"/>
         <display value="Biotinidase DBS Ql"/>
       </coding>
+      <text value="Biotinidase DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2008-08-01"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1841-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1841-lab"/>
   </request>
 </entry>
   <entry>
@@ -328,13 +331,13 @@
     
     
   <Condition>
-  <id value="ID295-c"/>
+  <id value="295"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -351,8 +354,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID295-c"/>
+    <method value="POST"/>
+    <url value="Condition/295"/>
   </request>
 </entry>
   <entry>
@@ -360,13 +363,13 @@
     
     
   <Condition>
-  <id value="ID296-c"/>
+  <id value="296"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -383,8 +386,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID296-c"/>
+    <method value="POST"/>
+    <url value="Condition/296"/>
   </request>
 </entry>
   <entry>
@@ -392,13 +395,13 @@
     
     
   <Condition>
-  <id value="ID297-c"/>
+  <id value="297"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Diaper rash</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -415,8 +418,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID297-c"/>
+    <method value="POST"/>
+    <url value="Condition/297"/>
   </request>
 </entry>
   <entry>
@@ -424,13 +427,13 @@
     
     
   <Condition>
-  <id value="ID298-c"/>
+  <id value="298"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -447,8 +450,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID298-c"/>
+    <method value="POST"/>
+    <url value="Condition/298"/>
   </request>
 </entry>
   <entry>
@@ -456,13 +459,13 @@
     
     
   <Condition>
-  <id value="ID299-c"/>
+  <id value="299"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -479,8 +482,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID299-c"/>
+    <method value="POST"/>
+    <url value="Condition/299"/>
   </request>
 </entry>
   <entry>
@@ -488,13 +491,13 @@
     
     
   <Condition>
-  <id value="ID300-c"/>
+  <id value="300"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Nausea and vomiting</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -511,8 +514,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID300-c"/>
+    <method value="POST"/>
+    <url value="Condition/300"/>
   </request>
 </entry>
   <entry>
@@ -520,13 +523,13 @@
     
     
   <Condition>
-  <id value="ID301-c"/>
+  <id value="301"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Viral disease</div>   
    </text>
     <patient>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </patient>
     <code> 
       <coding>
@@ -543,8 +546,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID301-c"/>
+    <method value="POST"/>
+    <url value="Condition/301"/>
   </request>
 </entry>
 <entry>
@@ -552,7 +555,7 @@
     
     
   <Observation>
-  <id value="ID1-smokingstatus"/>
+  <id value="1-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
@@ -563,6 +566,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -570,18 +574,18 @@
         <code value="428041000124106"/>
         <display value="Current some day smoker"/>
       </coding>
+      <text value="Current some day smoker"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/1-smokingstatus"/>
   </request>
 </entry>
 <entry>
@@ -589,7 +593,7 @@
     
     
   <Observation>
-  <id value="ID2004454-gestage"/>
+  <id value="2004454-gestage"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-15: Gestational age at birth = 30.6 weeks</div>
@@ -600,6 +604,7 @@
         <code value="18185-9"/>
         <display value="Gestational age at birth"/>
       </coding>
+      <text value="Gestational age at birth"/>
     </code>
     <valueQuantity>
       <value value="30.6"/>
@@ -610,16 +615,15 @@
     
     <effectiveDateTime value="2007-07-15"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID2004454"/>
+      <reference value="Patient/2004454"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2004454-gestage"/>
+    <method value="POST"/>
+    <url value="Observation/2004454-gestage"/>
   </request>
 </entry>
   <entry>
@@ -627,7 +631,7 @@
     
     
     <List>
-  <id value="ID45-l"/>
+  <id value="45"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -638,9 +642,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID2004454"/>
+          <reference value="Patient/2004454"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -650,13 +655,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID45-l"/>
+    <method value="POST"/>
+    <url value="List/45"/>
   </request>
 </entry>
 

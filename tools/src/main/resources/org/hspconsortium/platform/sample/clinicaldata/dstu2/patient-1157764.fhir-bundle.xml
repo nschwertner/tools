@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID1157764"/>
+    <id value="1157764"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="1157764"/>
@@ -56,8 +57,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID1157764"/>
+    <method value="POST"/>
+    <url value="Patient/1157764"/>
   </request>
 </entry>
 <entry>
@@ -65,7 +66,7 @@
     
     
   <Observation>
-  <id value="ID1842-lab"/>
+  <id value="1842-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: LDLc SerPl Calc-mCnc = 101 mg/dL</div>
@@ -76,6 +77,7 @@
         <code value="13457-7"/>
         <display value="LDLc SerPl Calc-mCnc"/>
       </coding>
+      <text value="LDLc SerPl Calc-mCnc"/>
     </code>
     <valueQuantity>
       <value value="101.0"/>
@@ -86,9 +88,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -97,27 +98,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="100.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="100.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1842-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1842-lab"/>
   </request>
 </entry>
 <entry>
@@ -125,7 +127,7 @@
     
     
   <Observation>
-  <id value="ID1843-lab"/>
+  <id value="1843-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: TSH SerPl DL&lt;=0.005 mU/L-aCnc = 3.548 mcU/mL</div>
@@ -136,6 +138,7 @@
         <code value="11580-8"/>
         <display value="TSH SerPl DL&lt;=0.005 mU/L-aCnc"/>
       </coding>
+      <text value="TSH SerPl DL&lt;=0.005 mU/L-aCnc"/>
     </code>
     <valueQuantity>
       <value value="3.548"/>
@@ -146,9 +149,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -157,27 +159,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.4"/>
-          <unit value="mcU/mL"/>
-          <code value="mcU/mL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="4.2"/>
-          <unit value="mcU/mL"/>
-          <code value="mcU/mL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.4"/>
+        <unit value="mcU/mL"/>
+        <code value="mcU/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="4.2"/>
+        <unit value="mcU/mL"/>
+        <code value="mcU/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1843-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1843-lab"/>
   </request>
 </entry>
 <entry>
@@ -185,7 +188,7 @@
     
     
   <Observation>
-  <id value="ID1844-lab"/>
+  <id value="1844-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: HDLc SerPl-mCnc = 66 mg/dL</div>
@@ -196,6 +199,7 @@
         <code value="2085-9"/>
         <display value="HDLc SerPl-mCnc"/>
       </coding>
+      <text value="HDLc SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="66.0"/>
@@ -206,9 +210,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -217,27 +220,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1844-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1844-lab"/>
   </request>
 </entry>
 <entry>
@@ -245,7 +249,7 @@
     
     
   <Observation>
-  <id value="ID1845-lab"/>
+  <id value="1845-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: Trigl SerPl-mCnc = 72 mg/dL</div>
@@ -256,6 +260,7 @@
         <code value="2571-8"/>
         <display value="Trigl SerPl-mCnc"/>
       </coding>
+      <text value="Trigl SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="72.0"/>
@@ -266,9 +271,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -277,27 +281,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="150.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="150.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1845-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1845-lab"/>
   </request>
 </entry>
 <entry>
@@ -305,7 +310,7 @@
     
     
   <Observation>
-  <id value="ID1846-lab"/>
+  <id value="1846-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: Cholest SerPl-mCnc = 181 mg/dL</div>
@@ -316,6 +321,7 @@
         <code value="2093-3"/>
         <display value="Cholest SerPl-mCnc"/>
       </coding>
+      <text value="Cholest SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="181.0"/>
@@ -326,9 +332,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -337,27 +342,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="200.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="200.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1846-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1846-lab"/>
   </request>
 </entry>
 <entry>
@@ -365,7 +371,7 @@
     
     
   <Observation>
-  <id value="ID1847-lab"/>
+  <id value="1847-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: pH Ur Strip = 5 [pH]</div>
@@ -376,6 +382,7 @@
         <code value="5803-2"/>
         <display value="pH Ur Strip"/>
       </coding>
+      <text value="pH Ur Strip"/>
     </code>
     <valueQuantity>
       <value value="5.0"/>
@@ -386,9 +393,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -397,27 +403,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="5.0"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="8.0"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="5.0"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="8.0"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1847-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1847-lab"/>
   </request>
 </entry>
 <entry>
@@ -425,7 +432,7 @@
     
     
   <Observation>
-  <id value="ID1848-lab"/>
+  <id value="1848-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Prot Ur Strip-mCnc = 0 mg/dL</div>
@@ -436,6 +443,7 @@
         <code value="5804-0"/>
         <display value="Prot Ur Strip-mCnc"/>
       </coding>
+      <text value="Prot Ur Strip-mCnc"/>
     </code>
     <valueQuantity>
       <value value="0.0"/>
@@ -446,9 +454,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -457,27 +464,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1848-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1848-lab"/>
   </request>
 </entry>
 <entry>
@@ -485,7 +493,7 @@
     
     
   <Observation>
-  <id value="ID1849-lab"/>
+  <id value="1849-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: RBC #/area UrnS HPF = 1 /[HPF]</div>
@@ -496,6 +504,7 @@
         <code value="13945-1"/>
         <display value="RBC #/area UrnS HPF"/>
       </coding>
+      <text value="RBC #/area UrnS HPF"/>
     </code>
     <valueQuantity>
       <value value="1.0"/>
@@ -506,9 +515,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -517,27 +525,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="2.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="2.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1849-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1849-lab"/>
   </request>
 </entry>
 <entry>
@@ -545,7 +554,7 @@
     
     
   <Observation>
-  <id value="ID1850-lab"/>
+  <id value="1850-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: WBC #/area UrnS HPF = 1 /[HPF]</div>
@@ -556,6 +565,7 @@
         <code value="5821-4"/>
         <display value="WBC #/area UrnS HPF"/>
       </coding>
+      <text value="WBC #/area UrnS HPF"/>
     </code>
     <valueQuantity>
       <value value="1.0"/>
@@ -566,9 +576,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -577,27 +586,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="5.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="5.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1850-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1850-lab"/>
   </request>
 </entry>
 <entry>
@@ -605,7 +615,7 @@
     
     
   <Observation>
-  <id value="ID1851-lab"/>
+  <id value="1851-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Bacteria #/area UrnS HPF = 44 /[HPF]</div>
@@ -616,6 +626,7 @@
         <code value="5769-5"/>
         <display value="Bacteria #/area UrnS HPF"/>
       </coding>
+      <text value="Bacteria #/area UrnS HPF"/>
     </code>
     <valueQuantity>
       <value value="44.0"/>
@@ -626,9 +637,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -637,27 +647,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="/[HPF]"/>
-          <code value="/[HPF]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="/[HPF]"/>
+        <code value="/[HPF]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1851-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1851-lab"/>
   </request>
 </entry>
 <entry>
@@ -665,7 +676,7 @@
     
     
   <Observation>
-  <id value="ID1852-lab"/>
+  <id value="1852-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -680,21 +691,21 @@
         <code value="12258-0"/>
         <display value="Squamous UrnS Ql HPF"/>
       </coding>
+      <text value="Squamous UrnS Ql HPF"/>
     </code>
     <valueString value="None"/>
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1852-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1852-lab"/>
   </request>
 </entry>
 <entry>
@@ -702,7 +713,7 @@
     
     
   <Observation>
-  <id value="ID1853-lab"/>
+  <id value="1853-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Sp Gr Ur Strip = 1.001 </div>
@@ -713,6 +724,7 @@
         <code value="5811-5"/>
         <display value="Sp Gr Ur Strip"/>
       </coding>
+      <text value="Sp Gr Ur Strip"/>
     </code>
     <valueQuantity>
       <value value="1.001"/>
@@ -723,9 +735,8 @@
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -734,27 +745,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="1.003"/>
-          <unit value=""/>
-          <code value=""/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="1.03"/>
-          <unit value=""/>
-          <code value=""/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="1.003"/>
+        <unit value=""/>
+        <code value=""/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="1.03"/>
+        <unit value=""/>
+        <code value=""/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1853-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1853-lab"/>
   </request>
 </entry>
 <entry>
@@ -762,7 +774,7 @@
     
     
   <Observation>
-  <id value="ID1854-lab"/>
+  <id value="1854-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Negative&#39;, &#39;Positive&#39;]'/>
     </extension>
@@ -777,21 +789,21 @@
         <code value="5802-4"/>
         <display value="Nitrite Ur Ql Strip"/>
       </coding>
+      <text value="Nitrite Ur Ql Strip"/>
     </code>
     <valueString value="Negative"/>
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1854-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1854-lab"/>
   </request>
 </entry>
 <entry>
@@ -799,7 +811,7 @@
     
     
   <Observation>
-  <id value="ID1855-lab"/>
+  <id value="1855-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-10-30: Appearance Ur = Clear </div>
@@ -810,21 +822,21 @@
         <code value="5767-9"/>
         <display value="Appearance Ur"/>
       </coding>
+      <text value="Appearance Ur"/>
     </code>
     <valueString value="Clear"/>
     
     <effectiveDateTime value="2006-10-30"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1855-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1855-lab"/>
   </request>
 </entry>
 <entry>
@@ -832,7 +844,7 @@
     
     
   <Observation>
-  <id value="ID1856-lab"/>
+  <id value="1856-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2004-07-23: CRP SerPl HS-mCnc = 2.2 mg/L</div>
@@ -843,6 +855,7 @@
         <code value="30522-7"/>
         <display value="CRP SerPl HS-mCnc"/>
       </coding>
+      <text value="CRP SerPl HS-mCnc"/>
     </code>
     <valueQuantity>
       <value value="2.2"/>
@@ -853,9 +866,8 @@
     
     <effectiveDateTime value="2004-07-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -864,27 +876,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mg/L"/>
-          <code value="mg/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="3.0"/>
-          <unit value="mg/L"/>
-          <code value="mg/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mg/L"/>
+        <code value="mg/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="3.0"/>
+        <unit value="mg/L"/>
+        <code value="mg/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1856-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1856-lab"/>
   </request>
 </entry>
 <entry>
@@ -892,7 +905,7 @@
     
     
 <MedicationOrder>
-  <id value="ID128-mp"/>
+  <id value="128"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -900,41 +913,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2003-10-23"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -944,7 +948,7 @@
     
     <text value="1 daily"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -961,14 +965,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID128-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/128"/>
   </request>
 </entry>
 <entry>
@@ -976,37 +980,23 @@
     
     
 <MedicationDispense>
-  <id value="ID928-md"/>
+  <id value="928"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1023,9 +1013,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-07-04"/>
 
@@ -1033,8 +1028,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID928-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/928"/>
   </request>
 </entry>
 <entry>
@@ -1042,37 +1037,23 @@
     
     
 <MedicationDispense>
-  <id value="ID913-md"/>
+  <id value="913"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1089,9 +1070,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-01-20"/>
 
@@ -1099,8 +1085,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID913-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/913"/>
   </request>
 </entry>
 <entry>
@@ -1108,37 +1094,23 @@
     
     
 <MedicationDispense>
-  <id value="ID936-md"/>
+  <id value="936"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1155,9 +1127,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2006-03-02"/>
 
@@ -1165,8 +1142,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID936-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/936"/>
   </request>
 </entry>
 <entry>
@@ -1174,37 +1151,23 @@
     
     
 <MedicationDispense>
-  <id value="ID925-md"/>
+  <id value="925"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1221,9 +1184,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-04-07"/>
 
@@ -1231,8 +1199,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID925-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/925"/>
   </request>
 </entry>
 <entry>
@@ -1240,37 +1208,23 @@
     
     
 <MedicationDispense>
-  <id value="ID920-md"/>
+  <id value="920"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1287,9 +1241,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-09-26"/>
 
@@ -1297,8 +1256,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID920-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/920"/>
   </request>
 </entry>
 <entry>
@@ -1306,37 +1265,23 @@
     
     
 <MedicationDispense>
-  <id value="ID924-md"/>
+  <id value="924"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1353,9 +1298,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-03-09"/>
 
@@ -1363,8 +1313,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID924-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/924"/>
   </request>
 </entry>
 <entry>
@@ -1372,37 +1322,23 @@
     
     
 <MedicationDispense>
-  <id value="ID927-md"/>
+  <id value="927"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1419,9 +1355,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-06-05"/>
 
@@ -1429,8 +1370,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID927-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/927"/>
   </request>
 </entry>
 <entry>
@@ -1438,37 +1379,23 @@
     
     
 <MedicationDispense>
-  <id value="ID930-md"/>
+  <id value="930"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1485,9 +1412,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-09-02"/>
 
@@ -1495,8 +1427,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID930-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/930"/>
   </request>
 </entry>
 <entry>
@@ -1504,37 +1436,23 @@
     
     
 <MedicationDispense>
-  <id value="ID912-md"/>
+  <id value="912"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1551,9 +1469,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-12-21"/>
 
@@ -1561,8 +1484,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID912-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/912"/>
   </request>
 </entry>
 <entry>
@@ -1570,37 +1493,23 @@
     
     
 <MedicationDispense>
-  <id value="ID917-md"/>
+  <id value="917"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1617,9 +1526,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-06-29"/>
 
@@ -1627,8 +1541,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID917-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/917"/>
   </request>
 </entry>
 <entry>
@@ -1636,37 +1550,23 @@
     
     
 <MedicationDispense>
-  <id value="ID931-md"/>
+  <id value="931"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1683,9 +1583,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-10-03"/>
 
@@ -1693,8 +1598,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID931-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/931"/>
   </request>
 </entry>
 <entry>
@@ -1702,37 +1607,23 @@
     
     
 <MedicationDispense>
-  <id value="ID921-md"/>
+  <id value="921"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1749,9 +1640,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-10-27"/>
 
@@ -1759,8 +1655,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID921-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/921"/>
   </request>
 </entry>
 <entry>
@@ -1768,37 +1664,23 @@
     
     
 <MedicationDispense>
-  <id value="ID911-md"/>
+  <id value="911"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1815,9 +1697,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-11-21"/>
 
@@ -1825,8 +1712,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID911-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/911"/>
   </request>
 </entry>
 <entry>
@@ -1834,37 +1721,23 @@
     
     
 <MedicationDispense>
-  <id value="ID934-md"/>
+  <id value="934"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1881,9 +1754,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2006-01-01"/>
 
@@ -1891,8 +1769,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID934-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/934"/>
   </request>
 </entry>
 <entry>
@@ -1900,37 +1778,23 @@
     
     
 <MedicationDispense>
-  <id value="ID915-md"/>
+  <id value="915"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1947,9 +1811,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-03-20"/>
 
@@ -1957,8 +1826,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID915-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/915"/>
   </request>
 </entry>
 <entry>
@@ -1966,37 +1835,23 @@
     
     
 <MedicationDispense>
-  <id value="ID916-md"/>
+  <id value="916"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2013,9 +1868,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-04-19"/>
 
@@ -2023,8 +1883,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID916-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/916"/>
   </request>
 </entry>
 <entry>
@@ -2032,37 +1892,23 @@
     
     
 <MedicationDispense>
-  <id value="ID926-md"/>
+  <id value="926"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2079,9 +1925,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-05-06"/>
 
@@ -2089,8 +1940,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID926-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/926"/>
   </request>
 </entry>
 <entry>
@@ -2098,37 +1949,23 @@
     
     
 <MedicationDispense>
-  <id value="ID933-md"/>
+  <id value="933"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2145,9 +1982,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-12-02"/>
 
@@ -2155,8 +1997,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID933-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/933"/>
   </request>
 </entry>
 <entry>
@@ -2164,37 +2006,23 @@
     
     
 <MedicationDispense>
-  <id value="ID923-md"/>
+  <id value="923"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2211,9 +2039,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-02-06"/>
 
@@ -2221,8 +2054,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID923-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/923"/>
   </request>
 </entry>
 <entry>
@@ -2230,37 +2063,23 @@
     
     
 <MedicationDispense>
-  <id value="ID919-md"/>
+  <id value="919"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2277,9 +2096,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-08-28"/>
 
@@ -2287,8 +2111,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID919-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/919"/>
   </request>
 </entry>
 <entry>
@@ -2296,37 +2120,23 @@
     
     
 <MedicationDispense>
-  <id value="ID918-md"/>
+  <id value="918"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2343,9 +2153,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-07-28"/>
 
@@ -2353,8 +2168,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID918-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/918"/>
   </request>
 </entry>
 <entry>
@@ -2362,37 +2177,23 @@
     
     
 <MedicationDispense>
-  <id value="ID932-md"/>
+  <id value="932"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2409,9 +2210,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-11-02"/>
 
@@ -2419,8 +2225,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID932-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/932"/>
   </request>
 </entry>
 <entry>
@@ -2428,37 +2234,23 @@
     
     
 <MedicationDispense>
-  <id value="ID922-md"/>
+  <id value="922"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2475,9 +2267,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-11-25"/>
 
@@ -2485,8 +2282,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID922-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/922"/>
   </request>
 </entry>
 <entry>
@@ -2494,37 +2291,23 @@
     
     
 <MedicationDispense>
-  <id value="ID910-md"/>
+  <id value="910"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2541,9 +2324,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-10-23"/>
 
@@ -2551,8 +2339,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID910-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/910"/>
   </request>
 </entry>
 <entry>
@@ -2560,37 +2348,23 @@
     
     
 <MedicationDispense>
-  <id value="ID914-md"/>
+  <id value="914"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2607,9 +2381,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-02-18"/>
 
@@ -2617,8 +2396,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID914-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/914"/>
   </request>
 </entry>
 <entry>
@@ -2626,37 +2405,23 @@
     
     
 <MedicationDispense>
-  <id value="ID929-md"/>
+  <id value="929"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2673,9 +2438,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-08-03"/>
 
@@ -2683,8 +2453,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID929-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/929"/>
   </request>
 </entry>
 <entry>
@@ -2692,37 +2462,23 @@
     
     
 <MedicationDispense>
-  <id value="ID935-md"/>
+  <id value="935"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="151124"/>
-	  <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID128-mp"/>
+    <reference value="MedicationOrder/128"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2739,9 +2495,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="151124"/>
+        <display value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+    </coding>
+    <text value="anastrozole 1 MG Oral Tablet [Arimidex]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2006-01-31"/>
 
@@ -2749,8 +2510,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID935-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/935"/>
   </request>
 </entry>
 <entry>
@@ -2758,7 +2519,7 @@
     
     
 <MedicationOrder>
-  <id value="ID129-mp"/>
+  <id value="129"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2766,41 +2527,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2003-11-02"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="wk"/>
+        <period value="1"/>
+        <periodUnits value="wk"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -2810,7 +2562,7 @@
     
     <text value="1 weekly"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -2827,14 +2579,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID129-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/129"/>
   </request>
 </entry>
 <entry>
@@ -2842,37 +2594,23 @@
     
     
 <MedicationDispense>
-  <id value="ID898-md"/>
+  <id value="898"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2889,9 +2627,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-02-20"/>
 
@@ -2899,8 +2642,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID898-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/898"/>
   </request>
 </entry>
 <entry>
@@ -2908,37 +2651,23 @@
     
     
 <MedicationDispense>
-  <id value="ID889-md"/>
+  <id value="889"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -2955,9 +2684,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-06-09"/>
 
@@ -2965,8 +2699,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID889-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/889"/>
   </request>
 </entry>
 <entry>
@@ -2974,37 +2708,23 @@
     
     
 <MedicationDispense>
-  <id value="ID908-md"/>
+  <id value="908"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3021,9 +2741,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-12-25"/>
 
@@ -3031,8 +2756,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID908-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/908"/>
   </request>
 </entry>
 <entry>
@@ -3040,37 +2765,23 @@
     
     
 <MedicationDispense>
-  <id value="ID890-md"/>
+  <id value="890"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3087,9 +2798,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-07-06"/>
 
@@ -3097,8 +2813,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID890-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/890"/>
   </request>
 </entry>
 <entry>
@@ -3106,37 +2822,23 @@
     
     
 <MedicationDispense>
-  <id value="ID891-md"/>
+  <id value="891"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3153,9 +2855,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-08-04"/>
 
@@ -3163,8 +2870,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID891-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/891"/>
   </request>
 </entry>
 <entry>
@@ -3172,37 +2879,23 @@
     
     
 <MedicationDispense>
-  <id value="ID902-md"/>
+  <id value="902"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3219,9 +2912,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-06-08"/>
 
@@ -3229,8 +2927,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID902-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/902"/>
   </request>
 </entry>
 <entry>
@@ -3238,37 +2936,23 @@
     
     
 <MedicationDispense>
-  <id value="ID899-md"/>
+  <id value="899"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3285,9 +2969,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-03-19"/>
 
@@ -3295,8 +2984,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID899-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/899"/>
   </request>
 </entry>
 <entry>
@@ -3304,37 +2993,23 @@
     
     
 <MedicationDispense>
-  <id value="ID884-md"/>
+  <id value="884"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3351,9 +3026,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-01-20"/>
 
@@ -3361,8 +3041,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID884-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/884"/>
   </request>
 </entry>
 <entry>
@@ -3370,37 +3050,23 @@
     
     
 <MedicationDispense>
-  <id value="ID892-md"/>
+  <id value="892"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3417,9 +3083,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-09-04"/>
 
@@ -3427,8 +3098,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID892-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/892"/>
   </request>
 </entry>
 <entry>
@@ -3436,37 +3107,23 @@
     
     
 <MedicationDispense>
-  <id value="ID905-md"/>
+  <id value="905"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3483,9 +3140,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-09-02"/>
 
@@ -3493,8 +3155,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID905-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/905"/>
   </request>
 </entry>
 <entry>
@@ -3502,37 +3164,23 @@
     
     
 <MedicationDispense>
-  <id value="ID886-md"/>
+  <id value="886"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3549,9 +3197,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-03-20"/>
 
@@ -3559,8 +3212,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID886-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/886"/>
   </request>
 </entry>
 <entry>
@@ -3568,37 +3221,23 @@
     
     
 <MedicationDispense>
-  <id value="ID904-md"/>
+  <id value="904"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3615,9 +3254,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-08-03"/>
 
@@ -3625,8 +3269,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID904-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/904"/>
   </request>
 </entry>
 <entry>
@@ -3634,37 +3278,23 @@
     
     
 <MedicationDispense>
-  <id value="ID882-md"/>
+  <id value="882"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3681,9 +3311,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-11-30"/>
 
@@ -3691,8 +3326,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID882-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/882"/>
   </request>
 </entry>
 <entry>
@@ -3700,37 +3335,23 @@
     
     
 <MedicationDispense>
-  <id value="ID885-md"/>
+  <id value="885"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3747,9 +3368,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-02-18"/>
 
@@ -3757,8 +3383,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID885-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/885"/>
   </request>
 </entry>
 <entry>
@@ -3766,37 +3392,23 @@
     
     
 <MedicationDispense>
-  <id value="ID901-md"/>
+  <id value="901"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3813,9 +3425,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-05-15"/>
 
@@ -3823,8 +3440,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID901-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/901"/>
   </request>
 </entry>
 <entry>
@@ -3832,37 +3449,23 @@
     
     
 <MedicationDispense>
-  <id value="ID896-md"/>
+  <id value="896"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3879,9 +3482,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-12-26"/>
 
@@ -3889,8 +3497,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID896-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/896"/>
   </request>
 </entry>
 <entry>
@@ -3898,37 +3506,23 @@
     
     
 <MedicationDispense>
-  <id value="ID895-md"/>
+  <id value="895"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -3945,9 +3539,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-11-25"/>
 
@@ -3955,8 +3554,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID895-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/895"/>
   </request>
 </entry>
 <entry>
@@ -3964,37 +3563,23 @@
     
     
 <MedicationDispense>
-  <id value="ID883-md"/>
+  <id value="883"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4011,9 +3596,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-12-28"/>
 
@@ -4021,8 +3611,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID883-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/883"/>
   </request>
 </entry>
 <entry>
@@ -4030,37 +3620,23 @@
     
     
 <MedicationDispense>
-  <id value="ID893-md"/>
+  <id value="893"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4077,9 +3653,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-09-28"/>
 
@@ -4087,8 +3668,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID893-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/893"/>
   </request>
 </entry>
 <entry>
@@ -4096,37 +3677,23 @@
     
     
 <MedicationDispense>
-  <id value="ID907-md"/>
+  <id value="907"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4143,9 +3710,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-11-27"/>
 
@@ -4153,8 +3725,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID907-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/907"/>
   </request>
 </entry>
 <entry>
@@ -4162,37 +3734,23 @@
     
     
 <MedicationDispense>
-  <id value="ID888-md"/>
+  <id value="888"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4209,9 +3767,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-05-10"/>
 
@@ -4219,8 +3782,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID888-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/888"/>
   </request>
 </entry>
 <entry>
@@ -4228,37 +3791,23 @@
     
     
 <MedicationDispense>
-  <id value="ID887-md"/>
+  <id value="887"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4275,9 +3824,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-04-19"/>
 
@@ -4285,8 +3839,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID887-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/887"/>
   </request>
 </entry>
 <entry>
@@ -4294,37 +3848,23 @@
     
     
 <MedicationDispense>
-  <id value="ID897-md"/>
+  <id value="897"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4341,9 +3881,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-01-23"/>
 
@@ -4351,8 +3896,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID897-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/897"/>
   </request>
 </entry>
 <entry>
@@ -4360,37 +3905,23 @@
     
     
 <MedicationDispense>
-  <id value="ID906-md"/>
+  <id value="906"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4407,9 +3938,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-10-30"/>
 
@@ -4417,8 +3953,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID906-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/906"/>
   </request>
 </entry>
 <entry>
@@ -4426,37 +3962,23 @@
     
     
 <MedicationDispense>
-  <id value="ID903-md"/>
+  <id value="903"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4473,9 +3995,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-07-04"/>
 
@@ -4483,8 +4010,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID903-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/903"/>
   </request>
 </entry>
 <entry>
@@ -4492,37 +4019,23 @@
     
     
 <MedicationDispense>
-  <id value="ID909-md"/>
+  <id value="909"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4539,9 +4052,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2006-01-20"/>
 
@@ -4549,8 +4067,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID909-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/909"/>
   </request>
 </entry>
 <entry>
@@ -4558,37 +4076,23 @@
     
     
 <MedicationDispense>
-  <id value="ID894-md"/>
+  <id value="894"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4605,9 +4109,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2004-10-27"/>
 
@@ -4615,8 +4124,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID894-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/894"/>
   </request>
 </entry>
 <entry>
@@ -4624,37 +4133,23 @@
     
     
 <MedicationDispense>
-  <id value="ID881-md"/>
+  <id value="881"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4671,9 +4166,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2003-11-02"/>
 
@@ -4681,8 +4181,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID881-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/881"/>
   </request>
 </entry>
 <entry>
@@ -4690,37 +4190,23 @@
     
     
 <MedicationDispense>
-  <id value="ID900-md"/>
+  <id value="900"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="877300"/>
-	  <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID129-mp"/>
+    <reference value="MedicationOrder/129"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4737,9 +4223,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="877300"/>
+        <display value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+    </coding>
+    <text value="{4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-04-16"/>
 
@@ -4747,8 +4238,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID900-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/900"/>
   </request>
 </entry>
 <entry>
@@ -4756,7 +4247,7 @@
     
     
 <MedicationOrder>
-  <id value="ID130-mp"/>
+  <id value="130"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4764,41 +4255,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="311992"/>
-	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="311992"/>
+        <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+    </coding>
+    <text value="Nitrofurantoin 100 MG Oral Capsule"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2006-10-31"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -4808,7 +4290,7 @@
     
     <text value="1 bid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4825,14 +4307,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID130-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/130"/>
   </request>
 </entry>
 <entry>
@@ -4840,37 +4322,23 @@
     
     
 <MedicationDispense>
-  <id value="ID880-md"/>
+  <id value="880"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 60 tablets = 30 day supply of Nitrofurantoin 100 MG Oral Capsule
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Nitrofurantoin 100 MG Oral Capsule"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="311992"/>
-	  <display value="Nitrofurantoin 100 MG Oral Capsule"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID130-mp"/>
+    <reference value="MedicationOrder/130"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4887,9 +4355,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="311992"/>
+        <display value="Nitrofurantoin 100 MG Oral Capsule"/>
+    </coding>
+    <text value="Nitrofurantoin 100 MG Oral Capsule"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2006-10-31"/>
 
@@ -4897,8 +4370,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID880-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/880"/>
   </request>
 </entry>
 <entry>
@@ -4906,7 +4379,7 @@
     
     
 <MedicationOrder>
-  <id value="ID131-mp"/>
+  <id value="131"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4914,41 +4387,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="285128"/>
-	  <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="285128"/>
+        <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+    </coding>
+    <text value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2009-08-22"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="[drp]"/>
@@ -4958,7 +4422,7 @@
     
     <text value="1 gtt daily in OD"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4975,14 +4439,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID131-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/131"/>
   </request>
 </entry>
 <entry>
@@ -4990,37 +4454,23 @@
     
     
 <MedicationDispense>
-  <id value="ID937-md"/>
+  <id value="937"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 2 tablets = 20 day supply of bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="285128"/>
-	  <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1157764"/>
+    <reference value="Patient/1157764"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID131-mp"/>
+    <reference value="MedicationOrder/131"/>
   </authorizingPrescription>
 
   <quantity>
@@ -5037,9 +4487,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="285128"/>
+        <display value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+    </coding>
+    <text value="bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-08-22"/>
 
@@ -5047,8 +4502,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID937-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/937"/>
   </request>
 </entry>
   <entry>
@@ -5056,13 +4511,13 @@
     
     
   <Condition>
-  <id value="ID379-c"/>
+  <id value="379"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Primary malignant neoplasm of female breast</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5079,8 +4534,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID379-c"/>
+    <method value="POST"/>
+    <url value="Condition/379"/>
   </request>
 </entry>
   <entry>
@@ -5088,13 +4543,13 @@
     
     
   <Condition>
-  <id value="ID380"/>
+  <id value="380"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Adjustment disorder</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5111,8 +4566,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID380"/>
+    <method value="POST"/>
+    <url value="Condition/380"/>
   </request>
 </entry>
   <entry>
@@ -5120,13 +4575,13 @@
     
     
   <Condition>
-  <id value="ID381"/>
+  <id value="381"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Crohn&#39;s disease of large bowel</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5143,8 +4598,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID381"/>
+    <method value="POST"/>
+    <url value="Condition/381"/>
   </request>
 </entry>
   <entry>
@@ -5152,13 +4607,13 @@
     
     
   <Condition>
-  <id value="ID382"/>
+  <id value="382"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Recurrent major depressive episodes, moderate</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5175,8 +4630,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID382"/>
+    <method value="POST"/>
+    <url value="Condition/382"/>
   </request>
 </entry>
   <entry>
@@ -5184,13 +4639,13 @@
     
     
   <Condition>
-  <id value="ID383"/>
+  <id value="383"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5207,8 +4662,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID383"/>
+    <method value="POST"/>
+    <url value="Condition/383"/>
   </request>
 </entry>
   <entry>
@@ -5216,13 +4671,13 @@
     
     
   <Condition>
-  <id value="ID384"/>
+  <id value="384"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Hematuria syndrome</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5239,8 +4694,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID384"/>
+    <method value="POST"/>
+    <url value="Condition/384"/>
   </request>
 </entry>
   <entry>
@@ -5248,13 +4703,13 @@
     
     
   <Condition>
-  <id value="ID385"/>
+  <id value="385"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Primary malignant neoplasm of central portion of female breast</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5271,8 +4726,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID385"/>
+    <method value="POST"/>
+    <url value="Condition/385"/>
   </request>
 </entry>
   <entry>
@@ -5280,13 +4735,13 @@
     
     
   <Condition>
-  <id value="ID386"/>
+  <id value="386"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Primary open angle glaucoma</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5303,8 +4758,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID386"/>
+    <method value="POST"/>
+    <url value="Condition/386"/>
   </request>
 </entry>
   <entry>
@@ -5312,13 +4767,13 @@
     
     
   <Condition>
-  <id value="ID387"/>
+  <id value="387"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Low tension glaucoma</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </patient>
     <code> 
       <coding>
@@ -5335,8 +4790,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID387"/>
+    <method value="POST"/>
+    <url value="Condition/387"/>
   </request>
 </entry>
 <entry>
@@ -5344,7 +4799,7 @@
     
     
   <Observation>
-  <id value="ID46-smokingstatus"/>
+  <id value="46-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current every day smoker</div>
@@ -5355,6 +4810,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -5362,18 +4818,18 @@
         <code value="449868002"/>
         <display value="Current every day smoker"/>
       </coding>
+      <text value="Current every day smoker"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID46-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/46-smokingstatus"/>
   </request>
 </entry>
 <entry>
@@ -5381,7 +4837,7 @@
     
     
   <Observation>
-  <id value="ID1157764-gestage"/>
+  <id value="1157764-gestage"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">1949-11-04: Gestational age at birth = 38.3 weeks</div>
@@ -5392,6 +4848,7 @@
         <code value="18185-9"/>
         <display value="Gestational age at birth"/>
       </coding>
+      <text value="Gestational age at birth"/>
     </code>
     <valueQuantity>
       <value value="38.3"/>
@@ -5402,16 +4859,15 @@
     
     <effectiveDateTime value="1949-11-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1157764"/>
+      <reference value="Patient/1157764"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1157764-gestage"/>
+    <method value="POST"/>
+    <url value="Observation/1157764-gestage"/>
   </request>
 </entry>
   <entry>
@@ -5419,7 +4875,7 @@
     
     
     <List>
-  <id value="ID24-l"/>
+  <id value="24"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -5430,9 +4886,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID1157764"/>
+          <reference value="Patient/1157764"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -5442,13 +4899,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID24-l"/>
+    <method value="POST"/>
+    <url value="List/24"/>
   </request>
 </entry>
 

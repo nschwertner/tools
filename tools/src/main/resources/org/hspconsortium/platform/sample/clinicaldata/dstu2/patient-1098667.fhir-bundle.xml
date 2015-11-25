@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID1098667"/>
+    <id value="1098667"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="1098667"/>
@@ -51,8 +52,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID1098667"/>
+    <method value="POST"/>
+    <url value="Patient/1098667"/>
   </request>
 </entry>
 <entry>
@@ -60,7 +61,7 @@
     
     
 <MedicationOrder>
-  <id value="ID109-mp"/>
+  <id value="109"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -68,41 +69,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="150840"/>
-	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="150840"/>
+        <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+    </coding>
+    <text value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2005-01-13"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -112,7 +104,7 @@
     
     <text value="1 daily"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -129,14 +121,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID109-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/109"/>
   </request>
 </entry>
 <entry>
@@ -144,37 +136,23 @@
     
     
 <MedicationDispense>
-  <id value="ID570-md"/>
+  <id value="570"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 30 day supply of Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="150840"/>
-	  <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID109-mp"/>
+    <reference value="MedicationOrder/109"/>
   </authorizingPrescription>
 
   <quantity>
@@ -191,9 +169,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="150840"/>
+        <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+    </coding>
+    <text value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-01-13"/>
 
@@ -201,8 +184,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID570-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/570"/>
   </request>
 </entry>
 <entry>
@@ -210,7 +193,7 @@
     
     
 <MedicationOrder>
-  <id value="ID110-mp"/>
+  <id value="110"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -218,41 +201,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309462"/>
-	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309462"/>
+        <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+    </coding>
+    <text value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2005-07-30"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="4"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -264,7 +238,7 @@
     
     <text value="1 q6h prn pain"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -281,14 +255,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID110-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/110"/>
   </request>
 </entry>
 <entry>
@@ -296,37 +270,23 @@
     
     
 <MedicationDispense>
-  <id value="ID565-md"/>
+  <id value="565"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 24 tablets = 6 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309462"/>
-	  <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID110-mp"/>
+    <reference value="MedicationOrder/110"/>
   </authorizingPrescription>
 
   <quantity>
@@ -343,9 +303,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309462"/>
+        <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+    </coding>
+    <text value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2005-07-30"/>
 
@@ -353,8 +318,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID565-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/565"/>
   </request>
 </entry>
 <entry>
@@ -362,7 +327,7 @@
     
     
 <MedicationOrder>
-  <id value="ID111-mp"/>
+  <id value="111"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -370,41 +335,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="fexofenadine 180 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310333"/>
-	  <display value="fexofenadine 180 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2008-09-10"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -414,7 +370,7 @@
     
     <text value="1 daily"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -431,14 +387,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID111-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/111"/>
   </request>
 </entry>
 <entry>
@@ -446,37 +402,23 @@
     
     
 <MedicationDispense>
-  <id value="ID567-md"/>
+  <id value="567"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="fexofenadine 180 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310333"/>
-	  <display value="fexofenadine 180 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID111-mp"/>
+    <reference value="MedicationOrder/111"/>
   </authorizingPrescription>
 
   <quantity>
@@ -493,9 +435,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-01-07"/>
 
@@ -503,8 +450,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID567-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/567"/>
   </request>
 </entry>
 <entry>
@@ -512,37 +459,23 @@
     
     
 <MedicationDispense>
-  <id value="ID566-md"/>
+  <id value="566"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="fexofenadine 180 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310333"/>
-	  <display value="fexofenadine 180 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID111-mp"/>
+    <reference value="MedicationOrder/111"/>
   </authorizingPrescription>
 
   <quantity>
@@ -559,9 +492,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-09-10"/>
 
@@ -569,8 +507,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID566-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/566"/>
   </request>
 </entry>
 <entry>
@@ -578,37 +516,23 @@
     
     
 <MedicationDispense>
-  <id value="ID569-md"/>
+  <id value="569"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="fexofenadine 180 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310333"/>
-	  <display value="fexofenadine 180 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID111-mp"/>
+    <reference value="MedicationOrder/111"/>
   </authorizingPrescription>
 
   <quantity>
@@ -625,9 +549,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-08-04"/>
 
@@ -635,8 +564,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID569-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/569"/>
   </request>
 </entry>
 <entry>
@@ -644,37 +573,23 @@
     
     
 <MedicationDispense>
-  <id value="ID568-md"/>
+  <id value="568"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="fexofenadine 180 MG Oral Tablet"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310333"/>
-	  <display value="fexofenadine 180 MG Oral Tablet"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID111-mp"/>
+    <reference value="MedicationOrder/111"/>
   </authorizingPrescription>
 
   <quantity>
@@ -691,9 +606,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-05-02"/>
 
@@ -701,8 +621,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID568-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/568"/>
   </request>
 </entry>
 <entry>
@@ -710,7 +630,7 @@
     
     
 <MedicationOrder>
-  <id value="ID112-mp"/>
+  <id value="112"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -718,44 +638,35 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="351396"/>
-	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="351396"/>
+        <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2008-09-12"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <text value="Apply bid x7 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -772,14 +683,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID112-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/112"/>
   </request>
 </entry>
 <entry>
@@ -787,37 +698,23 @@
     
     
 <MedicationDispense>
-  <id value="ID572-md"/>
+  <id value="572"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 10 day supply of Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="351396"/>
-	  <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID112-mp"/>
+    <reference value="MedicationOrder/112"/>
   </authorizingPrescription>
 
   <quantity>
@@ -834,9 +731,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="351396"/>
+        <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-09-12"/>
 
@@ -844,8 +746,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID572-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/572"/>
   </request>
 </entry>
 <entry>
@@ -853,7 +755,7 @@
     
     
 <MedicationOrder>
-  <id value="ID113-mp"/>
+  <id value="113"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -861,44 +763,35 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310893"/>
-	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310893"/>
+        <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2009-04-23"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <text value="Apply bid x7 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -915,14 +808,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID113-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/113"/>
   </request>
 </entry>
 <entry>
@@ -930,37 +823,23 @@
     
     
 <MedicationDispense>
-  <id value="ID571-md"/>
+  <id value="571"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 28 tablets = 28 day supply of Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="310893"/>
-	  <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1098667"/>
+    <reference value="Patient/1098667"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID113-mp"/>
+    <reference value="MedicationOrder/113"/>
   </authorizingPrescription>
 
   <quantity>
@@ -977,9 +856,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310893"/>
+        <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-04-23"/>
 
@@ -987,8 +871,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID571-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/571"/>
   </request>
 </entry>
   <entry>
@@ -996,13 +880,13 @@
     
     
   <Condition>
-  <id value="ID272-c"/>
+  <id value="272"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute maxillary sinusitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1019,8 +903,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID272-c"/>
+    <method value="POST"/>
+    <url value="Condition/272"/>
   </request>
 </entry>
   <entry>
@@ -1028,13 +912,13 @@
     
     
   <Condition>
-  <id value="ID273-c"/>
+  <id value="273"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1051,8 +935,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID273-c"/>
+    <method value="POST"/>
+    <url value="Condition/273"/>
   </request>
 </entry>
   <entry>
@@ -1060,13 +944,13 @@
     
     
   <Condition>
-  <id value="ID274-c"/>
+  <id value="274"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1083,8 +967,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID274-c"/>
+    <method value="POST"/>
+    <url value="Condition/274"/>
   </request>
 </entry>
   <entry>
@@ -1092,13 +976,13 @@
     
     
   <Condition>
-  <id value="ID275-c"/>
+  <id value="275"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Migraine without aura</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1115,8 +999,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID275-c"/>
+    <method value="POST"/>
+    <url value="Condition/275"/>
   </request>
 </entry>
   <entry>
@@ -1124,13 +1008,13 @@
     
     
   <Condition>
-  <id value="ID276-c"/>
+  <id value="276"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1147,8 +1031,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID276-c"/>
+    <method value="POST"/>
+    <url value="Condition/276"/>
   </request>
 </entry>
   <entry>
@@ -1156,13 +1040,13 @@
     
     
   <Condition>
-  <id value="ID277-c"/>
+  <id value="277"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Blood chemistry abnormal</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1179,8 +1063,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID277-c"/>
+    <method value="POST"/>
+    <url value="Condition/277"/>
   </request>
 </entry>
   <entry>
@@ -1188,13 +1072,13 @@
     
     
   <Condition>
-  <id value="ID278-c"/>
+  <id value="278"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Hemangioma</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1211,8 +1095,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID278-c"/>
+    <method value="POST"/>
+    <url value="Condition/278"/>
   </request>
 </entry>
   <entry>
@@ -1220,13 +1104,13 @@
     
     
   <Condition>
-  <id value="ID279-c"/>
+  <id value="279"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Pure hypercholesterolemia</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1243,8 +1127,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID279-c"/>
+    <method value="POST"/>
+    <url value="Condition/279"/>
   </request>
 </entry>
   <entry>
@@ -1252,13 +1136,13 @@
     
     
   <Condition>
-  <id value="ID280-c"/>
+  <id value="280"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Family history of malignant neoplasm of gastrointestinal tract</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1275,8 +1159,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID280-c"/>
+    <method value="POST"/>
+    <url value="Condition/280"/>
   </request>
 </entry>
   <entry>
@@ -1284,13 +1168,13 @@
     
     
   <Condition>
-  <id value="ID281-c"/>
+  <id value="281"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">History of polyp of colon</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1307,8 +1191,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID281-c"/>
+    <method value="POST"/>
+    <url value="Condition/281"/>
   </request>
 </entry>
   <entry>
@@ -1316,13 +1200,13 @@
     
     
   <Condition>
-  <id value="ID282-c"/>
+  <id value="282"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of face</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1339,8 +1223,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID282-c"/>
+    <method value="POST"/>
+    <url value="Condition/282"/>
   </request>
 </entry>
   <entry>
@@ -1348,13 +1232,13 @@
     
     
   <Condition>
-  <id value="ID283-c"/>
+  <id value="283"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of trunk</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </patient>
     <code> 
       <coding>
@@ -1371,8 +1255,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID283-c"/>
+    <method value="POST"/>
+    <url value="Condition/283"/>
   </request>
 </entry>
 <entry>
@@ -1380,7 +1264,7 @@
     
     
   <Observation>
-  <id value="ID18-smokingstatus"/>
+  <id value="18-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Unknown if ever smoked</div>
@@ -1391,6 +1275,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -1398,18 +1283,18 @@
         <code value="266927001"/>
         <display value="Unknown if ever smoked"/>
       </coding>
+      <text value="Unknown if ever smoked"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID18-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/18-smokingstatus"/>
   </request>
 </entry>
 <entry>
@@ -1417,7 +1302,7 @@
     
     
   <Observation>
-  <id value="ID1098667-gestage"/>
+  <id value="1098667-gestage"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">1953-10-27: Gestational age at birth = 43.4 weeks</div>
@@ -1428,6 +1313,7 @@
         <code value="18185-9"/>
         <display value="Gestational age at birth"/>
       </coding>
+      <text value="Gestational age at birth"/>
     </code>
     <valueQuantity>
       <value value="43.4"/>
@@ -1438,16 +1324,15 @@
     
     <effectiveDateTime value="1953-10-27"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1098667"/>
+      <reference value="Patient/1098667"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1098667-gestage"/>
+    <method value="POST"/>
+    <url value="Observation/1098667-gestage"/>
   </request>
 </entry>
   <entry>
@@ -1455,7 +1340,7 @@
     
     
     <List>
-  <id value="ID21-l"/>
+  <id value="21"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -1466,9 +1351,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID1098667"/>
+          <reference value="Patient/1098667"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -1478,13 +1364,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID21-l"/>
+    <method value="POST"/>
+    <url value="List/21"/>
   </request>
 </entry>
 

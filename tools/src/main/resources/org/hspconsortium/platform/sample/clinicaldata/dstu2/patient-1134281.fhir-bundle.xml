@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID1134281"/>
+    <id value="1134281"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="1134281"/>
@@ -56,8 +57,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID1134281"/>
+    <method value="POST"/>
+    <url value="Patient/1134281"/>
   </request>
 </entry>
 <entry>
@@ -65,7 +66,7 @@
     
     
   <Observation>
-  <id value="ID1681-lab"/>
+  <id value="1681-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Base excess Bld-sCnc = -6 mmol/L</div>
@@ -76,6 +77,7 @@
         <code value="11555-0"/>
         <display value="Base excess Bld-sCnc"/>
       </coding>
+      <text value="Base excess Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="-6.0"/>
@@ -86,9 +88,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -97,27 +98,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1681-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1681-lab"/>
   </request>
 </entry>
 <entry>
@@ -125,7 +127,7 @@
     
     
   <Observation>
-  <id value="ID1682-lab"/>
+  <id value="1682-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: CO2 Bld-sCnc = 24 mmol/L</div>
@@ -136,6 +138,7 @@
         <code value="20565-8"/>
         <display value="CO2 Bld-sCnc"/>
       </coding>
+      <text value="CO2 Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="24.0"/>
@@ -146,9 +149,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -157,27 +159,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="22.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="29.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1682-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1682-lab"/>
   </request>
 </entry>
 <entry>
@@ -185,7 +188,7 @@
     
     
   <Observation>
-  <id value="ID1683-lab"/>
+  <id value="1683-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: SaO2% from pO2 Bld = 92 %</div>
@@ -196,6 +199,7 @@
         <code value="2713-6"/>
         <display value="SaO2% from pO2 Bld"/>
       </coding>
+      <text value="SaO2% from pO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="92.0"/>
@@ -206,9 +210,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -217,27 +220,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="95.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="98.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="95.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="98.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1683-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1683-lab"/>
   </request>
 </entry>
 <entry>
@@ -245,7 +249,7 @@
     
     
   <Observation>
-  <id value="ID1684-lab"/>
+  <id value="1684-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: SaO2% from pO2 Bld = 89 %</div>
@@ -256,6 +260,7 @@
         <code value="2713-6"/>
         <display value="SaO2% from pO2 Bld"/>
       </coding>
+      <text value="SaO2% from pO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="89.0"/>
@@ -266,9 +271,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -277,27 +281,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="95.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="98.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="95.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="98.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1684-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1684-lab"/>
   </request>
 </entry>
 <entry>
@@ -305,7 +310,7 @@
     
     
   <Observation>
-  <id value="ID1685-lab"/>
+  <id value="1685-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Glucose Bld-mCnc = 71 mg/dL</div>
@@ -316,6 +321,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="71.0"/>
@@ -326,9 +332,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -337,27 +342,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1685-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1685-lab"/>
   </request>
 </entry>
 <entry>
@@ -365,7 +371,7 @@
     
     
   <Observation>
-  <id value="ID1686-lab"/>
+  <id value="1686-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Glucose Bld-mCnc = 109 mg/dL</div>
@@ -376,6 +382,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="109.0"/>
@@ -386,9 +393,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -397,27 +403,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1686-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1686-lab"/>
   </request>
 </entry>
 <entry>
@@ -425,7 +432,7 @@
     
     
   <Observation>
-  <id value="ID1687-lab"/>
+  <id value="1687-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pH Bld = 7.36 [pH]</div>
@@ -436,6 +443,7 @@
         <code value="11558-4"/>
         <display value="pH Bld"/>
       </coding>
+      <text value="pH Bld"/>
     </code>
     <valueQuantity>
       <value value="7.36"/>
@@ -446,9 +454,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -457,27 +464,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="7.35"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.45"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="7.35"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.45"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1687-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1687-lab"/>
   </request>
 </entry>
 <entry>
@@ -485,7 +493,7 @@
     
     
   <Observation>
-  <id value="ID1688-lab"/>
+  <id value="1688-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pH Bld = 7.22 [pH]</div>
@@ -496,6 +504,7 @@
         <code value="11558-4"/>
         <display value="pH Bld"/>
       </coding>
+      <text value="pH Bld"/>
     </code>
     <valueQuantity>
       <value value="7.22"/>
@@ -506,9 +515,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -517,27 +525,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="7.35"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.45"/>
-          <unit value="[pH]"/>
-          <code value="[pH]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="7.35"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.45"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1688-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1688-lab"/>
   </request>
 </entry>
 <entry>
@@ -545,7 +554,7 @@
     
     
   <Observation>
-  <id value="ID1689-lab"/>
+  <id value="1689-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pCO2 Bld = 56 mm[Hg]</div>
@@ -556,6 +565,7 @@
         <code value="11557-6"/>
         <display value="pCO2 Bld"/>
       </coding>
+      <text value="pCO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="56.0"/>
@@ -566,9 +576,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -577,27 +586,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="35.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="45.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="35.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="45.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1689-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1689-lab"/>
   </request>
 </entry>
 <entry>
@@ -605,7 +615,7 @@
     
     
   <Observation>
-  <id value="ID1690-lab"/>
+  <id value="1690-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pCO2 Bld = 40 mm[Hg]</div>
@@ -616,6 +626,7 @@
         <code value="11557-6"/>
         <display value="pCO2 Bld"/>
       </coding>
+      <text value="pCO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="40.0"/>
@@ -626,9 +637,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -637,27 +647,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="35.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="45.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="35.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="45.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1690-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1690-lab"/>
   </request>
 </entry>
 <entry>
@@ -665,7 +676,7 @@
     
     
   <Observation>
-  <id value="ID1691-lab"/>
+  <id value="1691-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pO2 Bld = 79 mm[Hg]</div>
@@ -676,6 +687,7 @@
         <code value="11556-8"/>
         <display value="pO2 Bld"/>
       </coding>
+      <text value="pO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="79.0"/>
@@ -686,9 +698,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -697,27 +708,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="80.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="110.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="80.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="110.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1691-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1691-lab"/>
   </request>
 </entry>
 <entry>
@@ -725,7 +737,7 @@
     
     
   <Observation>
-  <id value="ID1692-lab"/>
+  <id value="1692-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pO2 Bld = 60 mm[Hg]</div>
@@ -736,6 +748,7 @@
         <code value="11556-8"/>
         <display value="pO2 Bld"/>
       </coding>
+      <text value="pO2 Bld"/>
     </code>
     <valueQuantity>
       <value value="60.0"/>
@@ -746,9 +759,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -757,27 +769,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="80.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="110.0"/>
-          <unit value="mm[Hg]"/>
-          <code value="mm[Hg]"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="80.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="110.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1692-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1692-lab"/>
   </request>
 </entry>
 <entry>
@@ -785,7 +798,7 @@
     
     
   <Observation>
-  <id value="ID1693-lab"/>
+  <id value="1693-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: HCO3 Bld-sCnc = 23.1 mmol/L</div>
@@ -796,6 +809,7 @@
         <code value="1959-6"/>
         <display value="HCO3 Bld-sCnc"/>
       </coding>
+      <text value="HCO3 Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="23.1"/>
@@ -806,9 +820,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -817,27 +830,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="22.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="29.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1693-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1693-lab"/>
   </request>
 </entry>
 <entry>
@@ -845,7 +859,7 @@
     
     
   <Observation>
-  <id value="ID1694-lab"/>
+  <id value="1694-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: HCO3 Bld-sCnc = 22.8 mmol/L</div>
@@ -856,6 +870,7 @@
         <code value="1959-6"/>
         <display value="HCO3 Bld-sCnc"/>
       </coding>
+      <text value="HCO3 Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="22.8"/>
@@ -866,9 +881,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -877,27 +891,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="22.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="29.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1694-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1694-lab"/>
   </request>
 </entry>
 <entry>
@@ -905,7 +920,7 @@
     
     
   <Observation>
-  <id value="ID1695-lab"/>
+  <id value="1695-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: CO2 Bld-sCnc = 25 mmol/L</div>
@@ -916,6 +931,7 @@
         <code value="20565-8"/>
         <display value="CO2 Bld-sCnc"/>
       </coding>
+      <text value="CO2 Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="25.0"/>
@@ -926,9 +942,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -937,27 +952,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="22.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="29.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1695-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1695-lab"/>
   </request>
 </entry>
 <entry>
@@ -965,7 +981,7 @@
     
     
   <Observation>
-  <id value="ID1696-lab"/>
+  <id value="1696-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Base excess Bld-sCnc = -3 mmol/L</div>
@@ -976,6 +992,7 @@
         <code value="11555-0"/>
         <display value="Base excess Bld-sCnc"/>
       </coding>
+      <text value="Base excess Bld-sCnc"/>
     </code>
     <valueQuantity>
       <value value="-3.0"/>
@@ -986,9 +1003,8 @@
     
     <effectiveDateTime value="2005-07-04"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -997,27 +1013,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1696-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1696-lab"/>
   </request>
 </entry>
 <entry>
@@ -1025,7 +1042,7 @@
     
     
   <Observation>
-  <id value="ID1697-lab"/>
+  <id value="1697-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -1040,21 +1057,21 @@
         <code value="741-9"/>
         <display value="Microcytes Bld Ql Smear"/>
       </coding>
+      <text value="Microcytes Bld Ql Smear"/>
     </code>
     <valueString value="Few"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1697-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1697-lab"/>
   </request>
 </entry>
 <entry>
@@ -1062,7 +1079,7 @@
     
     
   <Observation>
-  <id value="ID1698-lab"/>
+  <id value="1698-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -1077,21 +1094,21 @@
         <code value="738-5"/>
         <display value="Macrocytes Bld Ql Smear"/>
       </coding>
+      <text value="Macrocytes Bld Ql Smear"/>
     </code>
     <valueString value="Moderate"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1698-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1698-lab"/>
   </request>
 </entry>
 <entry>
@@ -1099,7 +1116,7 @@
     
     
   <Observation>
-  <id value="ID1699-lab"/>
+  <id value="1699-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: TB Wheal 3D p 5 TU Diam = 1.4 mm</div>
@@ -1110,6 +1127,7 @@
         <code value="1648-5"/>
         <display value="TB Wheal 3D p 5 TU Diam"/>
       </coding>
+      <text value="TB Wheal 3D p 5 TU Diam"/>
     </code>
     <valueQuantity>
       <value value="1.4"/>
@@ -1120,9 +1138,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1131,27 +1148,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.1"/>
-          <unit value="mm"/>
-          <code value="mm"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="4.4"/>
-          <unit value="mm"/>
-          <code value="mm"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.1"/>
+        <unit value="mm"/>
+        <code value="mm"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="4.4"/>
+        <unit value="mm"/>
+        <code value="mm"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1699-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1699-lab"/>
   </request>
 </entry>
 <entry>
@@ -1159,7 +1177,7 @@
     
     
   <Observation>
-  <id value="ID1700-lab"/>
+  <id value="1700-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Platelet # Bld = 248 10*3/uL</div>
@@ -1170,6 +1188,7 @@
         <code value="26515-7"/>
         <display value="Platelet # Bld"/>
       </coding>
+      <text value="Platelet # Bld"/>
     </code>
     <valueQuantity>
       <value value="248.0"/>
@@ -1180,9 +1199,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1191,27 +1209,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="150.0"/>
-          <unit value="10*3/uL"/>
-          <code value="10*3/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="450.0"/>
-          <unit value="10*3/uL"/>
-          <code value="10*3/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="150.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="450.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1700-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1700-lab"/>
   </request>
 </entry>
 <entry>
@@ -1219,7 +1238,7 @@
     
     
   <Observation>
-  <id value="ID1701-lab"/>
+  <id value="1701-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCV RBC = 107 fL</div>
@@ -1230,6 +1249,7 @@
         <code value="30428-7"/>
         <display value="MCV RBC"/>
       </coding>
+      <text value="MCV RBC"/>
     </code>
     <valueQuantity>
       <value value="107.0"/>
@@ -1240,9 +1260,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1251,27 +1270,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="95.0"/>
-          <unit value="fL"/>
-          <code value="fL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="125.0"/>
-          <unit value="fL"/>
-          <code value="fL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="95.0"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="125.0"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1701-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1701-lab"/>
   </request>
 </entry>
 <entry>
@@ -1279,7 +1299,7 @@
     
     
   <Observation>
-  <id value="ID1702-lab"/>
+  <id value="1702-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCH RBC Qn Auto = 37.2 pg</div>
@@ -1290,6 +1310,7 @@
         <code value="785-6"/>
         <display value="MCH RBC Qn Auto"/>
       </coding>
+      <text value="MCH RBC Qn Auto"/>
     </code>
     <valueQuantity>
       <value value="37.2"/>
@@ -1300,9 +1321,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1311,27 +1331,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="30.0"/>
-          <unit value="pg"/>
-          <code value="pg"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="42.0"/>
-          <unit value="pg"/>
-          <code value="pg"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="30.0"/>
+        <unit value="pg"/>
+        <code value="pg"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="42.0"/>
+        <unit value="pg"/>
+        <code value="pg"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1702-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1702-lab"/>
   </request>
 </entry>
 <entry>
@@ -1339,7 +1360,7 @@
     
     
   <Observation>
-  <id value="ID1703-lab"/>
+  <id value="1703-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCHC RBC Auto-mCnc = 34.7 g/dL</div>
@@ -1350,6 +1371,7 @@
         <code value="786-4"/>
         <display value="MCHC RBC Auto-mCnc"/>
       </coding>
+      <text value="MCHC RBC Auto-mCnc"/>
     </code>
     <valueQuantity>
       <value value="34.7"/>
@@ -1360,9 +1382,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1371,27 +1392,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="30.0"/>
-          <unit value="g/dL"/>
-          <code value="g/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="34.0"/>
-          <unit value="g/dL"/>
-          <code value="g/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="30.0"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="34.0"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1703-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1703-lab"/>
   </request>
 </entry>
 <entry>
@@ -1399,7 +1421,7 @@
     
     
   <Observation>
-  <id value="ID1704-lab"/>
+  <id value="1704-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Low&#39;, &#39;Adequate&#39;, &#39;High&#39;]'/>
     </extension>
@@ -1414,21 +1436,21 @@
         <code value="9317-9"/>
         <display value="Platelet Bld Ql Smear"/>
       </coding>
+      <text value="Platelet Bld Ql Smear"/>
     </code>
     <valueString value="Adequate"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1704-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1704-lab"/>
   </request>
 </entry>
 <entry>
@@ -1436,7 +1458,7 @@
     
     
   <Observation>
-  <id value="ID1705-lab"/>
+  <id value="1705-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Calcium SerPl-mCnc = 7.7 mg/dL</div>
@@ -1447,6 +1469,7 @@
         <code value="17861-6"/>
         <display value="Calcium SerPl-mCnc"/>
       </coding>
+      <text value="Calcium SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="7.7"/>
@@ -1457,9 +1480,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1468,27 +1490,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="8.5"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="10.5"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="8.5"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="10.5"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1705-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1705-lab"/>
   </request>
 </entry>
 <entry>
@@ -1496,7 +1519,7 @@
     
     
   <Observation>
-  <id value="ID1706-lab"/>
+  <id value="1706-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Sodium SerPl-sCnc = 137 mmol/L</div>
@@ -1507,6 +1530,7 @@
         <code value="2951-2"/>
         <display value="Sodium SerPl-sCnc"/>
       </coding>
+      <text value="Sodium SerPl-sCnc"/>
     </code>
     <valueQuantity>
       <value value="137.0"/>
@@ -1517,9 +1541,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1528,27 +1551,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="135.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="145.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="135.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="145.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1706-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1706-lab"/>
   </request>
 </entry>
 <entry>
@@ -1556,7 +1580,7 @@
     
     
   <Observation>
-  <id value="ID1707-lab"/>
+  <id value="1707-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Creat SerPl-mCnc = 1 mg/dL</div>
@@ -1567,6 +1591,7 @@
         <code value="2160-0"/>
         <display value="Creat SerPl-mCnc"/>
       </coding>
+      <text value="Creat SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="1.0"/>
@@ -1577,9 +1602,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1588,27 +1612,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.2"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.6"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.2"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.6"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1707-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1707-lab"/>
   </request>
 </entry>
 <entry>
@@ -1616,7 +1641,7 @@
     
     
   <Observation>
-  <id value="ID1708-lab"/>
+  <id value="1708-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Potassium SerPl-sCnc = 5.4 mmol/L</div>
@@ -1627,6 +1652,7 @@
         <code value="2823-3"/>
         <display value="Potassium SerPl-sCnc"/>
       </coding>
+      <text value="Potassium SerPl-sCnc"/>
     </code>
     <valueQuantity>
       <value value="5.4"/>
@@ -1637,9 +1663,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1648,27 +1673,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="3.5"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="5.5"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="3.5"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="5.5"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1708-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1708-lab"/>
   </request>
 </entry>
 <entry>
@@ -1676,7 +1702,7 @@
     
     
   <Observation>
-  <id value="ID1709-lab"/>
+  <id value="1709-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Chloride SerPl-sCnc = 105 mmol/L</div>
@@ -1687,6 +1713,7 @@
         <code value="2075-0"/>
         <display value="Chloride SerPl-sCnc"/>
       </coding>
+      <text value="Chloride SerPl-sCnc"/>
     </code>
     <valueQuantity>
       <value value="105.0"/>
@@ -1697,9 +1724,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1708,27 +1734,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="95.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="105.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="95.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="105.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1709-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1709-lab"/>
   </request>
 </entry>
 <entry>
@@ -1736,7 +1763,7 @@
     
     
   <Observation>
-  <id value="ID1710-lab"/>
+  <id value="1710-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: CO2 SerPl-sCnc = 24 mmol/L</div>
@@ -1747,6 +1774,7 @@
         <code value="2028-9"/>
         <display value="CO2 SerPl-sCnc"/>
       </coding>
+      <text value="CO2 SerPl-sCnc"/>
     </code>
     <valueQuantity>
       <value value="24.0"/>
@@ -1757,9 +1785,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1768,27 +1795,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="22.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="29.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1710-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1710-lab"/>
   </request>
 </entry>
 <entry>
@@ -1796,7 +1824,7 @@
     
     
   <Observation>
-  <id value="ID1711-lab"/>
+  <id value="1711-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Myelocytes NFr Bld = 1 %</div>
@@ -1807,6 +1835,7 @@
         <code value="26498-6"/>
         <display value="Myelocytes NFr Bld"/>
       </coding>
+      <text value="Myelocytes NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="1.0"/>
@@ -1817,9 +1846,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1828,27 +1856,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1711-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1711-lab"/>
   </request>
 </entry>
 <entry>
@@ -1856,7 +1885,7 @@
     
     
   <Observation>
-  <id value="ID1712-lab"/>
+  <id value="1712-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Neuts Band NFr Bld = 2 %</div>
@@ -1867,6 +1896,7 @@
         <code value="26508-2"/>
         <display value="Neuts Band NFr Bld"/>
       </coding>
+      <text value="Neuts Band NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="2.0"/>
@@ -1877,9 +1907,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1888,27 +1917,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="4.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="14.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="4.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="14.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1712-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1712-lab"/>
   </request>
 </entry>
 <entry>
@@ -1916,7 +1946,7 @@
     
     
   <Observation>
-  <id value="ID1713-lab"/>
+  <id value="1713-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Lymphocytes NFr Bld = 43 %</div>
@@ -1927,6 +1957,7 @@
         <code value="26478-8"/>
         <display value="Lymphocytes NFr Bld"/>
       </coding>
+      <text value="Lymphocytes NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="43.0"/>
@@ -1937,9 +1968,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -1948,27 +1978,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="18.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="38.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="18.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="38.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1713-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1713-lab"/>
   </request>
 </entry>
 <entry>
@@ -1976,7 +2007,7 @@
     
     
   <Observation>
-  <id value="ID1714-lab"/>
+  <id value="1714-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Monocytes NFr Bld = 8 %</div>
@@ -1987,6 +2018,7 @@
         <code value="26485-3"/>
         <display value="Monocytes NFr Bld"/>
       </coding>
+      <text value="Monocytes NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="8.0"/>
@@ -1997,9 +2029,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2008,27 +2039,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="1.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="12.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="1.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="12.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1714-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1714-lab"/>
   </request>
 </entry>
 <entry>
@@ -2036,7 +2068,7 @@
     
     
   <Observation>
-  <id value="ID1715-lab"/>
+  <id value="1715-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Eosinophil NFr Bld = 3 %</div>
@@ -2047,6 +2079,7 @@
         <code value="26450-7"/>
         <display value="Eosinophil NFr Bld"/>
       </coding>
+      <text value="Eosinophil NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="3.0"/>
@@ -2057,9 +2090,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2068,27 +2100,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="4.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="4.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1715-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1715-lab"/>
   </request>
 </entry>
 <entry>
@@ -2096,7 +2129,7 @@
     
     
   <Observation>
-  <id value="ID1716-lab"/>
+  <id value="1716-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Basophils NFr Bld = 0 %</div>
@@ -2107,6 +2140,7 @@
         <code value="30180-4"/>
         <display value="Basophils NFr Bld"/>
       </coding>
+      <text value="Basophils NFr Bld"/>
     </code>
     <valueQuantity>
       <value value="0.0"/>
@@ -2117,9 +2151,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2128,27 +2161,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="2.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="2.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1716-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1716-lab"/>
   </request>
 </entry>
 <entry>
@@ -2156,7 +2190,7 @@
     
     
   <Observation>
-  <id value="ID1717-lab"/>
+  <id value="1717-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Hgb Bld-mCnc = 17 g/dL</div>
@@ -2167,6 +2201,7 @@
         <code value="718-7"/>
         <display value="Hgb Bld-mCnc"/>
       </coding>
+      <text value="Hgb Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="17.0"/>
@@ -2177,9 +2212,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2188,27 +2222,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="16.5"/>
-          <unit value="g/dL"/>
-          <code value="g/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="21.5"/>
-          <unit value="g/dL"/>
-          <code value="g/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="16.5"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="21.5"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1717-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1717-lab"/>
   </request>
 </entry>
 <entry>
@@ -2216,7 +2251,7 @@
     
     
   <Observation>
-  <id value="ID1718-lab"/>
+  <id value="1718-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Anion Gap3 SerPl-sCnc = 8 mmol/L</div>
@@ -2227,6 +2262,7 @@
         <code value="10466-1"/>
         <display value="Anion Gap3 SerPl-sCnc"/>
       </coding>
+      <text value="Anion Gap3 SerPl-sCnc"/>
     </code>
     <valueQuantity>
       <value value="8.0"/>
@@ -2237,9 +2273,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2248,27 +2283,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="mmol/L"/>
-          <code value="mmol/L"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1718-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1718-lab"/>
   </request>
 </entry>
 <entry>
@@ -2276,7 +2312,7 @@
     
     
   <Observation>
-  <id value="ID1719-lab"/>
+  <id value="1719-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: PMV Bld = 7.8 fL</div>
@@ -2287,6 +2323,7 @@
         <code value="28542-9"/>
         <display value="PMV Bld"/>
       </coding>
+      <text value="PMV Bld"/>
     </code>
     <valueQuantity>
       <value value="7.8"/>
@@ -2297,9 +2334,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2308,27 +2344,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="6.3"/>
-          <unit value="fL"/>
-          <code value="fL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="9.6"/>
-          <unit value="fL"/>
-          <code value="fL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="6.3"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="9.6"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1719-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1719-lab"/>
   </request>
 </entry>
 <entry>
@@ -2336,7 +2373,7 @@
     
     
   <Observation>
-  <id value="ID1720-lab"/>
+  <id value="1720-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RDW RBC-Rto = 16.8 %</div>
@@ -2347,6 +2384,7 @@
         <code value="30385-9"/>
         <display value="RDW RBC-Rto"/>
       </coding>
+      <text value="RDW RBC-Rto"/>
     </code>
     <valueQuantity>
       <value value="16.8"/>
@@ -2357,9 +2395,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2368,27 +2405,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="11.5"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="14.5"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="11.5"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="14.5"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1720-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1720-lab"/>
   </request>
 </entry>
 <entry>
@@ -2396,7 +2434,7 @@
     
     
   <Observation>
-  <id value="ID1721-lab"/>
+  <id value="1721-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: nRBC/100 WBC Bld-Rto = 5 #/100 WBC</div>
@@ -2407,6 +2445,7 @@
         <code value="19048-8"/>
         <display value="nRBC/100 WBC Bld-Rto"/>
       </coding>
+      <text value="nRBC/100 WBC Bld-Rto"/>
     </code>
     <valueQuantity>
       <value value="5.0"/>
@@ -2417,9 +2456,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2428,27 +2466,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="#/100 WBC"/>
-          <code value="#/100 WBC"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="24.0"/>
-          <unit value="#/100 WBC"/>
-          <code value="#/100 WBC"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="#/100 WBC"/>
+        <code value="#/100 WBC"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="24.0"/>
+        <unit value="#/100 WBC"/>
+        <code value="#/100 WBC"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1721-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1721-lab"/>
   </request>
 </entry>
 <entry>
@@ -2456,7 +2495,7 @@
     
     
   <Observation>
-  <id value="ID1722-lab"/>
+  <id value="1722-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Neutrophils NFr Bld Auto = 40 %</div>
@@ -2467,6 +2506,7 @@
         <code value="770-8"/>
         <display value="Neutrophils NFr Bld Auto"/>
       </coding>
+      <text value="Neutrophils NFr Bld Auto"/>
     </code>
     <valueQuantity>
       <value value="40.0"/>
@@ -2477,9 +2517,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2488,27 +2527,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="37.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="67.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="37.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="67.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1722-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1722-lab"/>
   </request>
 </entry>
 <entry>
@@ -2516,7 +2556,7 @@
     
     
   <Observation>
-  <id value="ID1723-lab"/>
+  <id value="1723-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RBC morph Bld = Normal </div>
@@ -2527,21 +2567,21 @@
         <code value="6742-1"/>
         <display value="RBC morph Bld"/>
       </coding>
+      <text value="RBC morph Bld"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1723-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1723-lab"/>
   </request>
 </entry>
 <entry>
@@ -2549,7 +2589,7 @@
     
     
   <Observation>
-  <id value="ID1724-lab"/>
+  <id value="1724-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 89 mg/dL</div>
@@ -2560,6 +2600,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="89.0"/>
@@ -2570,9 +2611,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2581,27 +2621,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1724-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1724-lab"/>
   </request>
 </entry>
 <entry>
@@ -2609,7 +2650,7 @@
     
     
   <Observation>
-  <id value="ID1725-lab"/>
+  <id value="1725-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 86 mg/dL</div>
@@ -2620,6 +2661,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="86.0"/>
@@ -2630,9 +2672,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2641,27 +2682,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1725-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1725-lab"/>
   </request>
 </entry>
 <entry>
@@ -2669,7 +2711,7 @@
     
     
   <Observation>
-  <id value="ID1726-lab"/>
+  <id value="1726-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 82 mg/dL</div>
@@ -2680,6 +2722,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="82.0"/>
@@ -2690,9 +2733,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2701,27 +2743,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1726-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1726-lab"/>
   </request>
 </entry>
 <entry>
@@ -2729,7 +2772,7 @@
     
     
   <Observation>
-  <id value="ID1727-lab"/>
+  <id value="1727-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 76 mg/dL</div>
@@ -2740,6 +2783,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="76.0"/>
@@ -2750,9 +2794,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2761,27 +2804,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1727-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1727-lab"/>
   </request>
 </entry>
 <entry>
@@ -2789,7 +2833,7 @@
     
     
   <Observation>
-  <id value="ID1728-lab"/>
+  <id value="1728-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: WBC # Bld = 17.7 10*3/uL</div>
@@ -2800,6 +2844,7 @@
         <code value="26464-8"/>
         <display value="WBC # Bld"/>
       </coding>
+      <text value="WBC # Bld"/>
     </code>
     <valueQuantity>
       <value value="17.7"/>
@@ -2810,9 +2855,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2821,27 +2865,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="9.0"/>
-          <unit value="10*3/uL"/>
-          <code value="10*3/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="37.0"/>
-          <unit value="10*3/uL"/>
-          <code value="10*3/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="9.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="37.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1728-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1728-lab"/>
   </request>
 </entry>
 <entry>
@@ -2849,7 +2894,7 @@
     
     
   <Observation>
-  <id value="ID1729-lab"/>
+  <id value="1729-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RBC # Bld Auto = 4.58 10*6/uL</div>
@@ -2860,6 +2905,7 @@
         <code value="789-8"/>
         <display value="RBC # Bld Auto"/>
       </coding>
+      <text value="RBC # Bld Auto"/>
     </code>
     <valueQuantity>
       <value value="4.58"/>
@@ -2870,9 +2916,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2881,27 +2926,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="4.1"/>
-          <unit value="10*6/uL"/>
-          <code value="10*6/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.1"/>
-          <unit value="10*6/uL"/>
-          <code value="10*6/uL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="4.1"/>
+        <unit value="10*6/uL"/>
+        <code value="10*6/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.1"/>
+        <unit value="10*6/uL"/>
+        <code value="10*6/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1729-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1729-lab"/>
   </request>
 </entry>
 <entry>
@@ -2909,7 +2955,7 @@
     
     
   <Observation>
-  <id value="ID1730-lab"/>
+  <id value="1730-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose SerPl-mCnc = 62 mg/dL</div>
@@ -2920,6 +2966,7 @@
         <code value="2345-7"/>
         <display value="Glucose SerPl-mCnc"/>
       </coding>
+      <text value="Glucose SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="62.0"/>
@@ -2930,9 +2977,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -2941,27 +2987,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1730-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1730-lab"/>
   </request>
 </entry>
 <entry>
@@ -2969,7 +3016,7 @@
     
     
   <Observation>
-  <id value="ID1731-lab"/>
+  <id value="1731-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Bilirub SerPl-mCnc = 6.9 mg/dL</div>
@@ -2980,6 +3027,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="6.9"/>
@@ -2990,9 +3038,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3001,27 +3048,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1731-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1731-lab"/>
   </request>
 </entry>
 <entry>
@@ -3029,7 +3077,7 @@
     
     
   <Observation>
-  <id value="ID1732-lab"/>
+  <id value="1732-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Bilirub SerPl-mCnc = 5.4 mg/dL</div>
@@ -3040,6 +3088,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="5.4"/>
@@ -3050,9 +3099,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3061,27 +3109,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1732-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1732-lab"/>
   </request>
 </entry>
 <entry>
@@ -3089,7 +3138,7 @@
     
     
   <Observation>
-  <id value="ID1733-lab"/>
+  <id value="1733-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: BUN SerPl-mCnc = 10 mg/dL</div>
@@ -3100,6 +3149,7 @@
         <code value="3094-0"/>
         <display value="BUN SerPl-mCnc"/>
       </coding>
+      <text value="BUN SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="10.0"/>
@@ -3110,9 +3160,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3121,27 +3170,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="5.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="20.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="5.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="20.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1733-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1733-lab"/>
   </request>
 </entry>
 <entry>
@@ -3149,7 +3199,7 @@
     
     
   <Observation>
-  <id value="ID1734-lab"/>
+  <id value="1734-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -3164,21 +3214,21 @@
         <code value="10378-8"/>
         <display value="Polychromasia Bld Ql Smear"/>
       </coding>
+      <text value="Polychromasia Bld Ql Smear"/>
     </code>
     <valueString value="Slight"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1734-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1734-lab"/>
   </request>
 </entry>
 <entry>
@@ -3186,7 +3236,7 @@
     
     
   <Observation>
-  <id value="ID1735-lab"/>
+  <id value="1735-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -3201,21 +3251,21 @@
         <code value="774-0"/>
         <display value="Ovalocytes Bld Ql Smear"/>
       </coding>
+      <text value="Ovalocytes Bld Ql Smear"/>
     </code>
     <valueString value="Few"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1735-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1735-lab"/>
   </request>
 </entry>
 <entry>
@@ -3223,7 +3273,7 @@
     
     
   <Observation>
-  <id value="ID1736-lab"/>
+  <id value="1736-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
     </extension>
@@ -3238,21 +3288,21 @@
         <code value="800-3"/>
         <display value="Schistocytes Bld Ql Smear"/>
       </coding>
+      <text value="Schistocytes Bld Ql Smear"/>
     </code>
     <valueString value="None"/>
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1736-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1736-lab"/>
   </request>
 </entry>
 <entry>
@@ -3260,7 +3310,7 @@
     
     
   <Observation>
-  <id value="ID1737-lab"/>
+  <id value="1737-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Variant Lymphs NFr Bld Manual = 3 %</div>
@@ -3271,6 +3321,7 @@
         <code value="735-1"/>
         <display value="Variant Lymphs NFr Bld Manual"/>
       </coding>
+      <text value="Variant Lymphs NFr Bld Manual"/>
     </code>
     <valueQuantity>
       <value value="3.0"/>
@@ -3281,9 +3332,8 @@
     
     <effectiveDateTime value="2005-07-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3292,27 +3342,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="0.0"/>
-          <unit value="%"/>
-          <code value="%"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1737-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1737-lab"/>
   </request>
 </entry>
 <entry>
@@ -3320,7 +3371,7 @@
     
     
   <Observation>
-  <id value="ID1738-lab"/>
+  <id value="1738-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Bilirub SerPl-mCnc = 10.2 mg/dL</div>
@@ -3331,6 +3382,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="10.2"/>
@@ -3341,9 +3393,8 @@
     
     <effectiveDateTime value="2005-07-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3352,27 +3403,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1738-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1738-lab"/>
   </request>
 </entry>
 <entry>
@@ -3380,7 +3432,7 @@
     
     
   <Observation>
-  <id value="ID1739-lab"/>
+  <id value="1739-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Bilirub SerPl-mCnc = 10.1 mg/dL</div>
@@ -3391,6 +3443,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="10.1"/>
@@ -3401,9 +3454,8 @@
     
     <effectiveDateTime value="2005-07-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3412,27 +3464,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1739-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1739-lab"/>
   </request>
 </entry>
 <entry>
@@ -3440,7 +3493,7 @@
     
     
   <Observation>
-  <id value="ID1740-lab"/>
+  <id value="1740-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Glucose Bld-mCnc = 60 mg/dL</div>
@@ -3451,6 +3504,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="60.0"/>
@@ -3461,9 +3515,8 @@
     
     <effectiveDateTime value="2005-07-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3472,27 +3525,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1740-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1740-lab"/>
   </request>
 </entry>
 <entry>
@@ -3500,7 +3554,7 @@
     
     
   <Observation>
-  <id value="ID1741-lab"/>
+  <id value="1741-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Glucose Bld-mCnc = 93 mg/dL</div>
@@ -3511,6 +3565,7 @@
         <code value="2339-0"/>
         <display value="Glucose Bld-mCnc"/>
       </coding>
+      <text value="Glucose Bld-mCnc"/>
     </code>
     <valueQuantity>
       <value value="93.0"/>
@@ -3521,9 +3576,8 @@
     
     <effectiveDateTime value="2005-07-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3532,27 +3586,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="40.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="109.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1741-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1741-lab"/>
   </request>
 </entry>
 <entry>
@@ -3560,7 +3615,7 @@
     
     
   <Observation>
-  <id value="ID1742-lab"/>
+  <id value="1742-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -3575,21 +3630,21 @@
         <code value="38478-4"/>
         <display value="Biotinidase DBS Ql"/>
       </coding>
+      <text value="Biotinidase DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2005-07-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1742-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1742-lab"/>
   </request>
 </entry>
 <entry>
@@ -3597,7 +3652,7 @@
     
     
   <Observation>
-  <id value="ID1743-lab"/>
+  <id value="1743-lab"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
         <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
     </extension>
@@ -3612,21 +3667,21 @@
         <code value="29571-7"/>
         <display value="Phe DBS Ql"/>
       </coding>
+      <text value="Phe DBS Ql"/>
     </code>
     <valueString value="Normal"/>
     
     <effectiveDateTime value="2005-07-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1743-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1743-lab"/>
   </request>
 </entry>
 <entry>
@@ -3634,7 +3689,7 @@
     
     
   <Observation>
-  <id value="ID1744-lab"/>
+  <id value="1744-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Bilirub SerPl-mCnc = 8.6 mg/dL</div>
@@ -3645,6 +3700,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="8.6"/>
@@ -3655,9 +3711,8 @@
     
     <effectiveDateTime value="2005-07-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3666,27 +3721,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1744-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1744-lab"/>
   </request>
 </entry>
 <entry>
@@ -3694,7 +3750,7 @@
     
     
   <Observation>
-  <id value="ID1745-lab"/>
+  <id value="1745-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Bilirub SerPl-mCnc = 8.3 mg/dL</div>
@@ -3705,6 +3761,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="8.3"/>
@@ -3715,9 +3772,8 @@
     
     <effectiveDateTime value="2005-07-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3726,27 +3782,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="7.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1745-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1745-lab"/>
   </request>
 </entry>
 <entry>
@@ -3754,7 +3811,7 @@
     
     
   <Observation>
-  <id value="ID1746-lab"/>
+  <id value="1746-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-08: Bilirub SerPl-mCnc = 11.3 mg/dL</div>
@@ -3765,6 +3822,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="11.3"/>
@@ -3775,9 +3833,8 @@
     
     <effectiveDateTime value="2005-07-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3786,27 +3843,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1746-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1746-lab"/>
   </request>
 </entry>
 <entry>
@@ -3814,7 +3872,7 @@
     
     
   <Observation>
-  <id value="ID1747-lab"/>
+  <id value="1747-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-08: Bilirub SerPl-mCnc = 11 mg/dL</div>
@@ -3825,6 +3883,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="11.0"/>
@@ -3835,9 +3894,8 @@
     
     <effectiveDateTime value="2005-07-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3846,27 +3904,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1747-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1747-lab"/>
   </request>
 </entry>
 <entry>
@@ -3874,7 +3933,7 @@
     
     
   <Observation>
-  <id value="ID1748-lab"/>
+  <id value="1748-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-07-10: Bilirub SerPl-mCnc = 10.5 mg/dL</div>
@@ -3885,6 +3944,7 @@
         <code value="1975-2"/>
         <display value="Bilirub SerPl-mCnc"/>
       </coding>
+      <text value="Bilirub SerPl-mCnc"/>
     </code>
     <valueQuantity>
       <value value="10.5"/>
@@ -3895,9 +3955,8 @@
     
     <effectiveDateTime value="2005-07-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
     <referenceRange>
       <meaning>
@@ -3906,27 +3965,28 @@
          <code value="normal"/>
          <display value="Normal Range"/>
        </coding>
+       <text value="Normal Range"/>
       </meaning>
-        <low>
-          <value value="2.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </low>
-        <high>
-          <value value="6.0"/>
-          <unit value="mg/dL"/>
-          <code value="mg/dL"/>
-          <system value="http://unitsofmeasure.org"/>
-        </high>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
     </referenceRange>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1748-lab"/>
+    <method value="POST"/>
+    <url value="Observation/1748-lab"/>
   </request>
 </entry>
 <entry>
@@ -3934,7 +3994,7 @@
     
     
 <MedicationOrder>
-  <id value="ID114-mp"/>
+  <id value="114"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -3942,41 +4002,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 50 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="239191"/>
-	  <display value="Amoxicillin 50 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="239191"/>
+        <display value="Amoxicillin 50 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 50 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2005-11-28"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="10"/>
       <unit value="mL"/>
@@ -3986,7 +4037,7 @@
     
     <text value="10 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4003,14 +4054,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID114-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/114"/>
   </request>
 </entry>
 <entry>
@@ -4018,7 +4069,7 @@
     
     
 <MedicationOrder>
-  <id value="ID115-mp"/>
+  <id value="115"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4026,35 +4077,26 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="352027"/>
-	  <display value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="352027"/>
+        <display value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
+    </coding>
+    <text value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <text value=""/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4071,14 +4113,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID115-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/115"/>
   </request>
 </entry>
 <entry>
@@ -4086,7 +4128,7 @@
     
     
 <MedicationOrder>
-  <id value="ID116-mp"/>
+  <id value="116"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4094,41 +4136,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Metoclopramide 1 MG/ML Oral Solution"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="104884"/>
-	  <display value="Metoclopramide 1 MG/ML Oral Solution"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="104884"/>
+        <display value="Metoclopramide 1 MG/ML Oral Solution"/>
+    </coding>
+    <text value="Metoclopramide 1 MG/ML Oral Solution"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2006-01-08"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="4"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="4"/>
       <unit value="mL"/>
@@ -4138,7 +4171,7 @@
     
     <text value="4 mL qid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4155,14 +4188,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID116-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/116"/>
   </request>
 </entry>
 <entry>
@@ -4170,7 +4203,7 @@
     
     
 <MedicationOrder>
-  <id value="ID117-mp"/>
+  <id value="117"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4178,41 +4211,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="755272"/>
-	  <display value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="755272"/>
+        <display value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
+    </coding>
+    <text value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2006-01-08"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="6"/>
       <unit value="mL"/>
@@ -4222,7 +4246,7 @@
     
     <text value="6 mL bid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4239,14 +4263,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID117-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/117"/>
   </request>
 </entry>
 <entry>
@@ -4254,7 +4278,7 @@
     
     
 <MedicationOrder>
-  <id value="ID118-mp"/>
+  <id value="118"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4262,41 +4286,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 80 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="308189"/>
-	  <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2006-08-31"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="7"/>
       <unit value="mL"/>
@@ -4306,7 +4321,7 @@
     
     <text value="7 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4323,14 +4338,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID118-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/118"/>
   </request>
 </entry>
 <entry>
@@ -4338,7 +4353,7 @@
     
     
 <MedicationOrder>
-  <id value="ID119-mp"/>
+  <id value="119"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4346,37 +4361,28 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Mupirocin 0.02 MG/MG Topical Ointment"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="106346"/>
-	  <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="106346"/>
+        <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+    </coding>
+    <text value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <asNeededBoolean value="true"/>
     
     <text value="apply nasally prn"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4393,14 +4399,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID119-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/119"/>
   </request>
 </entry>
 <entry>
@@ -4408,37 +4414,23 @@
     
     
 <MedicationDispense>
-  <id value="ID373-md"/>
+  <id value="373"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 22 tablets = 10 day supply of Mupirocin 0.02 MG/MG Topical Ointment
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Mupirocin 0.02 MG/MG Topical Ointment"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="106346"/>
-	  <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID119-mp"/>
+    <reference value="MedicationOrder/119"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4455,9 +4447,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="106346"/>
+        <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+    </coding>
+    <text value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-04-06"/>
 
@@ -4465,8 +4462,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID373-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/373"/>
   </request>
 </entry>
 <entry>
@@ -4474,7 +4471,7 @@
     
     
 <MedicationOrder>
-  <id value="ID120-mp"/>
+  <id value="120"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -4482,41 +4479,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="617423"/>
-	  <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617423"/>
+        <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2009-06-17"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="7"/>
       <unit value="mL"/>
@@ -4526,7 +4514,7 @@
     
     <text value="7 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -4543,14 +4531,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID120-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/120"/>
   </request>
 </entry>
 <entry>
@@ -4558,37 +4546,23 @@
     
     
 <MedicationDispense>
-  <id value="ID379-md"/>
+  <id value="379"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 100 tablets = 10 day supply of Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="617423"/>
-	  <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1134281"/>
+    <reference value="Patient/1134281"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID120-mp"/>
+    <reference value="MedicationOrder/120"/>
   </authorizingPrescription>
 
   <quantity>
@@ -4605,9 +4579,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617423"/>
+        <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-06-17"/>
 
@@ -4615,8 +4594,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID379-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/379"/>
   </request>
 </entry>
   <entry>
@@ -4624,13 +4603,13 @@
     
     
   <Condition>
-  <id value="ID222-c"/>
+  <id value="222"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Neonatal jaundice associated with preterm delivery</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4647,8 +4626,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID222-c"/>
+    <method value="POST"/>
+    <url value="Condition/222"/>
   </request>
 </entry>
   <entry>
@@ -4656,13 +4635,13 @@
     
     
   <Condition>
-  <id value="ID223-c"/>
+  <id value="223"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Perinatal cyanotic attacks</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4679,8 +4658,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID223-c"/>
+    <method value="POST"/>
+    <url value="Condition/223"/>
   </request>
 </entry>
   <entry>
@@ -4688,13 +4667,13 @@
     
     
   <Condition>
-  <id value="ID224-c"/>
+  <id value="224"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Respiratory distress syndrome in the newborn</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4711,8 +4690,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID224-c"/>
+    <method value="POST"/>
+    <url value="Condition/224"/>
   </request>
 </entry>
   <entry>
@@ -4720,13 +4699,13 @@
     
     
   <Condition>
-  <id value="ID225-c"/>
+  <id value="225"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Scalp injury</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4743,8 +4722,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID225-c"/>
+    <method value="POST"/>
+    <url value="Condition/225"/>
   </request>
 </entry>
   <entry>
@@ -4752,13 +4731,13 @@
     
     
   <Condition>
-  <id value="ID226-c"/>
+  <id value="226"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4775,8 +4754,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID226-c"/>
+    <method value="POST"/>
+    <url value="Condition/226"/>
   </request>
 </entry>
   <entry>
@@ -4784,13 +4763,13 @@
     
     
   <Condition>
-  <id value="ID227-c"/>
+  <id value="227"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Neonatal jaundice</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4807,8 +4786,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID227-c"/>
+    <method value="POST"/>
+    <url value="Condition/227"/>
   </request>
 </entry>
   <entry>
@@ -4816,13 +4795,13 @@
     
     
   <Condition>
-  <id value="ID228-c"/>
+  <id value="228"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Jaundice</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4839,8 +4818,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID228-c"/>
+    <method value="POST"/>
+    <url value="Condition/228"/>
   </request>
 </entry>
   <entry>
@@ -4848,13 +4827,13 @@
     
     
   <Condition>
-  <id value="ID229-c"/>
+  <id value="229"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4871,8 +4850,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID229-c"/>
+    <method value="POST"/>
+    <url value="Condition/229"/>
   </request>
 </entry>
   <entry>
@@ -4880,13 +4859,13 @@
     
     
   <Condition>
-  <id value="ID230-c"/>
+  <id value="230"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Gastroesophageal reflux disease</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4903,8 +4882,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID230-c"/>
+    <method value="POST"/>
+    <url value="Condition/230"/>
   </request>
 </entry>
   <entry>
@@ -4912,13 +4891,13 @@
     
     
   <Condition>
-  <id value="ID231-c"/>
+  <id value="231"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4935,8 +4914,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID231-c"/>
+    <method value="POST"/>
+    <url value="Condition/231"/>
   </request>
 </entry>
   <entry>
@@ -4944,13 +4923,13 @@
     
     
   <Condition>
-  <id value="ID232-c"/>
+  <id value="232"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Other and unspecified noninfectious gastroenteritis and colitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4967,8 +4946,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID232-c"/>
+    <method value="POST"/>
+    <url value="Condition/232"/>
   </request>
 </entry>
   <entry>
@@ -4976,13 +4955,13 @@
     
     
   <Condition>
-  <id value="ID233-c"/>
+  <id value="233"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </patient>
     <code> 
       <coding>
@@ -4999,8 +4978,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID233-c"/>
+    <method value="POST"/>
+    <url value="Condition/233"/>
   </request>
 </entry>
   <entry>
@@ -5008,22 +4987,22 @@
     
     
     <Immunization>
-  <id value="ID10-i"/>
+  <id value="10"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">varicella virus vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1134281"/>
+            <reference value="Patient/1134281"/>
         </patient>
         <date value="2009-03-11"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="21"/>
-       		 <display value="varicella virus vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="21"/>
+                <display value="varicella virus vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="true"/>
         <explanation>
@@ -5040,8 +5019,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID10-i"/>
+    <method value="POST"/>
+    <url value="Immunization/10"/>
   </request>
 </entry>
   <entry>
@@ -5049,30 +5028,30 @@
     
     
     <Immunization>
-  <id value="ID11-i"/>
+  <id value="11"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">hepatitis A and hepatitis B vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1134281"/>
+            <reference value="Patient/1134281"/>
         </patient>
         <date value="2005-11-11"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="104"/>
-       		 <display value="hepatitis A and hepatitis B vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="104"/>
+                <display value="hepatitis A and hepatitis B vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID11-i"/>
+    <method value="POST"/>
+    <url value="Immunization/11"/>
   </request>
 </entry>
 <entry>
@@ -5080,7 +5059,7 @@
     
     
   <Observation>
-  <id value="ID9-smokingstatus"/>
+  <id value="9-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Never smoker</div>
@@ -5091,6 +5070,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -5098,18 +5078,18 @@
         <code value="266919005"/>
         <display value="Never smoker"/>
       </coding>
+      <text value="Never smoker"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1134281"/>
+      <reference value="Patient/1134281"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/9-smokingstatus"/>
   </request>
 </entry>
   <entry>
@@ -5117,7 +5097,7 @@
     
     
     <List>
-  <id value="ID22-l"/>
+  <id value="22"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -5128,9 +5108,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID1134281"/>
+          <reference value="Patient/1134281"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -5140,13 +5121,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID22-l"/>
+    <method value="POST"/>
+    <url value="List/22"/>
   </request>
 </entry>
 

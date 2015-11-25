@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID1614502"/>
+    <id value="1614502"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="1614502"/>
@@ -61,8 +62,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID1614502"/>
+    <method value="POST"/>
+    <url value="Patient/1614502"/>
   </request>
 </entry>
 <entry>
@@ -70,7 +71,7 @@
     
     
 <MedicationOrder>
-  <id value="ID172-mp"/>
+  <id value="172"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -78,41 +79,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 40 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="313850"/>
-	  <display value="Amoxicillin 40 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="313850"/>
+        <display value="Amoxicillin 40 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2007-09-14"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="15"/>
       <unit value="mL"/>
@@ -122,7 +114,7 @@
     
     <text value="15 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -139,14 +131,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID172-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/172"/>
   </request>
 </entry>
 <entry>
@@ -154,37 +146,23 @@
     
     
 <MedicationDispense>
-  <id value="ID101-md"/>
+  <id value="101"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 200 tablets = 10 day supply of Amoxicillin 40 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 40 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="313850"/>
-	  <display value="Amoxicillin 40 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID172-mp"/>
+    <reference value="MedicationOrder/172"/>
   </authorizingPrescription>
 
   <quantity>
@@ -201,9 +179,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="313850"/>
+        <display value="Amoxicillin 40 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2007-09-14"/>
 
@@ -211,8 +194,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID101-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/101"/>
   </request>
 </entry>
 <entry>
@@ -220,7 +203,7 @@
     
     
 <MedicationOrder>
-  <id value="ID173-mp"/>
+  <id value="173"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -228,44 +211,35 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Clotrimazole 10 MG/ML Topical Cream"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309367"/>
-	  <display value="Clotrimazole 10 MG/ML Topical Cream"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309367"/>
+        <display value="Clotrimazole 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Clotrimazole 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2007-10-28"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <text value="apply bid to affected area"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -282,14 +256,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID173-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/173"/>
   </request>
 </entry>
 <entry>
@@ -297,37 +271,23 @@
     
     
 <MedicationDispense>
-  <id value="ID100-md"/>
+  <id value="100"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 7 day supply of Clotrimazole 10 MG/ML Topical Cream
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Clotrimazole 10 MG/ML Topical Cream"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309367"/>
-	  <display value="Clotrimazole 10 MG/ML Topical Cream"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID173-mp"/>
+    <reference value="MedicationOrder/173"/>
   </authorizingPrescription>
 
   <quantity>
@@ -344,9 +304,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309367"/>
+        <display value="Clotrimazole 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Clotrimazole 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-04-03"/>
 
@@ -354,8 +319,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID100-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/100"/>
   </request>
 </entry>
 <entry>
@@ -363,37 +328,23 @@
     
     
 <MedicationDispense>
-  <id value="ID98-md"/>
+  <id value="98"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 30 tablets = 10 day supply of Clotrimazole 10 MG/ML Topical Cream
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Clotrimazole 10 MG/ML Topical Cream"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309367"/>
-	  <display value="Clotrimazole 10 MG/ML Topical Cream"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID173-mp"/>
+    <reference value="MedicationOrder/173"/>
   </authorizingPrescription>
 
   <quantity>
@@ -410,9 +361,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309367"/>
+        <display value="Clotrimazole 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Clotrimazole 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2007-10-28"/>
 
@@ -420,8 +376,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID98-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/98"/>
   </request>
 </entry>
 <entry>
@@ -429,7 +385,7 @@
     
     
 <MedicationOrder>
-  <id value="ID174-mp"/>
+  <id value="174"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -437,41 +393,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 25 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="313797"/>
-	  <display value="Amoxicillin 25 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="313797"/>
+        <display value="Amoxicillin 25 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 25 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2007-10-28"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="10"/>
       <unit value="mL"/>
@@ -481,7 +428,7 @@
     
     <text value="10 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -498,14 +445,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID174-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/174"/>
   </request>
 </entry>
 <entry>
@@ -513,37 +460,23 @@
     
     
 <MedicationDispense>
-  <id value="ID94-md"/>
+  <id value="94"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 150 tablets = 10 day supply of Amoxicillin 25 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 25 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="313797"/>
-	  <display value="Amoxicillin 25 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID174-mp"/>
+    <reference value="MedicationOrder/174"/>
   </authorizingPrescription>
 
   <quantity>
@@ -560,9 +493,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="313797"/>
+        <display value="Amoxicillin 25 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 25 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2007-10-28"/>
 
@@ -570,8 +508,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID94-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/94"/>
   </request>
 </entry>
 <entry>
@@ -579,7 +517,7 @@
     
     
 <MedicationOrder>
-  <id value="ID175-mp"/>
+  <id value="175"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -587,41 +525,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="cefdinir 25 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309054"/>
-	  <display value="cefdinir 25 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309054"/>
+        <display value="cefdinir 25 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="cefdinir 25 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2007-12-02"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="7"/>
       <unit value="mL"/>
@@ -631,7 +560,7 @@
     
     <text value="7 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -648,14 +577,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID175-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/175"/>
   </request>
 </entry>
 <entry>
@@ -663,37 +592,23 @@
     
     
 <MedicationDispense>
-  <id value="ID109-md"/>
+  <id value="109"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 60 tablets = 10 day supply of cefdinir 25 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="cefdinir 25 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="309054"/>
-	  <display value="cefdinir 25 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID175-mp"/>
+    <reference value="MedicationOrder/175"/>
   </authorizingPrescription>
 
   <quantity>
@@ -710,9 +625,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309054"/>
+        <display value="cefdinir 25 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="cefdinir 25 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2007-12-02"/>
 
@@ -720,8 +640,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID109-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/109"/>
   </request>
 </entry>
 <entry>
@@ -729,7 +649,7 @@
     
     
 <MedicationOrder>
-  <id value="ID176-mp"/>
+  <id value="176"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -737,41 +657,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Ibuprofen 20 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="197803"/>
-	  <display value="Ibuprofen 20 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197803"/>
+        <display value="Ibuprofen 20 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Ibuprofen 20 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2008-04-03"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="4"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="7"/>
       <unit value="mL"/>
@@ -783,7 +694,7 @@
     
     <text value="7 mL q6h prn"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -800,14 +711,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID176-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/176"/>
   </request>
 </entry>
 <entry>
@@ -815,37 +726,23 @@
     
     
 <MedicationDispense>
-  <id value="ID111-md"/>
+  <id value="111"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 120 tablets = 6 day supply of Ibuprofen 20 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Ibuprofen 20 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="197803"/>
-	  <display value="Ibuprofen 20 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID176-mp"/>
+    <reference value="MedicationOrder/176"/>
   </authorizingPrescription>
 
   <quantity>
@@ -862,9 +759,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197803"/>
+        <display value="Ibuprofen 20 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Ibuprofen 20 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-04-03"/>
 
@@ -872,8 +774,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID111-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/111"/>
   </request>
 </entry>
 <entry>
@@ -881,7 +783,7 @@
     
     
 <MedicationOrder>
-  <id value="ID177-mp"/>
+  <id value="177"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -889,41 +791,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 80 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="308189"/>
-	  <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2008-04-03"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="7"/>
       <unit value="mL"/>
@@ -933,7 +826,7 @@
     
     <text value="7 mL bid x 10 days"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -950,14 +843,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID177-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/177"/>
   </request>
 </entry>
 <entry>
@@ -965,37 +858,23 @@
     
     
 <MedicationDispense>
-  <id value="ID107-md"/>
+  <id value="107"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 80 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="308189"/>
-	  <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID177-mp"/>
+    <reference value="MedicationOrder/177"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1012,9 +891,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-11-12"/>
 
@@ -1022,8 +906,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID107-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/107"/>
   </request>
 </entry>
 <entry>
@@ -1031,37 +915,23 @@
     
     
 <MedicationDispense>
-  <id value="ID105-md"/>
+  <id value="105"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 80 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="308189"/>
-	  <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID177-mp"/>
+    <reference value="MedicationOrder/177"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1078,9 +948,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-07-11"/>
 
@@ -1088,8 +963,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID105-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/105"/>
   </request>
 </entry>
 <entry>
@@ -1097,37 +972,23 @@
     
     
 <MedicationDispense>
-  <id value="ID103-md"/>
+  <id value="103"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Amoxicillin 80 MG/ML Oral Suspension"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="308189"/>
-	  <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID177-mp"/>
+    <reference value="MedicationOrder/177"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1144,9 +1005,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2008-04-03"/>
 
@@ -1154,8 +1020,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID103-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/103"/>
   </request>
 </entry>
 <entry>
@@ -1163,7 +1029,7 @@
     
     
 <MedicationOrder>
-  <id value="ID178-mp"/>
+  <id value="178"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1171,35 +1037,26 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Permethrin 10 MG/ML Topical Lotion"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="312320"/>
-	  <display value="Permethrin 10 MG/ML Topical Lotion"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="312320"/>
+        <display value="Permethrin 10 MG/ML Topical Lotion"/>
+    </coding>
+    <text value="Permethrin 10 MG/ML Topical Lotion"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <text value="apply x1 as directed"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1216,14 +1073,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID178-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/178"/>
   </request>
 </entry>
 <entry>
@@ -1231,37 +1088,23 @@
     
     
 <MedicationDispense>
-  <id value="ID95-md"/>
+  <id value="95"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Permethrin 10 MG/ML Topical Lotion"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="312320"/>
-	  <display value="Permethrin 10 MG/ML Topical Lotion"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID178-mp"/>
+    <reference value="MedicationOrder/178"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1278,9 +1121,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="312320"/>
+        <display value="Permethrin 10 MG/ML Topical Lotion"/>
+    </coding>
+    <text value="Permethrin 10 MG/ML Topical Lotion"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-05-01"/>
 
@@ -1288,8 +1136,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID95-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/95"/>
   </request>
 </entry>
 <entry>
@@ -1297,37 +1145,23 @@
     
     
 <MedicationDispense>
-  <id value="ID96-md"/>
+  <id value="96"/>
   <!--  insert contents here  -->
    <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion
     </div>
-  </text>  
+  </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Permethrin 10 MG/ML Topical Lotion"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="312320"/>
-	  <display value="Permethrin 10 MG/ML Topical Lotion"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-  
   <status value="completed"/>
 
   <patient>
-    <reference value="Patient/ID1614502"/>
+    <reference value="Patient/1614502"/>
   </patient>
 
   <authorizingPrescription>
-    <reference value="MedicationOrder/ID178-mp"/>
+    <reference value="MedicationOrder/178"/>
   </authorizingPrescription>
 
   <quantity>
@@ -1344,9 +1178,14 @@
       <code value="d" />
   </daysSupply>
 
-  <medication>
-      <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="312320"/>
+        <display value="Permethrin 10 MG/ML Topical Lotion"/>
+    </coding>
+    <text value="Permethrin 10 MG/ML Topical Lotion"/>
+  </medicationCodeableConcept>
 
   <whenHandedOver value="2009-05-09"/>
 
@@ -1354,8 +1193,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationDispense/ID96-md"/>
+    <method value="POST"/>
+    <url value="MedicationDispense/96"/>
   </request>
 </entry>
   <entry>
@@ -1363,13 +1202,13 @@
     
     
   <Condition>
-  <id value="ID66-c"/>
+  <id value="66"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Cervicitis and endocervicitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1386,8 +1225,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID66-c"/>
+    <method value="POST"/>
+    <url value="Condition/66"/>
   </request>
 </entry>
   <entry>
@@ -1395,13 +1234,13 @@
     
     
   <Condition>
-  <id value="ID67-c"/>
+  <id value="67"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Diaper rash</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1418,8 +1257,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID67-c"/>
+    <method value="POST"/>
+    <url value="Condition/67"/>
   </request>
 </entry>
   <entry>
@@ -1427,13 +1266,13 @@
     
     
   <Condition>
-  <id value="ID68-c"/>
+  <id value="68"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1450,8 +1289,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID68-c"/>
+    <method value="POST"/>
+    <url value="Condition/68"/>
   </request>
 </entry>
   <entry>
@@ -1459,13 +1298,13 @@
     
     
   <Condition>
-  <id value="ID69-c"/>
+  <id value="69"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Foreign body in larynx</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1482,8 +1321,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID69-c"/>
+    <method value="POST"/>
+    <url value="Condition/69"/>
   </request>
 </entry>
   <entry>
@@ -1491,13 +1330,13 @@
     
     
   <Condition>
-  <id value="ID70-c"/>
+  <id value="70"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Vomiting</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1514,8 +1353,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID70-c"/>
+    <method value="POST"/>
+    <url value="Condition/70"/>
   </request>
 </entry>
   <entry>
@@ -1523,13 +1362,13 @@
     
     
   <Condition>
-  <id value="ID71-c"/>
+  <id value="71"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1546,8 +1385,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID71-c"/>
+    <method value="POST"/>
+    <url value="Condition/71"/>
   </request>
 </entry>
   <entry>
@@ -1555,13 +1394,13 @@
     
     
   <Condition>
-  <id value="ID72-c"/>
+  <id value="72"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">General well-being finding</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1578,8 +1417,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID72-c"/>
+    <method value="POST"/>
+    <url value="Condition/72"/>
   </request>
 </entry>
   <entry>
@@ -1587,13 +1426,13 @@
     
     
   <Condition>
-  <id value="ID73-c"/>
+  <id value="73"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Other and unspecified noninfectious gastroenteritis and colitis</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </patient>
     <code> 
       <coding>
@@ -1610,8 +1449,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID73-c"/>
+    <method value="POST"/>
+    <url value="Condition/73"/>
   </request>
 </entry>
   <entry>
@@ -1619,30 +1458,30 @@
     
     
     <Immunization>
-  <id value="ID5-i"/>
+  <id value="5"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">measles, mumps and rubella virus vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1614502"/>
+            <reference value="Patient/1614502"/>
         </patient>
         <date value="2010-03-11"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="03"/>
-       		 <display value="measles, mumps and rubella virus vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="03"/>
+                <display value="measles, mumps and rubella virus vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID5-i"/>
+    <method value="POST"/>
+    <url value="Immunization/5"/>
   </request>
 </entry>
   <entry>
@@ -1650,30 +1489,30 @@
     
     
     <Immunization>
-  <id value="ID6-i"/>
+  <id value="6"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">measles, mumps and rubella virus vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1614502"/>
+            <reference value="Patient/1614502"/>
         </patient>
         <date value="2010-06-11"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="03"/>
-       		 <display value="measles, mumps and rubella virus vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="03"/>
+                <display value="measles, mumps and rubella virus vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID6-i"/>
+    <method value="POST"/>
+    <url value="Immunization/6"/>
   </request>
 </entry>
 <entry>
@@ -1681,7 +1520,7 @@
     
     
   <Observation>
-  <id value="ID2-smokingstatus"/>
+  <id value="2-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Former smoker</div>
@@ -1692,6 +1531,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -1699,18 +1539,18 @@
         <code value="8517006"/>
         <display value="Former smoker"/>
       </coding>
+      <text value="Former smoker"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/2-smokingstatus"/>
   </request>
 </entry>
 <entry>
@@ -1718,7 +1558,7 @@
     
     
   <Observation>
-  <id value="ID1614502-gestage"/>
+  <id value="1614502-gestage"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-11-22: Gestational age at birth = 45.2 weeks</div>
@@ -1729,6 +1569,7 @@
         <code value="18185-9"/>
         <display value="Gestational age at birth"/>
       </coding>
+      <text value="Gestational age at birth"/>
     </code>
     <valueQuantity>
       <value value="45.2"/>
@@ -1739,16 +1580,15 @@
     
     <effectiveDateTime value="2006-11-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1614502"/>
+      <reference value="Patient/1614502"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1614502-gestage"/>
+    <method value="POST"/>
+    <url value="Observation/1614502-gestage"/>
   </request>
 </entry>
   <entry>
@@ -1756,7 +1596,7 @@
     
     
     <List>
-  <id value="ID36-l"/>
+  <id value="36"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -1767,9 +1607,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID1614502"/>
+          <reference value="Patient/1614502"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -1779,13 +1620,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID36-l"/>
+    <method value="POST"/>
+    <url value="List/36"/>
   </request>
 </entry>
 

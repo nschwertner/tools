@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID5555003"/>
+    <id value="5555003"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="5555003"/>
@@ -51,8 +52,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID5555003"/>
+    <method value="POST"/>
+    <url value="Patient/5555003"/>
   </request>
 </entry>
 <entry>
@@ -60,7 +61,7 @@
     
     
 <MedicationOrder>
-  <id value="ID335-mp"/>
+  <id value="335"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -68,41 +69,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Carvedilol Tablet 25mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="200033"/>
-	  <display value="Carvedilol Tablet 25mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="200033"/>
+        <display value="Carvedilol Tablet 25mg"/>
+    </coding>
+    <text value="Carvedilol Tablet 25mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-04-23"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -112,7 +104,7 @@
     
     <text value="1 tab bid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -129,14 +121,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID335-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/335"/>
   </request>
 </entry>
 <entry>
@@ -144,7 +136,7 @@
     
     
 <MedicationOrder>
-  <id value="ID336-mp"/>
+  <id value="336"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -152,41 +144,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Irbesartan Tablet 300mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="200096"/>
-	  <display value="Irbesartan Tablet 300mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="200096"/>
+        <display value="Irbesartan Tablet 300mg"/>
+    </coding>
+    <text value="Irbesartan Tablet 300mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-05-24"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -196,7 +179,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -213,14 +196,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID336-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/336"/>
   </request>
 </entry>
 <entry>
@@ -228,7 +211,7 @@
     
     
 <MedicationOrder>
-  <id value="ID337-mp"/>
+  <id value="337"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -236,43 +219,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="losartan Tablet 100mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="979480"/>
-	  <display value="losartan Tablet 100mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="979480"/>
+        <display value="losartan Tablet 100mg"/>
+    </coding>
+    <text value="losartan Tablet 100mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-07-23"/>
           <end value="2014-05-24"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -282,7 +256,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -299,14 +273,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID337-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/337"/>
   </request>
 </entry>
 <entry>
@@ -314,7 +288,7 @@
     
     
 <MedicationOrder>
-  <id value="ID338-mp"/>
+  <id value="338"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -322,41 +296,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Aspirin Tablet 81mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="243670"/>
-	  <display value="Aspirin Tablet 81mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="243670"/>
+        <display value="Aspirin Tablet 81mg"/>
+    </coding>
+    <text value="Aspirin Tablet 81mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-11-02"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -366,7 +331,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -383,14 +348,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID338-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/338"/>
   </request>
 </entry>
 <entry>
@@ -398,7 +363,7 @@
     
     
 <MedicationOrder>
-  <id value="ID339-mp"/>
+  <id value="339"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -406,43 +371,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Brilinta Tablet 90mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="1116639"/>
-	  <display value="Brilinta Tablet 90mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1116639"/>
+        <display value="Brilinta Tablet 90mg"/>
+    </coding>
+    <text value="Brilinta Tablet 90mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-11-01"/>
           <end value="2014-05-14"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -452,7 +408,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -469,14 +425,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID339-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/339"/>
   </request>
 </entry>
 <entry>
@@ -484,7 +440,7 @@
     
     
 <MedicationOrder>
-  <id value="ID340-mp"/>
+  <id value="340"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -492,41 +448,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Omeprazole Delayed Release Tablet 20mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="402014"/>
-	  <display value="Omeprazole Delayed Release Tablet 20mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="402014"/>
+        <display value="Omeprazole Delayed Release Tablet 20mg"/>
+    </coding>
+    <text value="Omeprazole Delayed Release Tablet 20mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-05-02"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -536,7 +483,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -553,14 +500,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID340-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/340"/>
   </request>
 </entry>
 <entry>
@@ -568,7 +515,7 @@
     
     
 <MedicationOrder>
-  <id value="ID341-mp"/>
+  <id value="341"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -576,41 +523,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Synthroid Tablet 50mcg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="966247"/>
-	  <display value="Synthroid Tablet 50mcg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="966247"/>
+        <display value="Synthroid Tablet 50mcg"/>
+    </coding>
+    <text value="Synthroid Tablet 50mcg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-08-11"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -620,7 +558,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -637,14 +575,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID341-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/341"/>
   </request>
 </entry>
 <entry>
@@ -652,7 +590,7 @@
     
     
 <MedicationOrder>
-  <id value="ID342-mp"/>
+  <id value="342"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -660,43 +598,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Synthroid Tablet 25mcg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="966158"/>
-	  <display value="Synthroid Tablet 25mcg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="966158"/>
+        <display value="Synthroid Tablet 25mcg"/>
+    </coding>
+    <text value="Synthroid Tablet 25mcg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-08-11"/>
           <end value="2014-05-03"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -706,7 +635,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -723,14 +652,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID342-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/342"/>
   </request>
 </entry>
 <entry>
@@ -738,7 +667,7 @@
     
     
 <MedicationOrder>
-  <id value="ID343-mp"/>
+  <id value="343"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -746,41 +675,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Systane ophthalmic solution"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="707566"/>
-	  <display value="Systane ophthalmic solution"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="707566"/>
+        <display value="Systane ophthalmic solution"/>
+    </coding>
+    <text value="Systane ophthalmic solution"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-10-17"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="[drp]"/>
@@ -790,7 +710,7 @@
     
     <text value="1 drop OU bid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -807,14 +727,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID343-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/343"/>
   </request>
 </entry>
 <entry>
@@ -822,7 +742,7 @@
     
     
 <MedicationOrder>
-  <id value="ID344-mp"/>
+  <id value="344"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -830,35 +750,26 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="ProAir HFA"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="745752"/>
-	  <display value="ProAir HFA"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="745752"/>
+        <display value="ProAir HFA"/>
+    </coding>
+    <text value="ProAir HFA"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <text value="2 puffs every 4 hrs for asthma"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -875,14 +786,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID344-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/344"/>
   </request>
 </entry>
 <entry>
@@ -890,7 +801,7 @@
     
     
 <MedicationOrder>
-  <id value="ID345-mp"/>
+  <id value="345"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -898,35 +809,26 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Flovent 100mcg/inh"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="896031"/>
-	  <display value="Flovent 100mcg/inh"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="896031"/>
+        <display value="Flovent 100mcg/inh"/>
+    </coding>
+    <text value="Flovent 100mcg/inh"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <text value="1 puff every 12 hrs"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -943,14 +845,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID345-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/345"/>
   </request>
 </entry>
 <entry>
@@ -958,7 +860,7 @@
     
     
 <MedicationOrder>
-  <id value="ID346-mp"/>
+  <id value="346"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -966,35 +868,26 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Advair 100/50"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="896185"/>
-	  <display value="Advair 100/50"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="896185"/>
+        <display value="Advair 100/50"/>
+    </coding>
+    <text value="Advair 100/50"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
-    </scheduledTiming>
+    <timing>
+    </timing>
     <text value="1 puff every 12 hrs for asthma"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1011,14 +904,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID346-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/346"/>
   </request>
 </entry>
 <entry>
@@ -1026,7 +919,7 @@
     
     
 <MedicationOrder>
-  <id value="ID347-mp"/>
+  <id value="347"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1034,41 +927,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Zetia Tablet 10mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="352304"/>
-	  <display value="Zetia Tablet 10mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="352304"/>
+        <display value="Zetia Tablet 10mg"/>
+    </coding>
+    <text value="Zetia Tablet 10mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-03-19"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -1078,7 +962,7 @@
     
     <text value="1 tab qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1095,14 +979,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID347-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/347"/>
   </request>
 </entry>
 <entry>
@@ -1110,7 +994,7 @@
     
     
 <MedicationOrder>
-  <id value="ID348-mp"/>
+  <id value="348"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1118,43 +1002,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Crestor Tablet 10mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="859749"/>
-	  <display value="Crestor Tablet 10mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="859749"/>
+        <display value="Crestor Tablet 10mg"/>
+    </coding>
+    <text value="Crestor Tablet 10mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-02-01"/>
           <end value="2014-03-19"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -1164,7 +1039,7 @@
     
     <text value="1 tab qhs"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1181,14 +1056,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID348-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/348"/>
   </request>
 </entry>
 <entry>
@@ -1196,7 +1071,7 @@
     
     
 <MedicationOrder>
-  <id value="ID349-mp"/>
+  <id value="349"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1204,41 +1079,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Fish Oil Capsule 1000mg"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="577208"/>
-	  <display value="Fish Oil Capsule 1000mg"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="577208"/>
+        <display value="Fish Oil Capsule 1000mg"/>
+    </coding>
+    <text value="Fish Oil Capsule 1000mg"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-04-12"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="2"/>
       <unit value="{tablet}"/>
@@ -1248,7 +1114,7 @@
     
     <text value="2 caps qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1265,14 +1131,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID349-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/349"/>
   </request>
 </entry>
 <entry>
@@ -1280,7 +1146,7 @@
     
     
 <MedicationOrder>
-  <id value="ID350-mp"/>
+  <id value="350"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1288,41 +1154,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Metamucil Sugar-Free"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="880853"/>
-	  <display value="Metamucil Sugar-Free"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="880853"/>
+        <display value="Metamucil Sugar-Free"/>
+    </coding>
+    <text value="Metamucil Sugar-Free"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2011-09-11"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="3"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="tsp"/>
@@ -1332,7 +1189,7 @@
     
     <text value="1 tsp. tid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1349,14 +1206,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID350-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/350"/>
   </request>
 </entry>
 <entry>
@@ -1364,7 +1221,7 @@
     
     
 <MedicationOrder>
-  <id value="ID351-mp"/>
+  <id value="351"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1372,41 +1229,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Vitamin D3 Capsule 5000 iu"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="240029"/>
-	  <display value="Vitamin D3 Capsule 5000 iu"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="240029"/>
+        <display value="Vitamin D3 Capsule 5000 iu"/>
+    </coding>
+    <text value="Vitamin D3 Capsule 5000 iu"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2015-01-03"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -1416,7 +1264,7 @@
     
     <text value="1 cap qd"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1433,14 +1281,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID351-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/351"/>
   </request>
 </entry>
 <entry>
@@ -1448,7 +1296,7 @@
     
     
 <MedicationOrder>
-  <id value="ID352-mp"/>
+  <id value="352"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1456,43 +1304,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Ergocalciferol Capsule 50,000 iu"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="1367410"/>
-	  <display value="Ergocalciferol Capsule 50,000 iu"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID5555003"/>
+    <reference value="Patient/5555003"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1367410"/>
+        <display value="Ergocalciferol Capsule 50,000 iu"/>
+    </coding>
+    <text value="Ergocalciferol Capsule 50,000 iu"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-09-05"/>
           <end value="2014-12-23"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="wk"/>
+        <period value="1"/>
+        <periodUnits value="wk"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -1502,7 +1341,7 @@
     
     <text value="1 cap once a week"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -1519,14 +1358,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID352-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/352"/>
   </request>
 </entry>
 

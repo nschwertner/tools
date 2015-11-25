@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID1032702"/>
+    <id value="1032702"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="1032702"/>
@@ -56,8 +57,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID1032702"/>
+    <method value="POST"/>
+    <url value="Patient/1032702"/>
   </request>
 </entry>
 <entry>
@@ -65,7 +66,7 @@
     
     
 <MedicationOrder>
-  <id value="ID101-mp"/>
+  <id value="101"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -73,41 +74,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="582620"/>
-	  <display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID1032702"/>
+    <reference value="Patient/1032702"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="582620"/>
+        <display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+    </coding>
+    <text value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2008-04-05"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="10"/>
       <unit value="mL"/>
@@ -117,7 +109,7 @@
     
     <text value="10 mL bid"/>
   </dosageInstruction>
-  <dispense>
+  <dispenseRequest>
      <numberOfRepeatsAllowed value="1"/>
      
      <quantity>
@@ -134,14 +126,14 @@
         <code value="d"/>
      </expectedSupplyDuration>
      
-  </dispense>
+  </dispenseRequest>
   
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID101-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/101"/>
   </request>
 </entry>
   <entry>
@@ -149,13 +141,13 @@
     
     
   <Condition>
-  <id value="ID119-c"/>
+  <id value="119"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </patient>
     <code> 
       <coding>
@@ -172,8 +164,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID119-c"/>
+    <method value="POST"/>
+    <url value="Condition/119"/>
   </request>
 </entry>
   <entry>
@@ -181,13 +173,13 @@
     
     
   <Condition>
-  <id value="ID120-c"/>
+  <id value="120"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </patient>
     <code> 
       <coding>
@@ -204,8 +196,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID120-c"/>
+    <method value="POST"/>
+    <url value="Condition/120"/>
   </request>
 </entry>
   <entry>
@@ -213,13 +205,13 @@
     
     
   <Condition>
-  <id value="ID121-c"/>
+  <id value="121"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Follow-up encounter</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </patient>
     <code> 
       <coding>
@@ -236,8 +228,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID121-c"/>
+    <method value="POST"/>
+    <url value="Condition/121"/>
   </request>
 </entry>
   <entry>
@@ -245,13 +237,13 @@
     
     
   <Condition>
-  <id value="ID122-c"/>
+  <id value="122"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Gastroesophageal reflux disease</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </patient>
     <code> 
       <coding>
@@ -268,8 +260,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID122-c"/>
+    <method value="POST"/>
+    <url value="Condition/122"/>
   </request>
 </entry>
   <entry>
@@ -277,13 +269,13 @@
     
     
   <Condition>
-  <id value="ID123-c"/>
+  <id value="123"/>
     <text>
      <status value="generated"/>
      <div xmlns="http://www.w3.org/1999/xhtml">Needs influenza immunization</div>   
    </text>
     <patient>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </patient>
     <code> 
       <coding>
@@ -300,8 +292,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Condition/ID123-c"/>
+    <method value="POST"/>
+    <url value="Condition/123"/>
   </request>
 </entry>
   <entry>
@@ -309,30 +301,30 @@
     
     
     <Immunization>
-  <id value="ID1-i"/>
+  <id value="1"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">DTaP-hepatitis B and poliovirus vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1032702"/>
+            <reference value="Patient/1032702"/>
         </patient>
         <date value="2007-09-27"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="110"/>
-       		 <display value="DTaP-hepatitis B and poliovirus vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="110"/>
+                <display value="DTaP-hepatitis B and poliovirus vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID1-i"/>
+    <method value="POST"/>
+    <url value="Immunization/1"/>
   </request>
 </entry>
   <entry>
@@ -340,30 +332,30 @@
     
     
     <Immunization>
-  <id value="ID2-i"/>
+  <id value="2"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">poliovirus vaccine, unspecified formulation</div>
         </text>
         <patient>
-            <reference value="Patient/ID1032702"/>
+            <reference value="Patient/1032702"/>
         </patient>
         <date value="2011-01-27"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="89"/>
-       		 <display value="poliovirus vaccine, unspecified formulation"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="89"/>
+                <display value="poliovirus vaccine, unspecified formulation"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID2-i"/>
+    <method value="POST"/>
+    <url value="Immunization/2"/>
   </request>
 </entry>
   <entry>
@@ -371,30 +363,30 @@
     
     
     <Immunization>
-  <id value="ID3-i"/>
+  <id value="3"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">poliovirus vaccine, unspecified formulation</div>
         </text>
         <patient>
-            <reference value="Patient/ID1032702"/>
+            <reference value="Patient/1032702"/>
         </patient>
         <date value="2011-05-27"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="89"/>
-       		 <display value="poliovirus vaccine, unspecified formulation"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="89"/>
+                <display value="poliovirus vaccine, unspecified formulation"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID3-i"/>
+    <method value="POST"/>
+    <url value="Immunization/3"/>
   </request>
 </entry>
   <entry>
@@ -402,30 +394,30 @@
     
     
     <Immunization>
-  <id value="ID4-i"/>
+  <id value="4"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">rotavirus, live, pentavalent vaccine</div>
         </text>
         <patient>
-            <reference value="Patient/ID1032702"/>
+            <reference value="Patient/1032702"/>
         </patient>
         <date value="2007-05-24"/>
-        <vaccineType>
+        <vaccineCode>
             <coding>
-        	<system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
-		 <code value="116"/>
-       		 <display value="rotavirus, live, pentavalent vaccine"/>
-		</coding>
-        </vaccineType>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="116"/>
+                <display value="rotavirus, live, pentavalent vaccine"/>
+            </coding>
+        </vaccineCode>
         <reported value="false"/>
         <wasNotGiven value="false"/>
     </Immunization>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Immunization/ID4-i"/>
+    <method value="POST"/>
+    <url value="Immunization/4"/>
   </request>
 </entry>
 <entry>
@@ -433,7 +425,7 @@
     
     
   <Observation>
-  <id value="ID5-smokingstatus"/>
+  <id value="5-smokingstatus"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
@@ -444,6 +436,7 @@
         <code value="72166-2"/>
         <display value="Tobacco smoking status"/>
       </coding>
+      <text value="Tobacco smoking status"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -451,18 +444,18 @@
         <code value="428041000124106"/>
         <display value="Current some day smoker"/>
       </coding>
+      <text value="Current some day smoker"/>
     </valueCodeableConcept>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID1032702"/>
+      <reference value="Patient/1032702"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-smokingstatus"/>
+    <method value="POST"/>
+    <url value="Observation/5-smokingstatus"/>
   </request>
 </entry>
   <entry>
@@ -470,7 +463,7 @@
     
     
     <List>
-  <id value="ID19-l"/>
+  <id value="19"/>
         <text>
             <status value="generated"/>
             <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
@@ -481,9 +474,10 @@
                <code value="52473-6"/>
                <display value="Allergy"/>
             </coding>
+            <text value="Allergy"/>
         </code>
         <subject>
-          <reference value="Patient/ID1032702"/>
+          <reference value="Patient/1032702"/>
         </subject>
         <date value="2000"/>
         <mode value="snapshot"/>
@@ -493,13 +487,14 @@
                 <code value="nilknown"/>
                 <display value="Nil Known"/>
             </coding>
+            <text value="Nil Known"/>
         </emptyReason>
     </List>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="List/ID19-l"/>
+    <method value="POST"/>
+    <url value="List/19"/>
   </request>
 </entry>
 

@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID4444001"/>
+    <id value="4444001"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="4444001"/>
@@ -43,8 +44,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID4444001"/>
+    <method value="POST"/>
+    <url value="Patient/4444001"/>
   </request>
 </entry>
 <entry>
@@ -52,7 +53,7 @@
     
     
 <MedicationOrder>
-  <id value="ID357-mp"/>
+  <id value="357"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -60,41 +61,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Acetaminophen 325 MG [Tylenol]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="569998"/>
-	  <display value="Acetaminophen 325 MG [Tylenol]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="569998"/>
+        <display value="Acetaminophen 325 MG [Tylenol]"/>
+    </coding>
+    <text value="Acetaminophen 325 MG [Tylenol]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-06-21"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="6"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -110,8 +102,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID357-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/357"/>
   </request>
 </entry>
 <entry>
@@ -119,7 +111,7 @@
     
     
 <MedicationOrder>
-  <id value="ID358-mp"/>
+  <id value="358"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -127,41 +119,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Aspirin 81 MG [Ecotrin]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="1189780"/>
-	  <display value="Aspirin 81 MG [Ecotrin]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1189780"/>
+        <display value="Aspirin 81 MG [Ecotrin]"/>
+    </coding>
+    <text value="Aspirin 81 MG [Ecotrin]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-06-21"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -175,8 +158,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID358-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/358"/>
   </request>
 </entry>
 <entry>
@@ -184,7 +167,7 @@
     
     
 <MedicationOrder>
-  <id value="ID359-mp"/>
+  <id value="359"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -192,51 +175,42 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="855635"/>
-	  <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="855635"/>
+        <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+    </coding>
+    <text value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2015-01-27"/>
           <end value="2016-01-27"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <text value="bid"/>
   </dosageInstruction>
 </MedicationOrder>
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID359-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/359"/>
   </request>
 </entry>
 <entry>
@@ -244,7 +218,7 @@
     
     
 <MedicationOrder>
-  <id value="ID360-mp"/>
+  <id value="360"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -252,41 +226,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="ferrous sulfate 325 MG [Feosol]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="635969"/>
-	  <display value="ferrous sulfate 325 MG [Feosol]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="635969"/>
+        <display value="ferrous sulfate 325 MG [Feosol]"/>
+    </coding>
+    <text value="ferrous sulfate 325 MG [Feosol]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2012-04-13"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="3"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -300,8 +265,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID360-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/360"/>
   </request>
 </entry>
 <entry>
@@ -309,7 +274,7 @@
     
     
 <MedicationOrder>
-  <id value="ID361-mp"/>
+  <id value="361"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -317,41 +282,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Lisinopril 5 MG [Prinivil]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="567575"/>
-	  <display value="Lisinopril 5 MG [Prinivil]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="567575"/>
+        <display value="Lisinopril 5 MG [Prinivil]"/>
+    </coding>
+    <text value="Lisinopril 5 MG [Prinivil]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2015-02-07"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -365,8 +321,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID361-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/361"/>
   </request>
 </entry>
 <entry>
@@ -374,7 +330,7 @@
     
     
 <MedicationOrder>
-  <id value="ID362-mp"/>
+  <id value="362"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -382,41 +338,32 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="Metformin hydrochloride 500 MG [Glucophage]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="860976"/>
-	  <display value="Metformin hydrochloride 500 MG [Glucophage]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="active" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="860976"/>
+        <display value="Metformin hydrochloride 500 MG [Glucophage]"/>
+    </coding>
+    <text value="Metformin hydrochloride 500 MG [Glucophage]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2015-01-27"/>
-        </bounds>
+        </boundsPeriod>
         <frequency value="2"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -430,8 +377,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID362-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/362"/>
   </request>
 </entry>
 <entry>
@@ -439,7 +386,7 @@
     
     
 <MedicationOrder>
-  <id value="ID363-mp"/>
+  <id value="363"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -447,43 +394,34 @@
     </div>
   </text>
 
-  <contained>
-    <Medication>
-      <id value="med"/>
-      <name value="metoprolol succinate 25 MG [Toprol]"/>
-      <code>
-	<coding>
-	<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-	  <code value="1370507"/>
-	  <display value="metoprolol succinate 25 MG [Toprol]"/>
-	</coding>
-      </code>
-    </Medication>
-  </contained>
-
   <status value="completed" />
   <patient>
-    <reference value="Patient/ID4444001"/>
+    <reference value="Patient/4444001"/>
   </patient>
 
-  <medication>
-    <reference value="#med"/>
-  </medication>
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1370507"/>
+        <display value="metoprolol succinate 25 MG [Toprol]"/>
+    </coding>
+    <text value="metoprolol succinate 25 MG [Toprol]"/>
+  </medicationCodeableConcept>
 
   <dosageInstruction>
-    <scheduledTiming>
+    <timing>
       <repeat>
-        <bounds>
+        <boundsPeriod>
           <start value="2014-08-18"/>
           <end value="2015-08-18"/>
           
-        </bounds>
+        </boundsPeriod>
         <frequency value="1"/>
-        <duration value="1"/>
-        <durationUnits value="d"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
       </repeat>
       
-    </scheduledTiming>
+    </timing>
     <doseQuantity>
       <value value="1"/>
       <unit value="{tablet}"/>
@@ -497,8 +435,8 @@
 
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="MedicationOrder/ID363-mp"/>
+    <method value="POST"/>
+    <url value="MedicationOrder/363"/>
   </request>
 </entry>
 

@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID9995679"/>
+    <id value="9995679"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="9995679"/>
@@ -43,8 +44,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID9995679"/>
+    <method value="POST"/>
+    <url value="Patient/9995679"/>
   </request>
 </entry>
   <entry>
@@ -52,7 +53,7 @@
     
     
     <Encounter>
-  <id value="ID1"/>
+  <id value="1"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2006-12-27T15:53:00: ambulatory encounter</div>
@@ -60,7 +61,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2006-12-27T15:53:00"/>
@@ -70,8 +71,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1"/>
+    <method value="POST"/>
+    <url value="Encounter/1"/>
   </request>
 </entry>
   <entry>
@@ -79,7 +80,7 @@
     
     
     <Encounter>
-  <id value="ID2"/>
+  <id value="2"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18T13:32:00: ambulatory encounter</div>
@@ -87,7 +88,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2007-04-18T13:32:00"/>
@@ -97,8 +98,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID2"/>
+    <method value="POST"/>
+    <url value="Encounter/2"/>
   </request>
 </entry>
   <entry>
@@ -106,7 +107,7 @@
     
     
     <Encounter>
-  <id value="ID3"/>
+  <id value="3"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18T12:49:00: ambulatory encounter</div>
@@ -114,7 +115,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2007-07-18T12:49:00"/>
@@ -124,8 +125,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID3"/>
+    <method value="POST"/>
+    <url value="Encounter/3"/>
   </request>
 </entry>
   <entry>
@@ -133,7 +134,7 @@
     
     
     <Encounter>
-  <id value="ID4"/>
+  <id value="4"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16T13:03:00: ambulatory encounter</div>
@@ -141,7 +142,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2008-01-16T13:03:00"/>
@@ -151,8 +152,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID4"/>
+    <method value="POST"/>
+    <url value="Encounter/4"/>
   </request>
 </entry>
   <entry>
@@ -160,7 +161,7 @@
     
     
     <Encounter>
-  <id value="ID5"/>
+  <id value="5"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25T15:45:00: ambulatory encounter</div>
@@ -168,7 +169,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2008-06-25T15:45:00"/>
@@ -178,8 +179,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID5"/>
+    <method value="POST"/>
+    <url value="Encounter/5"/>
   </request>
 </entry>
   <entry>
@@ -187,7 +188,7 @@
     
     
     <Encounter>
-  <id value="ID7"/>
+  <id value="7"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10T12:39:00: ambulatory encounter</div>
@@ -195,7 +196,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2009-06-10T12:39:00"/>
@@ -205,8 +206,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID7"/>
+    <method value="POST"/>
+    <url value="Encounter/7"/>
   </request>
 </entry>
   <entry>
@@ -214,7 +215,7 @@
     
     
     <Encounter>
-  <id value="ID9"/>
+  <id value="9"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23T12:54:00: ambulatory encounter</div>
@@ -222,7 +223,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2009-12-23T12:54:00"/>
@@ -232,8 +233,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID9"/>
+    <method value="POST"/>
+    <url value="Encounter/9"/>
   </request>
 </entry>
   <entry>
@@ -241,7 +242,7 @@
     
     
     <Encounter>
-  <id value="ID15"/>
+  <id value="15"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22T17:23:00: ambulatory encounter</div>
@@ -249,7 +250,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID9995679"/>
+        <reference value="Patient/9995679"/>
       </patient>
       <period>
        <start value="2010-12-22T17:23:00"/>
@@ -259,8 +260,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID15"/>
+    <method value="POST"/>
+    <url value="Encounter/15"/>
   </request>
 </entry>
   <entry>
@@ -268,7 +269,7 @@
     
     
   <Observation>
-    <id value="ID2-bp"/>
+    <id value="2-bp"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: Blood pressure 121/62 mmHg</div>
@@ -279,44 +280,67 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID2-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID2-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <encounter>
-      <reference value="Encounter/ID2"/>
+      <reference value="Encounter/2"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="121"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="62"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-bp"/>
+    <method value="POST"/>
+    <url value="Observation/2-bp"/>
   </request>
 </entry>
 <entry>
@@ -324,7 +348,7 @@
     
     
   <Observation>
-  <id value="ID2-systolic"/>
+  <id value="2-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: Systolic blood pressure = 121 mm[Hg]</div>
@@ -335,6 +359,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="121.0"/>
@@ -345,16 +370,15 @@
     
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/2-systolic"/>
   </request>
 </entry>
 <entry>
@@ -362,7 +386,7 @@
     
     
   <Observation>
-  <id value="ID2-diastolic"/>
+  <id value="2-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: Diastolic blood pressure = 62 mm[Hg]</div>
@@ -373,6 +397,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="62.0"/>
@@ -383,16 +408,15 @@
     
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/2-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -400,7 +424,7 @@
     
     
   <Observation>
-    <id value="ID3-bp"/>
+    <id value="3-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -408,6 +432,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -421,32 +446,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID3-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID3-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -454,19 +468,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID3"/>
+      <reference value="Encounter/3"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="116"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="64"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-bp"/>
+    <method value="POST"/>
+    <url value="Observation/3-bp"/>
   </request>
 </entry>
 <entry>
@@ -474,7 +523,7 @@
     
     
   <Observation>
-  <id value="ID3-systolic"/>
+  <id value="3-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18: Systolic blood pressure = 116 mm[Hg]</div>
@@ -485,6 +534,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="116.0"/>
@@ -495,16 +545,15 @@
     
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/3-systolic"/>
   </request>
 </entry>
 <entry>
@@ -512,7 +561,7 @@
     
     
   <Observation>
-  <id value="ID3-diastolic"/>
+  <id value="3-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18: Diastolic blood pressure = 64 mm[Hg]</div>
@@ -523,6 +572,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="64.0"/>
@@ -533,16 +583,15 @@
     
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/3-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -550,7 +599,7 @@
     
     
   <Observation>
-    <id value="ID4-bp"/>
+    <id value="4-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -558,6 +607,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -571,32 +621,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID4-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID4-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -604,19 +643,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID4"/>
+      <reference value="Encounter/4"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="120"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="58"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-bp"/>
+    <method value="POST"/>
+    <url value="Observation/4-bp"/>
   </request>
 </entry>
 <entry>
@@ -624,7 +698,7 @@
     
     
   <Observation>
-  <id value="ID4-systolic"/>
+  <id value="4-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16: Systolic blood pressure = 120 mm[Hg]</div>
@@ -635,6 +709,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="120.0"/>
@@ -645,16 +720,15 @@
     
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/4-systolic"/>
   </request>
 </entry>
 <entry>
@@ -662,7 +736,7 @@
     
     
   <Observation>
-  <id value="ID4-diastolic"/>
+  <id value="4-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16: Diastolic blood pressure = 58 mm[Hg]</div>
@@ -673,6 +747,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="58.0"/>
@@ -683,16 +758,15 @@
     
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/4-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -700,7 +774,7 @@
     
     
   <Observation>
-    <id value="ID5-bp"/>
+    <id value="5-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -708,6 +782,7 @@
              <code value="33586001"/>
              <display value="sitting"/>
          </coding>
+         <text value="sitting"/>
        </valueCodeableConcept>
     </extension>
     
@@ -721,32 +796,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID5-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID5-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368208006"/>
          <display value="left arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="left arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -754,19 +818,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="121"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="73"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-bp"/>
+    <method value="POST"/>
+    <url value="Observation/5-bp"/>
   </request>
 </entry>
 <entry>
@@ -774,7 +873,7 @@
     
     
   <Observation>
-  <id value="ID5-systolic"/>
+  <id value="5-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: Systolic blood pressure = 121 mm[Hg]</div>
@@ -785,6 +884,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="121.0"/>
@@ -795,16 +895,15 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/5-systolic"/>
   </request>
 </entry>
 <entry>
@@ -812,7 +911,7 @@
     
     
   <Observation>
-  <id value="ID5-diastolic"/>
+  <id value="5-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: Diastolic blood pressure = 73 mm[Hg]</div>
@@ -823,6 +922,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="73.0"/>
@@ -833,16 +933,15 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/5-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -850,7 +949,7 @@
     
     
   <Observation>
-    <id value="ID6-bp"/>
+    <id value="6-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -858,6 +957,7 @@
              <code value="33586001"/>
              <display value="sitting"/>
          </coding>
+         <text value="sitting"/>
        </valueCodeableConcept>
     </extension>
     
@@ -871,32 +971,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID6-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID6-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368208006"/>
          <display value="left arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="left arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -904,19 +993,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="119"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="70"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID6-bp"/>
+    <method value="POST"/>
+    <url value="Observation/6-bp"/>
   </request>
 </entry>
 <entry>
@@ -924,7 +1048,7 @@
     
     
   <Observation>
-  <id value="ID6-systolic"/>
+  <id value="6-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: Systolic blood pressure = 119 mm[Hg]</div>
@@ -935,6 +1059,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="119.0"/>
@@ -945,16 +1070,15 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID6-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/6-systolic"/>
   </request>
 </entry>
 <entry>
@@ -962,7 +1086,7 @@
     
     
   <Observation>
-  <id value="ID6-diastolic"/>
+  <id value="6-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: Diastolic blood pressure = 70 mm[Hg]</div>
@@ -973,6 +1097,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="70.0"/>
@@ -983,16 +1108,15 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID6-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/6-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1000,7 +1124,7 @@
     
     
   <Observation>
-    <id value="ID7-bp"/>
+    <id value="7-bp"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: Blood pressure 137/68 mmHg</div>
@@ -1011,44 +1135,67 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID7-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID7-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <encounter>
-      <reference value="Encounter/ID7"/>
+      <reference value="Encounter/7"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="137"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="68"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID7-bp"/>
+    <method value="POST"/>
+    <url value="Observation/7-bp"/>
   </request>
 </entry>
 <entry>
@@ -1056,7 +1203,7 @@
     
     
   <Observation>
-  <id value="ID7-systolic"/>
+  <id value="7-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: Systolic blood pressure = 137 mm[Hg]</div>
@@ -1067,6 +1214,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="137.0"/>
@@ -1077,16 +1225,15 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID7-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/7-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1094,7 +1241,7 @@
     
     
   <Observation>
-  <id value="ID7-diastolic"/>
+  <id value="7-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: Diastolic blood pressure = 68 mm[Hg]</div>
@@ -1105,6 +1252,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="68.0"/>
@@ -1115,16 +1263,15 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID7-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/7-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1132,7 +1279,7 @@
     
     
   <Observation>
-    <id value="ID8-bp"/>
+    <id value="8-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1140,6 +1287,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1153,32 +1301,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID8-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID8-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="61396006"/>
          <display value="left thigh"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="left thigh"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1186,19 +1323,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID7"/>
+      <reference value="Encounter/7"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="168"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="86"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID8-bp"/>
+    <method value="POST"/>
+    <url value="Observation/8-bp"/>
   </request>
 </entry>
 <entry>
@@ -1206,7 +1378,7 @@
     
     
   <Observation>
-  <id value="ID8-systolic"/>
+  <id value="8-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: Systolic blood pressure = 168 mm[Hg]</div>
@@ -1217,6 +1389,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="168.0"/>
@@ -1227,16 +1400,15 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID8-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/8-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1244,7 +1416,7 @@
     
     
   <Observation>
-  <id value="ID8-diastolic"/>
+  <id value="8-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: Diastolic blood pressure = 86 mm[Hg]</div>
@@ -1255,6 +1427,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="86.0"/>
@@ -1265,16 +1438,15 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID8-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/8-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1282,7 +1454,7 @@
     
     
   <Observation>
-    <id value="ID9-bp"/>
+    <id value="9-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1290,6 +1462,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1303,32 +1476,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID9-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID9-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368208006"/>
          <display value="left arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="left arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1336,19 +1498,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="122"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="66"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-bp"/>
+    <method value="POST"/>
+    <url value="Observation/9-bp"/>
   </request>
 </entry>
 <entry>
@@ -1356,7 +1553,7 @@
     
     
   <Observation>
-  <id value="ID9-systolic"/>
+  <id value="9-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 122 mm[Hg]</div>
@@ -1367,6 +1564,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="122.0"/>
@@ -1377,16 +1575,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/9-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1394,7 +1591,7 @@
     
     
   <Observation>
-  <id value="ID9-diastolic"/>
+  <id value="9-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 66 mm[Hg]</div>
@@ -1405,6 +1602,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="66.0"/>
@@ -1415,16 +1613,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/9-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1432,7 +1629,7 @@
     
     
   <Observation>
-    <id value="ID10-bp"/>
+    <id value="10-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1440,6 +1637,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1453,32 +1651,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID10-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID10-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1486,19 +1673,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="121"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="65"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID10-bp"/>
+    <method value="POST"/>
+    <url value="Observation/10-bp"/>
   </request>
 </entry>
 <entry>
@@ -1506,7 +1728,7 @@
     
     
   <Observation>
-  <id value="ID10-systolic"/>
+  <id value="10-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 121 mm[Hg]</div>
@@ -1517,6 +1739,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="121.0"/>
@@ -1527,16 +1750,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID10-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/10-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1544,7 +1766,7 @@
     
     
   <Observation>
-  <id value="ID10-diastolic"/>
+  <id value="10-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 65 mm[Hg]</div>
@@ -1555,6 +1777,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="65.0"/>
@@ -1565,16 +1788,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID10-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/10-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1582,7 +1804,7 @@
     
     
   <Observation>
-    <id value="ID11-bp"/>
+    <id value="11-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1590,6 +1812,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1603,32 +1826,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID11-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID11-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1636,19 +1848,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="119"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="60"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID11-bp"/>
+    <method value="POST"/>
+    <url value="Observation/11-bp"/>
   </request>
 </entry>
 <entry>
@@ -1656,7 +1903,7 @@
     
     
   <Observation>
-  <id value="ID11-systolic"/>
+  <id value="11-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 119 mm[Hg]</div>
@@ -1667,6 +1914,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="119.0"/>
@@ -1677,16 +1925,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID11-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/11-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1694,7 +1941,7 @@
     
     
   <Observation>
-  <id value="ID11-diastolic"/>
+  <id value="11-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 60 mm[Hg]</div>
@@ -1705,6 +1952,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="60.0"/>
@@ -1715,16 +1963,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID11-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/11-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1732,7 +1979,7 @@
     
     
   <Observation>
-    <id value="ID12-bp"/>
+    <id value="12-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1740,6 +1987,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1753,32 +2001,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID12-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID12-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1786,19 +2023,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="121"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="57"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID12-bp"/>
+    <method value="POST"/>
+    <url value="Observation/12-bp"/>
   </request>
 </entry>
 <entry>
@@ -1806,7 +2078,7 @@
     
     
   <Observation>
-  <id value="ID12-systolic"/>
+  <id value="12-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 121 mm[Hg]</div>
@@ -1817,6 +2089,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="121.0"/>
@@ -1827,16 +2100,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID12-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/12-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1844,7 +2116,7 @@
     
     
   <Observation>
-  <id value="ID12-diastolic"/>
+  <id value="12-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 57 mm[Hg]</div>
@@ -1855,6 +2127,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="57.0"/>
@@ -1865,16 +2138,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID12-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/12-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -1882,7 +2154,7 @@
     
     
   <Observation>
-    <id value="ID13-bp"/>
+    <id value="13-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -1890,6 +2162,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -1903,32 +2176,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID13-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID13-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -1936,19 +2198,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="131"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="71"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID13-bp"/>
+    <method value="POST"/>
+    <url value="Observation/13-bp"/>
   </request>
 </entry>
 <entry>
@@ -1956,7 +2253,7 @@
     
     
   <Observation>
-  <id value="ID13-systolic"/>
+  <id value="13-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 131 mm[Hg]</div>
@@ -1967,6 +2264,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="131.0"/>
@@ -1977,16 +2275,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID13-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/13-systolic"/>
   </request>
 </entry>
 <entry>
@@ -1994,7 +2291,7 @@
     
     
   <Observation>
-  <id value="ID13-diastolic"/>
+  <id value="13-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 71 mm[Hg]</div>
@@ -2005,6 +2302,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="71.0"/>
@@ -2015,16 +2313,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID13-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/13-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -2032,7 +2329,7 @@
     
     
   <Observation>
-    <id value="ID14-bp"/>
+    <id value="14-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -2040,6 +2337,7 @@
              <code value="40199007"/>
              <display value="supine"/>
          </coding>
+         <text value="supine"/>
        </valueCodeableConcept>
     </extension>
     
@@ -2053,32 +2351,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID14-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID14-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -2086,19 +2373,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="123"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="58"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID14-bp"/>
+    <method value="POST"/>
+    <url value="Observation/14-bp"/>
   </request>
 </entry>
 <entry>
@@ -2106,7 +2428,7 @@
     
     
   <Observation>
-  <id value="ID14-systolic"/>
+  <id value="14-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Systolic blood pressure = 123 mm[Hg]</div>
@@ -2117,6 +2439,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="123.0"/>
@@ -2127,16 +2450,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID14-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/14-systolic"/>
   </request>
 </entry>
 <entry>
@@ -2144,7 +2466,7 @@
     
     
   <Observation>
-  <id value="ID14-diastolic"/>
+  <id value="14-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: Diastolic blood pressure = 58 mm[Hg]</div>
@@ -2155,6 +2477,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="58.0"/>
@@ -2165,16 +2488,15 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID14-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/14-diastolic"/>
   </request>
 </entry>
   <entry>
@@ -2182,7 +2504,7 @@
     
     
   <Observation>
-    <id value="ID15-bp"/>
+    <id value="15-bp"/>
     <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position">
       <valueCodeableConcept>
          <coding>
@@ -2190,6 +2512,7 @@
              <code value="33586001"/>
              <display value="sitting"/>
          </coding>
+         <text value="sitting"/>
        </valueCodeableConcept>
     </extension>
     
@@ -2203,32 +2526,21 @@
         <code value="55284-4"/>
         <display value="Blood pressure systolic and diastolic"/>
       </coding>
+      <text value="Blood pressure systolic and diastolic"/>
     </code>
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID15-systolic"/>
-      </target>
-    </related>
-    <related>
-      <type value="has-component"/>
-      <target>
-        <reference value="Observation/ID15-diastolic"/>
-      </target>
-    </related>
-    <bodySiteCodeableConcept>
+    <bodySite>
      <coding>
          <system value="http://snomed.info/sct"/>
          <code value="368209003"/>
          <display value="right arm"/>
      </coding>
-    </bodySiteCodeableConcept>
+     <text value="right arm"/>
+    </bodySite>
     
     <method>
      <coding>
@@ -2236,19 +2548,54 @@
          <code value="machine"/>
          <display value="machine"/>
      </coding>
+     <text value="machine"/>
     </method>
     
     <encounter>
-      <reference value="Encounter/ID15"/>
+      <reference value="Encounter/15"/>
     </encounter>
     
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
+            </coding>
+            <text value="Systolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="123"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
+
+    <component>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8462-4"/>
+                <display value="Diastolic blood pressure"/>
+            </coding>
+            <text value="Diastolic blood pressure"/>
+        </code>
+        <valueQuantity>
+            <value value="59"/>
+            <unit value="mmHg"/>
+            <system value="http://unitsofmeasure.org" />
+            <code value="mm[Hg]"/>
+        </valueQuantity>
+    </component>
 
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-bp"/>
+    <method value="POST"/>
+    <url value="Observation/15-bp"/>
   </request>
 </entry>
 <entry>
@@ -2256,7 +2603,7 @@
     
     
   <Observation>
-  <id value="ID15-systolic"/>
+  <id value="15-systolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22: Systolic blood pressure = 123 mm[Hg]</div>
@@ -2267,6 +2614,7 @@
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
+      <text value="Systolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="123.0"/>
@@ -2277,16 +2625,15 @@
     
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-systolic"/>
+    <method value="POST"/>
+    <url value="Observation/15-systolic"/>
   </request>
 </entry>
 <entry>
@@ -2294,7 +2641,7 @@
     
     
   <Observation>
-  <id value="ID15-diastolic"/>
+  <id value="15-diastolic"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22: Diastolic blood pressure = 59 mm[Hg]</div>
@@ -2305,6 +2652,7 @@
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
+      <text value="Diastolic blood pressure"/>
     </code>
     <valueQuantity>
       <value value="59.0"/>
@@ -2315,16 +2663,15 @@
     
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-diastolic"/>
+    <method value="POST"/>
+    <url value="Observation/15-diastolic"/>
   </request>
 </entry>
 <entry>
@@ -2332,7 +2679,7 @@
     
     
   <Observation>
-  <id value="ID1-height"/>
+  <id value="1-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-12-27: height = 198.0 cm</div>
@@ -2343,6 +2690,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="198.0"/>
@@ -2353,20 +2701,19 @@
     
     <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1"/>
+      <reference value="Encounter/1"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1-height"/>
+    <method value="POST"/>
+    <url value="Observation/1-height"/>
   </request>
 </entry>
 <entry>
@@ -2374,7 +2721,7 @@
     
     
   <Observation>
-  <id value="ID1-heartrate"/>
+  <id value="1-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-12-27: heart_rate = 54.0 {beats}/min</div>
@@ -2385,6 +2732,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="54.0"/>
@@ -2395,20 +2743,19 @@
     
     <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1"/>
+      <reference value="Encounter/1"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/1-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -2416,7 +2763,7 @@
     
     
   <Observation>
-  <id value="ID1-weight"/>
+  <id value="1-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-12-27: weight = 86.0 kg</div>
@@ -2427,6 +2774,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="86.0"/>
@@ -2437,20 +2785,19 @@
     
     <effectiveDateTime value="2006-12-27"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1"/>
+      <reference value="Encounter/1"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1-weight"/>
   </request>
 </entry>
 <entry>
@@ -2458,7 +2805,7 @@
     
     
   <Observation>
-  <id value="ID2-height"/>
+  <id value="2-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: height = 197.5 cm</div>
@@ -2469,6 +2816,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.5"/>
@@ -2479,20 +2827,19 @@
     
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID2"/>
+      <reference value="Encounter/2"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-height"/>
+    <method value="POST"/>
+    <url value="Observation/2-height"/>
   </request>
 </entry>
 <entry>
@@ -2500,7 +2847,7 @@
     
     
   <Observation>
-  <id value="ID2-heartrate"/>
+  <id value="2-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: heart_rate = 60.0 {beats}/min</div>
@@ -2511,6 +2858,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="60.0"/>
@@ -2521,20 +2869,19 @@
     
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID2"/>
+      <reference value="Encounter/2"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/2-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -2542,7 +2889,7 @@
     
     
   <Observation>
-  <id value="ID2-weight"/>
+  <id value="2-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-04-18: weight = 87.0 kg</div>
@@ -2553,6 +2900,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="87.0"/>
@@ -2563,20 +2911,19 @@
     
     <effectiveDateTime value="2007-04-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID2"/>
+      <reference value="Encounter/2"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID2-weight"/>
+    <method value="POST"/>
+    <url value="Observation/2-weight"/>
   </request>
 </entry>
 <entry>
@@ -2584,7 +2931,7 @@
     
     
   <Observation>
-  <id value="ID3-height"/>
+  <id value="3-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18: height = 197.0 cm</div>
@@ -2595,6 +2942,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.0"/>
@@ -2605,20 +2953,19 @@
     
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID3"/>
+      <reference value="Encounter/3"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-height"/>
+    <method value="POST"/>
+    <url value="Observation/3-height"/>
   </request>
 </entry>
 <entry>
@@ -2626,7 +2973,7 @@
     
     
   <Observation>
-  <id value="ID3-heartrate"/>
+  <id value="3-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18: heart_rate = 80.0 {beats}/min</div>
@@ -2637,6 +2984,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="80.0"/>
@@ -2647,20 +2995,19 @@
     
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID3"/>
+      <reference value="Encounter/3"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/3-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -2668,7 +3015,7 @@
     
     
   <Observation>
-  <id value="ID3-weight"/>
+  <id value="3-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-07-18: weight = 90.2 kg</div>
@@ -2679,6 +3026,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="90.2"/>
@@ -2689,20 +3037,19 @@
     
     <effectiveDateTime value="2007-07-18"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID3"/>
+      <reference value="Encounter/3"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3-weight"/>
+    <method value="POST"/>
+    <url value="Observation/3-weight"/>
   </request>
 </entry>
 <entry>
@@ -2710,7 +3057,7 @@
     
     
   <Observation>
-  <id value="ID4-height"/>
+  <id value="4-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16: height = 197.5 cm</div>
@@ -2721,6 +3068,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.5"/>
@@ -2731,20 +3079,19 @@
     
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID4"/>
+      <reference value="Encounter/4"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-height"/>
+    <method value="POST"/>
+    <url value="Observation/4-height"/>
   </request>
 </entry>
 <entry>
@@ -2752,7 +3099,7 @@
     
     
   <Observation>
-  <id value="ID4-heartrate"/>
+  <id value="4-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16: heart_rate = 47.0 {beats}/min</div>
@@ -2763,6 +3110,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="47.0"/>
@@ -2773,20 +3121,19 @@
     
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID4"/>
+      <reference value="Encounter/4"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/4-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -2794,7 +3141,7 @@
     
     
   <Observation>
-  <id value="ID4-weight"/>
+  <id value="4-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-01-16: weight = 89.4 kg</div>
@@ -2805,6 +3152,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="89.4"/>
@@ -2815,20 +3163,19 @@
     
     <effectiveDateTime value="2008-01-16"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID4"/>
+      <reference value="Encounter/4"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID4-weight"/>
+    <method value="POST"/>
+    <url value="Observation/4-weight"/>
   </request>
 </entry>
 <entry>
@@ -2836,7 +3183,7 @@
     
     
   <Observation>
-  <id value="ID5-height"/>
+  <id value="5-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: height = 197.5 cm</div>
@@ -2847,6 +3194,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.5"/>
@@ -2857,20 +3205,19 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-height"/>
+    <method value="POST"/>
+    <url value="Observation/5-height"/>
   </request>
 </entry>
 <entry>
@@ -2878,7 +3225,7 @@
     
     
   <Observation>
-  <id value="ID5-heartrate"/>
+  <id value="5-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: heart_rate = 47.0 {beats}/min</div>
@@ -2889,6 +3236,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="47.0"/>
@@ -2899,20 +3247,19 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/5-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -2920,7 +3267,7 @@
     
     
   <Observation>
-  <id value="ID5-weight"/>
+  <id value="5-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: weight = 90.2 kg</div>
@@ -2931,6 +3278,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="90.2"/>
@@ -2941,20 +3289,19 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID5-weight"/>
+    <method value="POST"/>
+    <url value="Observation/5-weight"/>
   </request>
 </entry>
 <entry>
@@ -2962,7 +3309,7 @@
     
     
   <Observation>
-  <id value="ID6-heartrate"/>
+  <id value="6-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-06-25: heart_rate = 50.0 {beats}/min</div>
@@ -2973,6 +3320,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="50.0"/>
@@ -2983,20 +3331,19 @@
     
     <effectiveDateTime value="2008-06-25"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID5"/>
+      <reference value="Encounter/5"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID6-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/6-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3004,7 +3351,7 @@
     
     
   <Observation>
-  <id value="ID7-height"/>
+  <id value="7-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: height = 198.0 cm</div>
@@ -3015,6 +3362,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="198.0"/>
@@ -3025,20 +3373,19 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID7"/>
+      <reference value="Encounter/7"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID7-height"/>
+    <method value="POST"/>
+    <url value="Observation/7-height"/>
   </request>
 </entry>
 <entry>
@@ -3046,7 +3393,7 @@
     
     
   <Observation>
-  <id value="ID7-weight"/>
+  <id value="7-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-06-10: weight = 94.7 kg</div>
@@ -3057,6 +3404,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="94.7"/>
@@ -3067,20 +3415,19 @@
     
     <effectiveDateTime value="2009-06-10"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID7"/>
+      <reference value="Encounter/7"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID7-weight"/>
+    <method value="POST"/>
+    <url value="Observation/7-weight"/>
   </request>
 </entry>
 <entry>
@@ -3088,7 +3435,7 @@
     
     
   <Observation>
-  <id value="ID9-height"/>
+  <id value="9-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: height = 197.5 cm</div>
@@ -3099,6 +3446,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.5"/>
@@ -3109,20 +3457,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-height"/>
+    <method value="POST"/>
+    <url value="Observation/9-height"/>
   </request>
 </entry>
 <entry>
@@ -3130,7 +3477,7 @@
     
     
   <Observation>
-  <id value="ID9-heartrate"/>
+  <id value="9-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 50.0 {beats}/min</div>
@@ -3141,6 +3488,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="50.0"/>
@@ -3151,20 +3499,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/9-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3172,7 +3519,7 @@
     
     
   <Observation>
-  <id value="ID9-weight"/>
+  <id value="9-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: weight = 92.2 kg</div>
@@ -3183,6 +3530,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="92.2"/>
@@ -3193,20 +3541,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID9-weight"/>
+    <method value="POST"/>
+    <url value="Observation/9-weight"/>
   </request>
 </entry>
 <entry>
@@ -3214,7 +3561,7 @@
     
     
   <Observation>
-  <id value="ID10-heartrate"/>
+  <id value="10-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 50.0 {beats}/min</div>
@@ -3225,6 +3572,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="50.0"/>
@@ -3235,20 +3583,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID10-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/10-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3256,7 +3603,7 @@
     
     
   <Observation>
-  <id value="ID11-heartrate"/>
+  <id value="11-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 49.0 {beats}/min</div>
@@ -3267,6 +3614,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="49.0"/>
@@ -3277,20 +3625,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID11-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/11-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3298,7 +3645,7 @@
     
     
   <Observation>
-  <id value="ID12-heartrate"/>
+  <id value="12-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 53.0 {beats}/min</div>
@@ -3309,6 +3656,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="53.0"/>
@@ -3319,20 +3667,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID12-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/12-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3340,7 +3687,7 @@
     
     
   <Observation>
-  <id value="ID13-heartrate"/>
+  <id value="13-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 48.0 {beats}/min</div>
@@ -3351,6 +3698,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="48.0"/>
@@ -3361,20 +3709,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID13-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/13-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3382,7 +3729,7 @@
     
     
   <Observation>
-  <id value="ID14-heartrate"/>
+  <id value="14-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2009-12-23: heart_rate = 52.0 {beats}/min</div>
@@ -3393,6 +3740,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="52.0"/>
@@ -3403,20 +3751,19 @@
     
     <effectiveDateTime value="2009-12-23"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID9"/>
+      <reference value="Encounter/9"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID14-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/14-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3424,7 +3771,7 @@
     
     
   <Observation>
-  <id value="ID15-height"/>
+  <id value="15-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22: height = 197.0 cm</div>
@@ -3435,6 +3782,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="197.0"/>
@@ -3445,20 +3793,19 @@
     
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID15"/>
+      <reference value="Encounter/15"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-height"/>
+    <method value="POST"/>
+    <url value="Observation/15-height"/>
   </request>
 </entry>
 <entry>
@@ -3466,7 +3813,7 @@
     
     
   <Observation>
-  <id value="ID15-heartrate"/>
+  <id value="15-heartrate"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22: heart_rate = 52.0 {beats}/min</div>
@@ -3477,6 +3824,7 @@
         <code value="8867-4"/>
         <display value="heart_rate"/>
       </coding>
+      <text value="heart_rate"/>
     </code>
     <valueQuantity>
       <value value="52.0"/>
@@ -3487,20 +3835,19 @@
     
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID15"/>
+      <reference value="Encounter/15"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-heartrate"/>
+    <method value="POST"/>
+    <url value="Observation/15-heartrate"/>
   </request>
 </entry>
 <entry>
@@ -3508,7 +3855,7 @@
     
     
   <Observation>
-  <id value="ID15-weight"/>
+  <id value="15-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-12-22: weight = 92.3 kg</div>
@@ -3519,6 +3866,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="92.3"/>
@@ -3529,20 +3877,19 @@
     
     <effectiveDateTime value="2010-12-22"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID9995679"/>
+      <reference value="Patient/9995679"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID15"/>
+      <reference value="Encounter/15"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID15-weight"/>
+    <method value="POST"/>
+    <url value="Observation/15-weight"/>
   </request>
 </entry>
 

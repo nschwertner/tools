@@ -7,7 +7,7 @@
     
     
   <Patient>
-    <id value="ID7777703"/>
+    <id value="7777703"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -22,6 +22,7 @@
           <code value="MR"/>
           <display value="Medical record number"/>
         </coding>
+        <text value="Medical record number"/>
       </type>
       <system value="http://hospital.smarthealthit.org"/>
       <value value="7777703"/>
@@ -38,8 +39,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Patient/ID7777703"/>
+    <method value="POST"/>
+    <url value="Patient/7777703"/>
   </request>
 </entry>
   <entry>
@@ -47,7 +48,7 @@
     
     
     <Encounter>
-  <id value="ID997"/>
+  <id value="997"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: ambulatory encounter</div>
@@ -55,7 +56,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2005-08-08"/>
@@ -65,8 +66,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID997"/>
+    <method value="POST"/>
+    <url value="Encounter/997"/>
   </request>
 </entry>
   <entry>
@@ -74,7 +75,7 @@
     
     
     <Encounter>
-  <id value="ID998"/>
+  <id value="998"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: ambulatory encounter</div>
@@ -82,7 +83,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2006-04-21"/>
@@ -92,8 +93,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID998"/>
+    <method value="POST"/>
+    <url value="Encounter/998"/>
   </request>
 </entry>
   <entry>
@@ -101,7 +102,7 @@
     
     
     <Encounter>
-  <id value="ID999"/>
+  <id value="999"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: ambulatory encounter</div>
@@ -109,7 +110,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2006-08-08"/>
@@ -119,8 +120,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID999"/>
+    <method value="POST"/>
+    <url value="Encounter/999"/>
   </request>
 </entry>
   <entry>
@@ -128,7 +129,7 @@
     
     
     <Encounter>
-  <id value="ID1000"/>
+  <id value="1000"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: ambulatory encounter</div>
@@ -136,7 +137,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2007-08-08"/>
@@ -146,8 +147,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1000"/>
+    <method value="POST"/>
+    <url value="Encounter/1000"/>
   </request>
 </entry>
   <entry>
@@ -155,7 +156,7 @@
     
     
     <Encounter>
-  <id value="ID1001"/>
+  <id value="1001"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: ambulatory encounter</div>
@@ -163,7 +164,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2008-08-07"/>
@@ -173,8 +174,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1001"/>
+    <method value="POST"/>
+    <url value="Encounter/1001"/>
   </request>
 </entry>
   <entry>
@@ -182,7 +183,7 @@
     
     
     <Encounter>
-  <id value="ID1002"/>
+  <id value="1002"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: ambulatory encounter</div>
@@ -190,7 +191,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2010-02-06"/>
@@ -200,8 +201,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1002"/>
+    <method value="POST"/>
+    <url value="Encounter/1002"/>
   </request>
 </entry>
   <entry>
@@ -209,7 +210,7 @@
     
     
     <Encounter>
-  <id value="ID1003"/>
+  <id value="1003"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: ambulatory encounter</div>
@@ -217,7 +218,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2010-08-07"/>
@@ -227,8 +228,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1003"/>
+    <method value="POST"/>
+    <url value="Encounter/1003"/>
   </request>
 </entry>
   <entry>
@@ -236,7 +237,7 @@
     
     
     <Encounter>
-  <id value="ID1004"/>
+  <id value="1004"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: ambulatory encounter</div>
@@ -244,7 +245,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2011-03-14"/>
@@ -254,8 +255,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1004"/>
+    <method value="POST"/>
+    <url value="Encounter/1004"/>
   </request>
 </entry>
   <entry>
@@ -263,7 +264,7 @@
     
     
     <Encounter>
-  <id value="ID1005"/>
+  <id value="1005"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: ambulatory encounter</div>
@@ -271,7 +272,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2011-08-07"/>
@@ -281,8 +282,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1005"/>
+    <method value="POST"/>
+    <url value="Encounter/1005"/>
   </request>
 </entry>
   <entry>
@@ -290,7 +291,7 @@
     
     
     <Encounter>
-  <id value="ID1006"/>
+  <id value="1006"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: ambulatory encounter</div>
@@ -298,7 +299,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2012-03-13"/>
@@ -308,8 +309,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1006"/>
+    <method value="POST"/>
+    <url value="Encounter/1006"/>
   </request>
 </entry>
   <entry>
@@ -317,7 +318,7 @@
     
     
     <Encounter>
-  <id value="ID1007"/>
+  <id value="1007"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: ambulatory encounter</div>
@@ -325,7 +326,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2012-09-12"/>
@@ -335,8 +336,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1007"/>
+    <method value="POST"/>
+    <url value="Encounter/1007"/>
   </request>
 </entry>
   <entry>
@@ -344,7 +345,7 @@
     
     
     <Encounter>
-  <id value="ID1008"/>
+  <id value="1008"/>
       <text>
         <status value="generated"/>
         <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: ambulatory encounter</div>
@@ -352,7 +353,7 @@
       <status value="finished"/>
       <class value="ambulatory"/>
       <patient>
-        <reference value="Patient/ID7777703"/>
+        <reference value="Patient/7777703"/>
       </patient>
       <period>
        <start value="2013-02-05"/>
@@ -362,8 +363,8 @@
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Encounter/ID1008"/>
+    <method value="POST"/>
+    <url value="Encounter/1008"/>
   </request>
 </entry>
 <entry>
@@ -371,7 +372,7 @@
     
     
   <Observation>
-  <id value="ID997-height"/>
+  <id value="997-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: height = 81.8 cm</div>
@@ -382,6 +383,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="81.8"/>
@@ -392,20 +394,19 @@
     
     <effectiveDateTime value="2005-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID997"/>
+      <reference value="Encounter/997"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID997-height"/>
+    <method value="POST"/>
+    <url value="Observation/997-height"/>
   </request>
 </entry>
 <entry>
@@ -413,7 +414,7 @@
     
     
   <Observation>
-  <id value="ID997-weight"/>
+  <id value="997-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: weight = 11.1 kg</div>
@@ -424,6 +425,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="11.1"/>
@@ -434,20 +436,19 @@
     
     <effectiveDateTime value="2005-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID997"/>
+      <reference value="Encounter/997"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID997-weight"/>
+    <method value="POST"/>
+    <url value="Observation/997-weight"/>
   </request>
 </entry>
 <entry>
@@ -455,7 +456,7 @@
     
     
   <Observation>
-  <id value="ID997-bmi"/>
+  <id value="997-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: bmi = 16.2 kg/m2</div>
@@ -466,6 +467,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="16.2"/>
@@ -476,20 +478,19 @@
     
     <effectiveDateTime value="2005-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID997"/>
+      <reference value="Encounter/997"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID997-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/997-bmi"/>
   </request>
 </entry>
 <entry>
@@ -497,7 +498,7 @@
     
     
   <Observation>
-  <id value="ID998-height"/>
+  <id value="998-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: height = 86.4 cm</div>
@@ -508,6 +509,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="86.4"/>
@@ -518,20 +520,19 @@
     
     <effectiveDateTime value="2006-04-21"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID998"/>
+      <reference value="Encounter/998"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID998-height"/>
+    <method value="POST"/>
+    <url value="Observation/998-height"/>
   </request>
 </entry>
 <entry>
@@ -539,7 +540,7 @@
     
     
   <Observation>
-  <id value="ID998-weight"/>
+  <id value="998-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: weight = 11.4 kg</div>
@@ -550,6 +551,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="11.4"/>
@@ -560,20 +562,19 @@
     
     <effectiveDateTime value="2006-04-21"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID998"/>
+      <reference value="Encounter/998"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID998-weight"/>
+    <method value="POST"/>
+    <url value="Observation/998-weight"/>
   </request>
 </entry>
 <entry>
@@ -581,7 +582,7 @@
     
     
   <Observation>
-  <id value="ID998-bmi"/>
+  <id value="998-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: bmi = 15.2 kg/m2</div>
@@ -592,6 +593,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.2"/>
@@ -602,20 +604,19 @@
     
     <effectiveDateTime value="2006-04-21"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID998"/>
+      <reference value="Encounter/998"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID998-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/998-bmi"/>
   </request>
 </entry>
 <entry>
@@ -623,7 +624,7 @@
     
     
   <Observation>
-  <id value="ID999-height"/>
+  <id value="999-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: height = 87.6 cm</div>
@@ -634,6 +635,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="87.6"/>
@@ -644,20 +646,19 @@
     
     <effectiveDateTime value="2006-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID999"/>
+      <reference value="Encounter/999"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID999-height"/>
+    <method value="POST"/>
+    <url value="Observation/999-height"/>
   </request>
 </entry>
 <entry>
@@ -665,7 +666,7 @@
     
     
   <Observation>
-  <id value="ID999-weight"/>
+  <id value="999-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: weight = 12.1 kg</div>
@@ -676,6 +677,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="12.1"/>
@@ -686,20 +688,19 @@
     
     <effectiveDateTime value="2006-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID999"/>
+      <reference value="Encounter/999"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID999-weight"/>
+    <method value="POST"/>
+    <url value="Observation/999-weight"/>
   </request>
 </entry>
 <entry>
@@ -707,7 +708,7 @@
     
     
   <Observation>
-  <id value="ID999-bmi"/>
+  <id value="999-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: bmi = 15.5 kg/m2</div>
@@ -718,6 +719,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.5"/>
@@ -728,20 +730,19 @@
     
     <effectiveDateTime value="2006-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID999"/>
+      <reference value="Encounter/999"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID999-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/999-bmi"/>
   </request>
 </entry>
 <entry>
@@ -749,7 +750,7 @@
     
     
   <Observation>
-  <id value="ID1000-height"/>
+  <id value="1000-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: height = 95.0 cm</div>
@@ -760,6 +761,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="95.0"/>
@@ -770,20 +772,19 @@
     
     <effectiveDateTime value="2007-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1000"/>
+      <reference value="Encounter/1000"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1000-height"/>
+    <method value="POST"/>
+    <url value="Observation/1000-height"/>
   </request>
 </entry>
 <entry>
@@ -791,7 +792,7 @@
     
     
   <Observation>
-  <id value="ID1000-weight"/>
+  <id value="1000-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: weight = 13.7 kg</div>
@@ -802,6 +803,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="13.7"/>
@@ -812,20 +814,19 @@
     
     <effectiveDateTime value="2007-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1000"/>
+      <reference value="Encounter/1000"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1000-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1000-weight"/>
   </request>
 </entry>
 <entry>
@@ -833,7 +834,7 @@
     
     
   <Observation>
-  <id value="ID1000-bmi"/>
+  <id value="1000-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: bmi = 15.0 kg/m2</div>
@@ -844,6 +845,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.0"/>
@@ -854,20 +856,19 @@
     
     <effectiveDateTime value="2007-08-08"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1000"/>
+      <reference value="Encounter/1000"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1000-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1000-bmi"/>
   </request>
 </entry>
 <entry>
@@ -875,7 +876,7 @@
     
     
   <Observation>
-  <id value="ID1001-height"/>
+  <id value="1001-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: height = 100.2 cm</div>
@@ -886,6 +887,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="100.2"/>
@@ -896,20 +898,19 @@
     
     <effectiveDateTime value="2008-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1001"/>
+      <reference value="Encounter/1001"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1001-height"/>
+    <method value="POST"/>
+    <url value="Observation/1001-height"/>
   </request>
 </entry>
 <entry>
@@ -917,7 +918,7 @@
     
     
   <Observation>
-  <id value="ID1001-weight"/>
+  <id value="1001-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: weight = 15.1 kg</div>
@@ -928,6 +929,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="15.1"/>
@@ -938,20 +940,19 @@
     
     <effectiveDateTime value="2008-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1001"/>
+      <reference value="Encounter/1001"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1001-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1001-weight"/>
   </request>
 </entry>
 <entry>
@@ -959,7 +960,7 @@
     
     
   <Observation>
-  <id value="ID1001-bmi"/>
+  <id value="1001-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: bmi = 15.0 kg/m2</div>
@@ -970,6 +971,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.0"/>
@@ -980,20 +982,19 @@
     
     <effectiveDateTime value="2008-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1001"/>
+      <reference value="Encounter/1001"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1001-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1001-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1001,7 +1002,7 @@
     
     
   <Observation>
-  <id value="ID1002-height"/>
+  <id value="1002-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: height = 108.2 cm</div>
@@ -1012,6 +1013,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="108.2"/>
@@ -1022,20 +1024,19 @@
     
     <effectiveDateTime value="2010-02-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1002"/>
+      <reference value="Encounter/1002"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1002-height"/>
+    <method value="POST"/>
+    <url value="Observation/1002-height"/>
   </request>
 </entry>
 <entry>
@@ -1043,7 +1044,7 @@
     
     
   <Observation>
-  <id value="ID1002-weight"/>
+  <id value="1002-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: weight = 17.9 kg</div>
@@ -1054,6 +1055,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="17.9"/>
@@ -1064,20 +1066,19 @@
     
     <effectiveDateTime value="2010-02-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1002"/>
+      <reference value="Encounter/1002"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1002-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1002-weight"/>
   </request>
 </entry>
 <entry>
@@ -1085,7 +1086,7 @@
     
     
   <Observation>
-  <id value="ID1002-bmi"/>
+  <id value="1002-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: bmi = 15.1 kg/m2</div>
@@ -1096,6 +1097,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.1"/>
@@ -1106,20 +1108,19 @@
     
     <effectiveDateTime value="2010-02-06"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1002"/>
+      <reference value="Encounter/1002"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1002-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1002-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1127,7 +1128,7 @@
     
     
   <Observation>
-  <id value="ID1003-height"/>
+  <id value="1003-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: height = 111.1 cm</div>
@@ -1138,6 +1139,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="111.1"/>
@@ -1148,20 +1150,19 @@
     
     <effectiveDateTime value="2010-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1003"/>
+      <reference value="Encounter/1003"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1003-height"/>
+    <method value="POST"/>
+    <url value="Observation/1003-height"/>
   </request>
 </entry>
 <entry>
@@ -1169,7 +1170,7 @@
     
     
   <Observation>
-  <id value="ID1003-weight"/>
+  <id value="1003-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: weight = 18.7 kg</div>
@@ -1180,6 +1181,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="18.7"/>
@@ -1190,20 +1192,19 @@
     
     <effectiveDateTime value="2010-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1003"/>
+      <reference value="Encounter/1003"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1003-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1003-weight"/>
   </request>
 </entry>
 <entry>
@@ -1211,7 +1212,7 @@
     
     
   <Observation>
-  <id value="ID1003-bmi"/>
+  <id value="1003-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: bmi = 15.1 kg/m2</div>
@@ -1222,6 +1223,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.1"/>
@@ -1232,20 +1234,19 @@
     
     <effectiveDateTime value="2010-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1003"/>
+      <reference value="Encounter/1003"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1003-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1003-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1253,7 +1254,7 @@
     
     
   <Observation>
-  <id value="ID1004-height"/>
+  <id value="1004-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: height = 114.0 cm</div>
@@ -1264,6 +1265,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="114.0"/>
@@ -1274,20 +1276,19 @@
     
     <effectiveDateTime value="2011-03-14"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1004"/>
+      <reference value="Encounter/1004"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1004-height"/>
+    <method value="POST"/>
+    <url value="Observation/1004-height"/>
   </request>
 </entry>
 <entry>
@@ -1295,7 +1296,7 @@
     
     
   <Observation>
-  <id value="ID1004-weight"/>
+  <id value="1004-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: weight = 20.3 kg</div>
@@ -1306,6 +1307,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="20.3"/>
@@ -1316,20 +1318,19 @@
     
     <effectiveDateTime value="2011-03-14"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1004"/>
+      <reference value="Encounter/1004"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1004-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1004-weight"/>
   </request>
 </entry>
 <entry>
@@ -1337,7 +1338,7 @@
     
     
   <Observation>
-  <id value="ID1004-bmi"/>
+  <id value="1004-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: bmi = 15.6 kg/m2</div>
@@ -1348,6 +1349,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.6"/>
@@ -1358,20 +1360,19 @@
     
     <effectiveDateTime value="2011-03-14"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1004"/>
+      <reference value="Encounter/1004"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1004-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1004-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1379,7 +1380,7 @@
     
     
   <Observation>
-  <id value="ID1005-height"/>
+  <id value="1005-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: height = 118.1 cm</div>
@@ -1390,6 +1391,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="118.1"/>
@@ -1400,20 +1402,19 @@
     
     <effectiveDateTime value="2011-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1005"/>
+      <reference value="Encounter/1005"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1005-height"/>
+    <method value="POST"/>
+    <url value="Observation/1005-height"/>
   </request>
 </entry>
 <entry>
@@ -1421,7 +1422,7 @@
     
     
   <Observation>
-  <id value="ID1005-weight"/>
+  <id value="1005-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: weight = 21.7 kg</div>
@@ -1432,6 +1433,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="21.7"/>
@@ -1442,20 +1444,19 @@
     
     <effectiveDateTime value="2011-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1005"/>
+      <reference value="Encounter/1005"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1005-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1005-weight"/>
   </request>
 </entry>
 <entry>
@@ -1463,7 +1464,7 @@
     
     
   <Observation>
-  <id value="ID1005-bmi"/>
+  <id value="1005-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: bmi = 15.4 kg/m2</div>
@@ -1474,6 +1475,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.4"/>
@@ -1484,20 +1486,19 @@
     
     <effectiveDateTime value="2011-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1005"/>
+      <reference value="Encounter/1005"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1005-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1005-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1505,7 +1506,7 @@
     
     
   <Observation>
-  <id value="ID1006-height"/>
+  <id value="1006-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: height = 119.6 cm</div>
@@ -1516,6 +1517,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="119.6"/>
@@ -1526,20 +1528,19 @@
     
     <effectiveDateTime value="2012-03-13"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1006"/>
+      <reference value="Encounter/1006"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1006-height"/>
+    <method value="POST"/>
+    <url value="Observation/1006-height"/>
   </request>
 </entry>
 <entry>
@@ -1547,7 +1548,7 @@
     
     
   <Observation>
-  <id value="ID1006-weight"/>
+  <id value="1006-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: weight = 23.6 kg</div>
@@ -1558,6 +1559,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="23.6"/>
@@ -1568,20 +1570,19 @@
     
     <effectiveDateTime value="2012-03-13"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1006"/>
+      <reference value="Encounter/1006"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1006-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1006-weight"/>
   </request>
 </entry>
 <entry>
@@ -1589,7 +1590,7 @@
     
     
   <Observation>
-  <id value="ID1006-bmi"/>
+  <id value="1006-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: bmi = 16.5 kg/m2</div>
@@ -1600,6 +1601,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="16.5"/>
@@ -1610,20 +1612,19 @@
     
     <effectiveDateTime value="2012-03-13"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1006"/>
+      <reference value="Encounter/1006"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1006-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1006-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1631,7 +1632,7 @@
     
     
   <Observation>
-  <id value="ID1007-height"/>
+  <id value="1007-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: height = 122.3 cm</div>
@@ -1642,6 +1643,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="122.3"/>
@@ -1652,20 +1654,19 @@
     
     <effectiveDateTime value="2012-09-12"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1007"/>
+      <reference value="Encounter/1007"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1007-height"/>
+    <method value="POST"/>
+    <url value="Observation/1007-height"/>
   </request>
 </entry>
 <entry>
@@ -1673,7 +1674,7 @@
     
     
   <Observation>
-  <id value="ID1007-weight"/>
+  <id value="1007-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: weight = 24.2 kg</div>
@@ -1684,6 +1685,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="24.2"/>
@@ -1694,20 +1696,19 @@
     
     <effectiveDateTime value="2012-09-12"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1007"/>
+      <reference value="Encounter/1007"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1007-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1007-weight"/>
   </request>
 </entry>
 <entry>
@@ -1715,7 +1716,7 @@
     
     
   <Observation>
-  <id value="ID1007-bmi"/>
+  <id value="1007-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: bmi = 16.2 kg/m2</div>
@@ -1726,6 +1727,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="16.2"/>
@@ -1736,20 +1738,19 @@
     
     <effectiveDateTime value="2012-09-12"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1007"/>
+      <reference value="Encounter/1007"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1007-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1007-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1757,7 +1758,7 @@
     
     
   <Observation>
-  <id value="ID1008-height"/>
+  <id value="1008-height"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: height = 123.9 cm</div>
@@ -1768,6 +1769,7 @@
         <code value="8302-2"/>
         <display value="height"/>
       </coding>
+      <text value="height"/>
     </code>
     <valueQuantity>
       <value value="123.9"/>
@@ -1778,20 +1780,19 @@
     
     <effectiveDateTime value="2013-02-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1008"/>
+      <reference value="Encounter/1008"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1008-height"/>
+    <method value="POST"/>
+    <url value="Observation/1008-height"/>
   </request>
 </entry>
 <entry>
@@ -1799,7 +1800,7 @@
     
     
   <Observation>
-  <id value="ID1008-weight"/>
+  <id value="1008-weight"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: weight = 24.4 kg</div>
@@ -1810,6 +1811,7 @@
         <code value="3141-9"/>
         <display value="weight"/>
       </coding>
+      <text value="weight"/>
     </code>
     <valueQuantity>
       <value value="24.4"/>
@@ -1820,20 +1822,19 @@
     
     <effectiveDateTime value="2013-02-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1008"/>
+      <reference value="Encounter/1008"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1008-weight"/>
+    <method value="POST"/>
+    <url value="Observation/1008-weight"/>
   </request>
 </entry>
 <entry>
@@ -1841,7 +1842,7 @@
     
     
   <Observation>
-  <id value="ID1008-bmi"/>
+  <id value="1008-bmi"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: bmi = 15.8 kg/m2</div>
@@ -1852,6 +1853,7 @@
         <code value="39156-5"/>
         <display value="bmi"/>
       </coding>
+      <text value="bmi"/>
     </code>
     <valueQuantity>
       <value value="15.8"/>
@@ -1862,20 +1864,19 @@
     
     <effectiveDateTime value="2013-02-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
     <encounter>
-      <reference value="Encounter/ID1008"/>
+      <reference value="Encounter/1008"/>
     </encounter>
     
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID1008-bmi"/>
+    <method value="POST"/>
+    <url value="Observation/1008-bmi"/>
   </request>
 </entry>
 <entry>
@@ -1883,7 +1884,7 @@
     
     
   <Observation>
-  <id value="ID3503-lab"/>
+  <id value="3503-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: Bones XR Bone Age = 121 mo</div>
@@ -1894,6 +1895,7 @@
         <code value="37362-1"/>
         <display value="Bones XR Bone Age"/>
       </coding>
+      <text value="Bones XR Bone Age"/>
     </code>
     <valueQuantity>
       <value value="121.0"/>
@@ -1904,16 +1906,15 @@
     
     <effectiveDateTime value="2011-08-07"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3503-lab"/>
+    <method value="POST"/>
+    <url value="Observation/3503-lab"/>
   </request>
 </entry>
 <entry>
@@ -1921,7 +1922,7 @@
     
     
   <Observation>
-  <id value="ID3504-lab"/>
+  <id value="3504-lab"/>
     <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: Bones XR Bone Age = 162 mo</div>
@@ -1932,6 +1933,7 @@
         <code value="37362-1"/>
         <display value="Bones XR Bone Age"/>
       </coding>
+      <text value="Bones XR Bone Age"/>
     </code>
     <valueQuantity>
       <value value="162.0"/>
@@ -1942,16 +1944,15 @@
     
     <effectiveDateTime value="2013-02-05"/>
     <status value="final"/>
-    <reliability value="ok"/>
     <subject>
-      <reference value="Patient/ID7777703"/>
+      <reference value="Patient/7777703"/>
     </subject>
   </Observation>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="Observation/ID3504-lab"/>
+    <method value="POST"/>
+    <url value="Observation/3504-lab"/>
   </request>
 </entry>
   <entry>
@@ -1959,7 +1960,7 @@
     
     
     <FamilyMemberHistory>
-  <id value="ID11-fmh"/>
+  <id value="11"/>
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="182"/>
@@ -1974,9 +1975,8 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Father</div>
       </text>
       <patient>
-         <reference value="Patient/ID7777703"/>
+         <reference value="Patient/7777703"/>
       </patient>
-      <relation>
         <relationship>
           <coding>
             <system value="http://hl7.org/fhir/v3/RoleCode"/>
@@ -1984,13 +1984,12 @@
             <display value="father"/>
           </coding>
         </relationship>
-      </relation>
     </FamilyMemberHistory>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="FamilyMemberHistory/ID11-fmh"/>
+    <method value="POST"/>
+    <url value="FamilyHistory/11"/>
   </request>
 </entry>
   <entry>
@@ -1998,7 +1997,7 @@
     
     
     <FamilyMemberHistory>
-  <id value="ID12-fmh"/>
+  <id value="12"/>
       <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
         <valueQuantity>
           <value value="163"/>
@@ -2013,9 +2012,8 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Mother</div>
       </text>
       <patient>
-         <reference value="Patient/ID7777703"/>
+         <reference value="Patient/7777703"/>
       </patient>
-      <relation>
         <relationship>
           <coding>
             <system value="http://hl7.org/fhir/v3/RoleCode"/>
@@ -2023,13 +2021,12 @@
             <display value="mother"/>
           </coding>
         </relationship>
-      </relation>
     </FamilyMemberHistory>
   
   </resource>
   <request>
-    <method value="PUT"/>
-    <url value="FamilyMemberHistory/ID12-fmh"/>
+    <method value="POST"/>
+    <url value="FamilyHistory/12"/>
   </request>
 </entry>
 
