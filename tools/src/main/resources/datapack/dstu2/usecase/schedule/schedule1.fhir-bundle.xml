@@ -50,8 +50,8 @@
                 <schedule>
                     <reference value="Schedule/USECASESCHEDULE1"/>
                 </schedule>
-                <start>2016-12-01T09:30:00-06:00</start>
-                <end>2016-12-01T10:00:00-06:00</end>
+                <start value="2016-12-10T09:30:00Z"/>
+                <end value="2016-12-10T10:00:00Z"/>
             </Slot>
         </resource>
         <request>
@@ -80,8 +80,8 @@
                 <schedule>
                     <reference value="Schedule/USECASESCHEDULE1"/>
                 </schedule>
-                <start>2016-12-01T10:00:00-06:00</start>
-                <end>2016-12-01T10:30:00-06:00</end>
+                <start value="2016-12-10T10:00:00Z"/>
+                <end value="2016-12-10T10:30:00Z"/>
             </Slot>
         </resource>
         <request>
@@ -100,7 +100,8 @@
                         <p>Appointment 1 for Kurtis Giles, MD</p>
                     </div>
                 </text>
-                <status>booked</status>
+                <status value="booked"/>
+                <description value="Discuss heart value disorder findings"/>
                 <type>
                     <coding>
                         <code value="394579002"/>
@@ -115,8 +116,8 @@
                     </coding>
                     <text value="Heart valve disorder (disorder)"/>
                 </reason>
-                <start>2016-12-01T09:30:00-06:00</start>
-                <end>2016-12-01T10:00:00-06:00</end>
+                <start value="2016-12-10T09:30:00Z"/>
+                <end value="2016-12-10T10:00:00Z"/>
                 <minutesDuration>30</minutesDuration>
                 <slot>
                     <reference value="Slot/USECASESCHEDULE1SLOT1"/>

@@ -52,8 +52,8 @@
                 <schedule>
                     <reference value="Schedule/USECASESCHEDULE2"/>
                 </schedule>
-                <start>2016-11-01T09:30:00-06:00</start>
-                <end>2016-11-01T10:30:00-06:00</end>
+                <start value="2016-11-10T09:30:00Z"/>
+                <end value="2016-11-10T10:30:00Z"/>
             </Slot>
         </resource>
         <request>
@@ -83,8 +83,8 @@
                 <schedule>
                     <reference value="Schedule/USECASESCHEDULE2"/>
                 </schedule>
-                <start>2016-11-01T10:30:00-06:00</start>
-                <end>2016-11-01T11:30:00-06:00</end>
+                <start value="2016-11-10T10:30:00Z"/>
+                <end value="2016-11-10T11:30:00Z"/>
             </Slot>
         </resource>
         <request>
@@ -103,7 +103,8 @@
                         <p>Appointment 1 for Physiotherapy Healtcare Service</p>
                     </div>
                 </text>
-                <status>booked</status>
+                <status value="booked"/>
+                <description value="Group PSTD Meeting"/>
                 <type>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -119,8 +120,8 @@
                     </coding>
                     <text value="Posttraumatic stress disorder (disorder)"/>
                 </reason>
-                <start>2016-11-01T09:30:00-06:00</start>
-                <end>2016-11-01T10:30:00-06:00</end>
+                <start value="2016-11-10T09:30:00Z"/>
+                <end value="2016-11-10T10:30:00Z"/>
                 <minutesDuration>60</minutesDuration>
                 <slot>
                     <reference value="Slot/USECASESCHEDULE2SLOT1"/>
@@ -150,7 +151,7 @@
         </resource>
         <request>
             <method value="PUT"/>
-            <url value="Appointment/USECASESCHEDULE1APPOINTMENT1"/>
+            <url value="Appointment/USECASESCHEDULE2APPOINTMENT1"/>
         </request>
     </entry>
 
@@ -170,7 +171,7 @@
                 <actor>
                     <reference value="HealthcareService/COREHEALTHCARESERVICE1"/>
                 </actor>
-                <participantStatus>accepted</participantStatus>
+                <participantStatus value="accepted"/>
             </AppointmentResponse>
         </resource>
         <request>
