@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <HealthcareService>
+                <id value="COREHEALTHCARESERVICE1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Physiotherapy</div>
+                </text>
+                <serviceType>
+                    <type>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="394913002"/>
+                            <display value="Psychotherapy"/>
+                        </coding>
+                    </type>
+                </serviceType>
+                <location>
+                    <reference value="Location/CORELOCATIONS3"/>
+                </location>
+                <serviceName value="Consulting psychologists and/or psychology services"/>
+                <programName value="PTSD outreach"/>
+                <referralMethod>
+                    <coding>
+                        <code value="phone"/>
+                        <display value="Phone"/>
+                    </coding>
+                </referralMethod>
+                <appointmentRequired value="true"/>
+                <availableTime>
+                    <daysOfWeek value="mon"/>
+                    <daysOfWeek value="tue"/>
+                    <daysOfWeek value="wed"/>
+                    <daysOfWeek value="thu"/>
+                    <daysOfWeek value="fri"/>
+                    <availableStartTime value="08:30:00"/>
+                    <availableEndTime value="05:30:00"/>
+                </availableTime>
+                <availableTime>
+                    <daysOfWeek value="sat"/>
+                    <daysOfWeek value="fri"/>
+                    <availableStartTime value="09:30:00"/>
+                    <availableEndTime value="04:30:00"/>
+                </availableTime>
+                <notAvailable>
+                    <description value="Christmas/Boxing Day"/>
+                    <during>
+                        <start value="2015-12-25"/>
+                        <end value="2015-12-26"/>
+                    </during>
+                </notAvailable>
+                <notAvailable>
+                    <description value="New Years Day"/>
+                    <during>
+                        <start value="2016-01-01"/>
+                        <end value="2016-01-01"/>
+                    </during>
+                </notAvailable>
+            </HealthcareService>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="HealthcareService/COREHEALTHCARESERVICE1"/>
+        </request>
+    </entry>
+
+</Bundle>

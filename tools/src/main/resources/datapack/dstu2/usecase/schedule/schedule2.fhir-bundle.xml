@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Schedule>
+                <id value="USECASESCHEDULE2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Schedule for Physiotherapy Healtcare Service</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394913002"/>
+                        <display value="Psychotherapy"/>
+                    </coding>
+                    <text value="Psychotherapy"/>
+                </type>
+                <actor>
+                    <reference value="HealthcareService/COREHEALTHCARESERVICE1"/>
+                </actor>
+            </Schedule>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Schedule/USECASESCHEDULE2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="USECASESCHEDULE2SLOT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 1 Schedule for Physiotherapy Healtcare Service</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394913002"/>
+                        <display value="Psychotherapy"/>
+                    </coding>
+                    <text value="Psychotherapy"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/USECASESCHEDULE2"/>
+                </schedule>
+                <start>2016-11-01T09:30:00-06:00</start>
+                <end>2016-11-01T10:30:00-06:00</end>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/USECASESCHEDULE2SLOT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="USECASESCHEDULE2SLOT2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 2 Schedule for Physiotherapy Healtcare Service</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394913002"/>
+                        <display value="Psychotherapy"/>
+                    </coding>
+                    <text value="Psychotherapy"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/USECASESCHEDULE2"/>
+                </schedule>
+                <start>2016-11-01T10:30:00-06:00</start>
+                <end>2016-11-01T11:30:00-06:00</end>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/USECASESCHEDULE2SLOT2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Appointment>
+                <id value="USECASESCHEDULE2APPOINTMENT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Appointment 1 for Physiotherapy Healtcare Service</p>
+                    </div>
+                </text>
+                <status>booked</status>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394913002"/>
+                        <display value="Psychotherapy"/>
+                    </coding>
+                    <text value="Psychotherapy"/>
+                </type>
+                <reason>
+                    <coding>
+                        <code value="47505003"/>
+                        <display value="Posttraumatic stress disorder (disorder)"/>
+                    </coding>
+                    <text value="Posttraumatic stress disorder (disorder)"/>
+                </reason>
+                <start>2016-11-01T09:30:00-06:00</start>
+                <end>2016-11-01T10:30:00-06:00</end>
+                <minutesDuration>60</minutesDuration>
+                <slot>
+                    <reference value="Slot/USECASESCHEDULE2SLOT1"/>
+                </slot>
+                <participant>
+                    <actor>
+                        <reference value="Patient/COREPATIENT1"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <code value="PART"/>
+                            <display value="Participation"/>
+                        </coding>
+                        <text value="Participation"/>
+                    </type>
+                    <actor>
+                        <reference value="HealthcareService/COREHEALTHCARESERVICE1"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+            </Appointment>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Appointment/USECASESCHEDULE1APPOINTMENT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <AppointmentResponse>
+                <id value="USECASESCHEDULE2APPOINTMENTRESPONSE1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Booking for Appointment 1 for Physiotherapy Healtcare Service</p>
+                    </div>
+                </text>
+                <appointment>
+                    <reference value="Appointment/USECASESCHEDULE2APPOINTMENT1"/>
+                </appointment>
+                <actor>
+                    <reference value="HealthcareService/COREHEALTHCARESERVICE1"/>
+                </actor>
+                <participantStatus>accepted</participantStatus>
+            </AppointmentResponse>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="AppointmentResponse/USECASESCHEDULE2APPOINTMENTRESPONSE1"/>
+        </request>
+    </entry>
+
+</Bundle>

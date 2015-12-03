@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Schedule>
+                <id value="USECASESCHEDULE1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Schedule for Kurtis Giles, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <actor>
+                    <reference value="Practitioner/COREPRACTITIONER1"/>
+                </actor>
+            </Schedule>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Schedule/USECASESCHEDULE1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="USECASESCHEDULE1SLOT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 1 Schedule for Kurtis Giles, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/USECASESCHEDULE1"/>
+                </schedule>
+                <start>2016-12-01T09:30:00-06:00</start>
+                <end>2016-12-01T10:00:00-06:00</end>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/USECASESCHEDULE1SLOT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="USECASESCHEDULE1SLOT2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 2 Schedule for Kurtis Giles, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/USECASESCHEDULE1"/>
+                </schedule>
+                <start>2016-12-01T10:00:00-06:00</start>
+                <end>2016-12-01T10:30:00-06:00</end>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/USECASESCHEDULE1SLOT2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Appointment>
+                <id value="USECASESCHEDULE1APPOINTMENT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Appointment 1 for Kurtis Giles, MD</p>
+                    </div>
+                </text>
+                <status>booked</status>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <reason>
+                    <coding>
+                        <code value="368009"/>
+                        <display value="Heart valve disorder (disorder)"/>
+                    </coding>
+                    <text value="Heart valve disorder (disorder)"/>
+                </reason>
+                <start>2016-12-01T09:30:00-06:00</start>
+                <end>2016-12-01T10:00:00-06:00</end>
+                <minutesDuration>30</minutesDuration>
+                <slot>
+                    <reference value="Slot/USECASESCHEDULE1SLOT1"/>
+                </slot>
+                <participant>
+                    <actor>
+                        <reference value="Patient/COREPATIENT1"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <code value="ATND"/>
+                            <display value="attender"/>
+                        </coding>
+                        <text value="attender"/>
+                    </type>
+                    <actor>
+                        <reference value="Practitioner/COREPRACTITIONER1"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+            </Appointment>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Appointment/USECASESCHEDULE1APPOINTMENT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <AppointmentResponse>
+                <id value="USECASESCHEDULE1APPOINTMENTRESPONSE1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Booking for Appointment 1 for Kurtis Giles, MD</p>
+                    </div>
+                </text>
+                <appointment>
+                    <reference value="Appointment/USECASESCHEDULE1APPOINTMENT1"/>
+                </appointment>
+                <actor>
+                    <reference value="Practitioner/COREPRACTITIONER1"/>
+                </actor>
+                <participantStatus>accepted</participantStatus>
+            </AppointmentResponse>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="AppointmentResponse/USECASESCHEDULE1APPOINTMENTRESPONSE1"/>
+        </request>
+    </entry>
+
+</Bundle>

@@ -15,11 +15,12 @@ import java.io.*;
 import java.util.UUID;
 
 public class DataLoad {
-    private static final String STATIC_DATA_PATH = "org/hspconsortium/platform/sample/clinicaldata/dstu2";
+    private static final String STATIC_DATA_PATH = "datapack/dstu2/core";
 //    private static String RESOURCE_URI = "https://hspc.isalusconsulting.com/dstu2/open-hsp-reference-api/data";
     private static String RESOURCE_URI = "http://localhost:8080/hsp-reference-api/data";
     private static String OUTPUT_DIR = "output";
     private static boolean isXML = true;
+    private static String INPUT_DIR = STATIC_DATA_PATH;
 
     public static void main(String[] args) throws Exception{
 
@@ -34,8 +35,9 @@ public class DataLoad {
                     System.out.println("java -jar hsp-tools.jar org.hspconsortium.DataLoad [options]");
                     System.out.println("   Options:");
                     System.out.println("   -h       print this message");
-                    System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hsp-api");
+                    System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hsp-reference-api");
                     System.out.println("   -json    indicates that the input files are JSON, XML is the default");
+                    System.out.println("   -in      the input directory for results; default '" + STATIC_DATA_PATH + "'");
                     System.out.println("   -out     the output directory for results; default '<current dir>/output'");
                     System.out.println("            unless the current directory is 'target', the output directory will");
                     System.out.println("            be created one directory up from 'target'");
@@ -55,6 +57,9 @@ public class DataLoad {
                 case "-json" :
                     isXML = false;
                     break;
+                case "-in" :
+                    INPUT_DIR = args[++i];
+                    break;
             }
         }
 
@@ -68,16 +73,18 @@ public class DataLoad {
         }
 
         PathMatchingResourcePatternResolver resourceResolver = new PathMatchingResourcePatternResolver();
-        org.springframework.core.io.Resource[] patientFileResources = resourceResolver.getResources(String.format("classpath:%s/*", STATIC_DATA_PATH));
+        org.springframework.core.io.Resource[] resourceFiles = resourceResolver.getResources(String.format("classpath:%s/*", INPUT_DIR));
 
-        for(org.springframework.core.io.Resource patientFile : patientFileResources){
-            if (!patientFile.isReadable()) {
+        System.out.println("Input: " + INPUT_DIR);
+
+        for(org.springframework.core.io.Resource resourceFile : resourceFiles){
+            if (!resourceFile.isReadable()) {
                 continue;
             }
-            byte[] xmlString = IOUtils.toByteArray(patientFile.getInputStream());
+            byte[] xmlString = IOUtils.toByteArray(resourceFile.getInputStream());
 
             HttpResponse response = post(xmlString);
-            System.out.println("File: " + patientFile.toString());
+            System.out.println("File: " + resourceFile.toString());
             StatusLine sl = response.getStatusLine();
             System.out.println("Status: " + sl.getStatusCode());
             if (sl.getStatusCode() != 200) {

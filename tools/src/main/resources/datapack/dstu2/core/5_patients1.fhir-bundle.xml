@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Patient>
+                <id value="COREPATIENT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Buford Cottrill</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                        <text value="Medical record number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="12345"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Cottrill"/>
+                    <given value="Buford"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="800-514-3156"/>
+                    <use value="mobile"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="buford.cottrill@example.com"/>
+                </telecom>
+                <gender value="male"/>
+                <birthDate value="1965-02-13"/>
+                <address>
+                    <use value="home"/>
+                    <line value="99 River Ave"/>
+                    <city value="Tulsa"/>
+                    <state value="OK"/>
+                    <postalCode value="74126"/>
+                    <country value="USA"/>
+                </address>
+                <active value="true"/>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1" />
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/COREPATIENT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Patient>
+                <id value="COREPATIENT2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Lilliana Carboni</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                        <text value="Medical record number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="123456"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Carboni"/>
+                    <given value="Lilliana"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="800-514-3156"/>
+                    <use value="mobile"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="Lilliana.Carboni@example.com"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1965-02-13"/>
+                <address>
+                    <use value="home"/>
+                    <line value="99 River Ave"/>
+                    <city value="Tulsa"/>
+                    <state value="OK"/>
+                    <postalCode value="74126"/>
+                    <country value="USA"/>
+                </address>
+                <active value="true"/>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1" />
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/COREPATIENT2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Patient>
+                <id value="COREPATIENT3"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Francisca Donnelly</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                        <text value="Medical record number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="123457"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Donnelly"/>
+                    <given value="Francisca"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="800-514-3156"/>
+                    <use value="mobile"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="Francisca.Donnelly@example.com"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="2015-02-13"/>
+                <address>
+                    <use value="home"/>
+                    <line value="99 River Ave"/>
+                    <city value="Tulsa"/>
+                    <state value="OK"/>
+                    <postalCode value="74126"/>
+                    <country value="USA"/>
+                </address>
+                <active value="true"/>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1" />
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/COREPATIENT3"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Patient>
+                <id value="COREPATIENT4"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Terrell Card</p>
+                    </div>
+                </text>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                        <text value="Medical record number"/>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="123458"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Card"/>
+                    <given value="Terrell"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="800-514-3156"/>
+                    <use value="mobile"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="Terrell.Card@example.com"/>
+                </telecom>
+                <gender value="male"/>
+                <birthDate value="1999-12-31"/>
+                <address>
+                    <use value="home"/>
+                    <line value="99 River Ave"/>
+                    <city value="Tulsa"/>
+                    <state value="OK"/>
+                    <postalCode value="74126"/>
+                    <country value="USA"/>
+                </address>
+                <active value="true"/>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1" />
+                </managingOrganization>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/COREPATIENT4"/>
+        </request>
+    </entry>
+</Bundle>

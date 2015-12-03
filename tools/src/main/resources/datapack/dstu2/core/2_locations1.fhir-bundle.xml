@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Location>
+                <id value="CORELOCATIONS1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Hospital A building</div>
+                </text>
+                <identifier>
+                    <value value="HOSPITAL_A"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Hospital A"/>
+                <description value="Hospital A"/>
+                <mode value="instance"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="1234"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <value value="1234"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="something@somewhere.com"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="Hospital A"/>
+                    <city value="Somewhere"/>
+                    <state value="UT"/>
+                    <postalCode value="12345"/>
+                    <country value="US"/>
+                </address>
+                <physicalType>
+                    <coding>
+                        <system value="http://hl7.org/fhir/location-physical-type"/>
+                        <code value="bu"/>
+                        <display value="Building"/>
+                    </coding>
+                </physicalType>
+                <position>
+                    <longitude value="-83.6945691"/>
+                    <latitude value="42.25475478"/>
+                    <altitude value="0"/>
+                </position>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1"/>
+                </managingOrganization>
+            </Location>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Location/CORELOCATIONS1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Location>
+                <id value="CORELOCATIONS2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Wing 1 Hospital A</div>
+                </text>
+                <identifier>
+                    <value value="WING_1_HOSPITAL_A"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Wing A1"/>
+                <description value="Wing 1"/>
+                <mode value="instance"/>
+                <physicalType>
+                    <coding>
+                        <system value="http://hl7.org/fhir/location-physical-type"/>
+                        <code value="wi"/>
+                        <display value="Wing"/>
+                    </coding>
+                </physicalType>
+                <position>
+                    <longitude value="-83.6945691"/>
+                    <latitude value="42.25475478"/>
+                    <altitude value="0"/>
+                </position>
+                <partOf>
+                    <reference value="Location/CORELOCATIONS1"/>
+                </partOf>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1"/>
+                </managingOrganization>
+            </Location>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Location/CORELOCATIONS2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Location>
+                <id value="CORELOCATIONS3"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Room A Wing 1 Hospital A</div>
+                </text>
+                <identifier>
+                    <value value="ROOM_A_WING_1_HOSPITAL_A"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Room A1A"/>
+                <description value="Room A Wing 1 Hospital A"/>
+                <mode value="instance"/>
+                <physicalType>
+                    <coding>
+                        <system value="http://hl7.org/fhir/location-physical-type"/>
+                        <code value="ro"/>
+                        <display value="Room"/>
+                    </coding>
+                </physicalType>
+                <position>
+                    <longitude value="-83.6945691"/>
+                    <latitude value="42.25475478"/>
+                    <altitude value="0"/>
+                </position>
+                <partOf>
+                    <reference value="Location/CORELOCATIONS2"/>
+                </partOf>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1"/>
+                </managingOrganization>
+            </Location>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Location/CORELOCATIONS3"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Location>
+                <id value="CORELOCATIONS4"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Bed 1 Room A Wing 1 Hospital A</div>
+                </text>
+                <identifier>
+                    <value value="BED_1_ROOM_A_WING_1_HOSPITAL_A"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Bed A1A1"/>
+                <description value="Bed 1 Room A Wing 1 Hospital A"/>
+                <mode value="instance"/>
+                <physicalType>
+                    <coding>
+                        <system value="http://hl7.org/fhir/location-physical-type"/>
+                        <code value="bd"/>
+                        <display value="Bed"/>
+                    </coding>
+                </physicalType>
+                <position>
+                    <longitude value="-83.6945691"/>
+                    <latitude value="42.25475478"/>
+                    <altitude value="0"/>
+                </position>
+                <partOf>
+                    <reference value="Location/CORELOCATIONS3"/>
+                </partOf>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1"/>
+                </managingOrganization>
+            </Location>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Location/CORELOCATIONS4"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Location>
+                <id value="CORELOCATIONS5"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">Bed 2 Room A Wing 1 Hospital A</div>
+                </text>
+                <identifier>
+                    <value value="BED_2_ROOM_A_WING_1_HOSPITAL_A"/>
+                </identifier>
+                <status value="active"/>
+                <name value="Bed A1A2"/>
+                <description value="Bed 2 Room A Wing 1 Hospital A"/>
+                <mode value="instance"/>
+                <physicalType>
+                    <coding>
+                        <system value="http://hl7.org/fhir/location-physical-type"/>
+                        <code value="bd"/>
+                        <display value="Bed"/>
+                    </coding>
+                </physicalType>
+                <position>
+                    <longitude value="-83.6945691"/>
+                    <latitude value="42.25475478"/>
+                    <altitude value="0"/>
+                </position>
+                <partOf>
+                    <reference value="Location/CORELOCATIONS4"/>
+                </partOf>
+                <managingOrganization>
+                    <reference value="Organization/COREORGANIZATION1"/>
+                </managingOrganization>
+            </Location>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Location/CORELOCATIONS5"/>
+        </request>
+    </entry>
+
+</Bundle>
