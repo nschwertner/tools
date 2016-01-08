@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <!-- Practitioner -->
+    <entry>
+        <resource>
+            <Practitioner>
+                <id value="demo"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        Demo Demo, MD
+                    </div>
+                </text>
+                <identifier>
+                    <use value="official"/>
+                    <value value="1234"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="Demo"/>
+                    <given value="Demo"/>
+                    <suffix value="MD"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="020556936"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="S.M.Heps@bmc.nl"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="fax"/>
+                    <value value="0205669283"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="123 N 123 E"/>
+                    <city value="Somewhere"/>
+                    <state value="UT"/>
+                    <postalCode value="12345"/>
+                    <country value="USA"/>
+                </address>
+
+                <gender value="male"/>
+                <birthDate value="1971-11-07"/>
+
+                <practitionerRole>
+                    <managingOrganization>
+                        <reference value="Organization/COREORGANIZATION1" />
+                    </managingOrganization>
+                    <role>
+                        <coding>
+                            <code value="doctor"/>
+                            <display value="Doctor"/>
+                        </coding>
+                        <text value="Care role"/>
+                    </role>
+                    <specialty>
+                        <coding>
+                            <code value="cardio"/>
+                            <display value="Cardiologist"/>
+                        </coding>
+                        <text value="specialization"/>
+                    </specialty>
+                </practitionerRole>
+            </Practitioner>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Practitioner/demo"/>
+        </request>
+    </entry>
+
+    <!-- Schedule -->
+    <entry>
+        <resource>
+            <Schedule>
+                <id value="DEMOSCHEDULE1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Schedule for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <actor>
+                    <reference value="Practitioner/demo"/>
+                </actor>
+            </Schedule>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Schedule/DEMOSCHEDULE1"/>
+        </request>
+    </entry>
+
+    <!-- Slots -->
+    <entry>
+        <resource>
+            <Slot>
+                <id value="DEMOSCHEDULE1SLOT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 1 Schedule for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/DEMOSCHEDULE1"/>
+                </schedule>
+                <start value="2017-12-10T09:30:00Z"/>
+                <end value="2017-12-10T10:00:00Z"/>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/DEMOSCHEDULE1SLOT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="DEMOSCHEDULE1SLOT2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 2 Schedule for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/DEMOSCHEDULE1"/>
+                </schedule>
+                <start value="2017-12-10T10:00:00Z"/>
+                <end value="2017-12-10T10:30:00Z"/>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/DEMOSCHEDULE1SLOT2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="DEMOSCHEDULE1SLOT3"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 3 Schedule for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/DEMOSCHEDULE1"/>
+                </schedule>
+                <start value="2017-12-10T10:30:00Z"/>
+                <end value="2017-12-10T11:00:00Z"/>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/DEMOSCHEDULE1SLOT3"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Slot>
+                <id value="DEMOSCHEDULE1SLOT4"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Slot 4 Schedule for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <schedule>
+                    <reference value="Schedule/DEMOSCHEDULE1"/>
+                </schedule>
+                <start value="2017-12-10T11:00:00Z"/>
+                <end value="2017-12-10T11:30:00Z"/>
+            </Slot>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Slot/DEMOSCHEDULE1SLOT4"/>
+        </request>
+    </entry>
+
+    <!-- Appointment 1 -->
+    <entry>
+        <resource>
+            <Appointment>
+                <id value="DEMOSCHEDULE1SLOT1APT1"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Appointment 1 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <status value="booked"/>
+                <description value="Consult heart surgery"/>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <reason>
+                    <coding>
+                        <code value="368009"/>
+                        <display value="Heart valve disorder (disorder)"/>
+                    </coding>
+                    <text value="Heart valve disorder (disorder)"/>
+                </reason>
+                <start value="2017-12-10T09:30:00Z"/>
+                <end value="2017-12-10T10:00:00Z"/>
+                <minutesDuration>30</minutesDuration>
+                <slot>
+                    <reference value="Slot/DEMOSCHEDULE1SLOT1"/>
+                </slot>
+                <participant>
+                    <actor>
+                        <reference value="Patient/COREPATIENT1"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <code value="ATND"/>
+                            <display value="attender"/>
+                        </coding>
+                        <text value="attender"/>
+                    </type>
+                    <actor>
+                        <reference value="Practitioner/demo"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+            </Appointment>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Appointment/DEMOSCHEDULE1SLOT1APT1"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <AppointmentResponse>
+                <id value="DEMOSCHEDULE1SLOT1APT1RESPONSE"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Booking for Appointment 1 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <appointment>
+                    <reference value="Appointment/DEMOSCHEDULE1SLOT1APT1"/>
+                </appointment>
+                <actor>
+                    <reference value="Practitioner/demo"/>
+                </actor>
+                <participantStatus>accepted</participantStatus>
+            </AppointmentResponse>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="AppointmentResponse/DEMOSCHEDULE1SLOT1APT1RESPONSE"/>
+        </request>
+    </entry>
+
+    <!-- Appointment 2 -->
+    <entry>
+        <resource>
+            <Appointment>
+                <id value="DEMOSCHEDULE1SLOT2APT2"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Appointment 2 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <status value="booked"/>
+                <description value="Echocardiogram"/>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <reason>
+                    <coding>
+                        <code value="368009"/>
+                        <display value="Heart valve disorder (disorder)"/>
+                    </coding>
+                    <text value="Heart valve disorder (disorder)"/>
+                </reason>
+                <start value="2017-12-10T10:00:00Z"/>
+                <end value="2017-12-10T10:30:00Z"/>
+                <minutesDuration>30</minutesDuration>
+                <slot>
+                    <reference value="Slot/DEMOSCHEDULE1SLOT2"/>
+                </slot>
+                <participant>
+                    <actor>
+                        <reference value="Patient/COREPATIENT2"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <code value="ATND"/>
+                            <display value="attender"/>
+                        </coding>
+                        <text value="attender"/>
+                    </type>
+                    <actor>
+                        <reference value="Practitioner/demo"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+            </Appointment>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Appointment/DEMOSCHEDULE1SLOT2APT2"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <AppointmentResponse>
+                <id value="DEMOSCHEDULE1SLOT2APT2RESPONSE"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Booking for Appointment 2 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <appointment>
+                    <reference value="Appointment/DEMOSCHEDULE1SLOT2APT2"/>
+                </appointment>
+                <actor>
+                    <reference value="Practitioner/demo"/>
+                </actor>
+                <participantStatus>accepted</participantStatus>
+            </AppointmentResponse>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="AppointmentResponse/DEMOSCHEDULE1SLOT2APT2RESPONSE"/>
+        </request>
+    </entry>
+
+
+    <!-- Appointment 3 -->
+    <entry>
+        <resource>
+            <Appointment>
+                <id value="DEMOSCHEDULE1SLOT4APT4"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Appointment 4 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <status value="booked"/>
+                <description value="EKG Screening"/>
+                <type>
+                    <coding>
+                        <code value="394579002"/>
+                        <display value="Cardiology"/>
+                    </coding>
+                    <text value="Cardiology"/>
+                </type>
+                <reason>
+                    <coding>
+                        <code value="368009"/>
+                        <display value="Heart valve disorder (disorder)"/>
+                    </coding>
+                    <text value="Heart valve disorder (disorder)"/>
+                </reason>
+                <start value="2017-12-10T11:00:00Z"/>
+                <end value="2017-12-10T11:30:00Z"/>
+                <minutesDuration>30</minutesDuration>
+                <slot>
+                    <reference value="Slot/DEMOSCHEDULE1SLOT4"/>
+                </slot>
+                <participant>
+                    <actor>
+                        <reference value="Patient/COREPATIENT4"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+                <participant>
+                    <type>
+                        <coding>
+                            <code value="ATND"/>
+                            <display value="attender"/>
+                        </coding>
+                        <text value="attender"/>
+                    </type>
+                    <actor>
+                        <reference value="Practitioner/demo"/>
+                    </actor>
+                    <required value="required"/>
+                    <status value="accepted"/>
+                </participant>
+            </Appointment>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Appointment/DEMOSCHEDULE1SLOT4APT4"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <AppointmentResponse>
+                <id value="DEMOSCHEDULE1SLOT4APT4RESPONSE"/>
+                <text>
+                    <status value="generated"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>Booking for Appointment 4 for Demo Demo, MD</p>
+                    </div>
+                </text>
+                <appointment>
+                    <reference value="Appointment/DEMOSCHEDULE1SLOT4APT4"/>
+                </appointment>
+                <actor>
+                    <reference value="Practitioner/demo"/>
+                </actor>
+                <participantStatus>accepted</participantStatus>
+            </AppointmentResponse>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="AppointmentResponse/DEMOSCHEDULE1SLOT4APT4RESPONSE"/>
+        </request>
+    </entry>
+
+</Bundle>
