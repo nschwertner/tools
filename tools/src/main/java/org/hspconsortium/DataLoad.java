@@ -16,8 +16,8 @@ import java.util.UUID;
 
 public class DataLoad {
     private static final String STATIC_DATA_PATH = "datapack/dstu2/core";
-//    private static String RESOURCE_URI = "https://sandbox.hspconsortium.org/dstu2/open-hsp-reference-api/data";
-    private static String RESOURCE_URI = "http://localhost:8080/hsp-reference-api/data";
+//    private static String RESOURCE_URI = "https://sandbox.hspconsortium.org/dstu2/open-hspc-reference-api/data";
+    private static String RESOURCE_URI = "http://localhost:8080/hspc-reference-api/data";
     private static String OUTPUT_DIR = "output";
     private static boolean isXML = true;
     private static String INPUT_DIR = STATIC_DATA_PATH;
@@ -32,10 +32,10 @@ public class DataLoad {
 
             switch (args[i]){
                 case "-h" :
-                    System.out.println("java -jar hsp-tools.jar org.hspconsortium.DataLoad [options]");
+                    System.out.println("java -jar hspc-tools.jar org.hspconsortium.DataLoad [options]");
                     System.out.println("   Options:");
                     System.out.println("   -h       print this message");
-                    System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hsp-reference-api");
+                    System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hspc-reference-api");
                     System.out.println("   -json    indicates that the input files are JSON, XML is the default");
                     System.out.println("   -in      the input directory for results; default '" + STATIC_DATA_PATH + "'");
                     System.out.println("   -out     the output directory for results; default '<current dir>/output'");
