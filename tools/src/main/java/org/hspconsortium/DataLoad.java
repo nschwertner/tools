@@ -35,7 +35,7 @@ public class DataLoad {
                     System.out.println("java -jar hspc-tools.jar org.hspconsortium.DataLoad [options]");
                     System.out.println("   Options:");
                     System.out.println("   -h       print this message");
-                    System.out.println("   -url     the url for the hsp api ex: -url http://localhost:8080/hspc-reference-api");
+                    System.out.println("   -url     the url for the hspc api ex: -url http://localhost:8080/hspc-reference-api");
                     System.out.println("   -json    indicates that the input files are JSON, XML is the default");
                     System.out.println("   -in      the input directory for results; default '" + STATIC_DATA_PATH + "'");
                     System.out.println("   -out     the output directory for results; default '<current dir>/output'");
