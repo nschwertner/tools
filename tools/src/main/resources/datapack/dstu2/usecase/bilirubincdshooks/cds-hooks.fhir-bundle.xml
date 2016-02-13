@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+    <entry>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="ID-BabyWithoutBilirubinObservation"/>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="ID-No-Observation-Patient-12345"/>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <use value="official"/>
+                    <family value="Q"/>
+                    <given value="Suzy"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="2016-02-28"/>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/ID-BabyWithoutBilirubinObservation"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="ID-BabyWithBilirubinObservation"/>
+                <identifier>
+                    <use value="usual"/>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0203"/>
+                            <code value="MR"/>
+                            <display value="Medical record number"/>
+                        </coding>
+                    </type>
+                    <system value="http://hospital.smarthealthit.org"/>
+                    <value value="ID9f51efcd61f04eadb4715f83ee6557cf"/>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <use value="official"/>
+                    <family value="LastName"/>
+                    <given value="Baby"/>
+                </name>
+                <gender value="female"/>
+                <birthDate value="2016-02-28"/>
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/ID-BabyWithBilirubinObservation"/>
+        </request>
+    </entry>
+
+    <entry>
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="ID-BilirubinObservationExceedsThreshold"/>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="58941-6"/>
+                        <display value="Transcutaneous Bilirubin"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/ID-BabyWithBilirubinObservation"/>
+                </subject>
+                <effectiveDateTime value="2016-02-28T14:45:23"/>
+                <valueQuantity>
+                    <value value="13.0"/>
+                    <unit value="mg/dL"/>
+                    <code value="mg/dL"/>
+                </valueQuantity>
+            </Observation>
+        </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/ID-BilirubinObservationExceedsThreshold"/>
+        </request>
+    </entry>
+
+</Bundle>
