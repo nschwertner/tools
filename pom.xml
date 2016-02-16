@@ -1,24 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.hspconsortium</groupId>
+
+    <parent>
+        <groupId>org.hspconsortium.reference</groupId>
+        <artifactId>hspc-reference-release</artifactId>
+        <version>0.3</version>
+    </parent>
+
+    <groupId>org.hspconsortium.tools</groupId>
     <artifactId>hspc-tools</artifactId>
     <version>0.7-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <organization>
-        <name>Healthcare Services Platform Consortium</name>
-        <url>http://hspconsortium.org</url>
-    </organization>
-
-    <inceptionYear>2014</inceptionYear>
-
-    <licenses>
-        <license>
-            <name>Apache Software License 2.0</name>
-            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
 
     <modules>
         <module>tools</module>
@@ -35,20 +28,6 @@
     </properties>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>license-maven-plugin</artifactId>
-                    <version>1.8</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.1</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
