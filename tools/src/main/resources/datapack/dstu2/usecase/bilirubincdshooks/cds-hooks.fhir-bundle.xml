@@ -25,7 +25,7 @@
                     <given value="Suzy"/>
                 </name>
                 <gender value="female"/>
-                <birthDate value="2016-02-28"/>
+                <birthDate value="2016-02-17"/>
             </Patient>
         </resource>
         <request>
@@ -57,7 +57,7 @@
                     <given value="Baby"/>
                 </name>
                 <gender value="female"/>
-                <birthDate value="2016-02-28"/>
+                <birthDate value="2016-02-17"/>
             </Patient>
         </resource>
         <request>
@@ -81,7 +81,7 @@
                 <subject>
                     <reference value="Patient/ID-BabyWithBilirubinObservation"/>
                 </subject>
-                <effectiveDateTime value="2016-02-28T14:45:23"/>
+                <effectiveDateTime value="2016-02-17T14:45:23"/>
                 <valueQuantity>
                     <value value="13.0"/>
                     <unit value="mg/dL"/>
