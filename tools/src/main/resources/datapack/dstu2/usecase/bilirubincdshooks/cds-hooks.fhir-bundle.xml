@@ -21,11 +21,11 @@
                 <active value="true"/>
                 <name>
                     <use value="official"/>
-                    <family value="Q"/>
-                    <given value="Suzy"/>
+                    <family value="Conner"/>
+                    <given value="Bette"/>
                 </name>
                 <gender value="female"/>
-                <birthDate value="2016-02-21"/>
+                <birthDate value="2016-02-25"/>
             </Patient>
         </resource>
         <request>
@@ -53,11 +53,11 @@
                 <active value="true"/>
                 <name>
                     <use value="official"/>
-                    <family value="LastName"/>
-                    <given value="Baby"/>
+                    <family value="Haward"/>
+                    <given value="Russell"/>
                 </name>
-                <gender value="female"/>
-                <birthDate value="2016-02-21"/>
+                <gender value="male"/>
+                <birthDate value="2016-02-25"/>
             </Patient>
         </resource>
         <request>
@@ -81,7 +81,7 @@
                 <subject>
                     <reference value="Patient/ID-BabyWithBilirubinObservation"/>
                 </subject>
-                <effectiveDateTime value="2016-02-21T14:45:23"/>
+                <effectiveDateTime value="2016-02-26T14:45:23"/>
                 <valueQuantity>
                     <value value="13.0"/>
                     <unit value="mg/dL"/>
