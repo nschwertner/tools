@@ -13,6 +13,13 @@
     <version>0.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/hspconsortium/tools.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/hspconsortium/tools.git</developerConnection>
+        <url>https://bitbucket.org/hspconsortium/tools.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <modules>
         <module>tools</module>
     </modules>
